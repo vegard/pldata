@@ -1,0 +1,2355 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    This work is licensed under the Creative Commons
+    Attribution-NonCommercial-ShareAlike 3.0 Unported License. To view a copy of
+    this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/ or send
+    a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco,
+    California, 94105, USA.
+-->
+<area>
+  <areadata>
+    <name>Arden Village</name>
+    <build_restricts>'all' aniline</build_restricts>
+    <builders>None</builders>
+    <colour></colour>
+    <colourcode>`</colourcode>
+    <continent>ireland</continent>
+    <flags>noteleport</flags>
+    <flags>noscry</flags>
+    <flags>hidden</flags>
+    <flags>use_buildrestricts</flags>
+    <frommud>Legilimensia</frommud>
+    <lrange>0 0</lrange>
+    <maplevel>1</maplevel>
+    <mapscale>8</mapscale>
+    <security>9</security>
+    <shortname></shortname>
+    <version>11</version>
+    <vnum_offset>0</vnum_offset>
+    <vnums>15000 15499</vnums>
+  </areadata>
+  <mobile>
+    <name>red headed barkeeper seamus</name>
+    <ac>-400 -400 -400 -336</ac>
+    <act>npc dont_wander no_tame stay_area update_always</act>
+    <align>1 1</align>
+    <damdice>8d8+34</damdice>
+    <damtype>none</damtype>
+    <defpos>standing</defpos>
+    <desc>. 
+</desc>
+    <form>edible sentient biped mammal</form>
+    <hitdice>7d10+360</hitdice>
+    <hitroll>60</hitroll>
+    <level>70</level>
+    <long>Seamus, the red headed barkeeper stands behind the bar.</long>
+    <manadice>7d10+360</manadice>
+    <material>flesh</material>
+    <part>head arms legs heart brains guts hands feet fingers ear eye</part>
+    <race>human</race>
+    <sex>male</sex>
+    <short>seamus the barkeeper</short>
+    <size>medium</size>
+    <startp>standing</startp>
+    <vnum>15000</vnum>
+    <wealth>140</wealth>
+  </mobile>
+  <mobile>
+    <name>squirrel</name>
+    <ac>90 90 90 78</ac>
+    <act>npc stay_area</act>
+    <align>0 0</align>
+    <damdice>1d4+0</damdice>
+    <damtype>bite</damtype>
+    <defpos>standing</defpos>
+    <desc>The squirrel is small, but has a large, almost transparent tail.  Its black 
+eyes dart about in search for something edible.  
+</desc>
+    <form>edible animal mammal</form>
+    <hitdice>1d4+1</hitdice>
+    <hitroll>0</hitroll>
+    <level>1</level>
+    <long>A squirrel is sitting here.</long>
+    <manadice>1d4+5</manadice>
+    <material>squirrel</material>
+    <off>dodge fast</off>
+    <part>head legs heart brains guts feet ear eye</part>
+    <race>rabbit</race>
+    <sex>neutral</sex>
+    <short>a small, gray squirrel</short>
+    <size>small</size>
+    <startp>standing</startp>
+    <vnum>15001</vnum>
+    <wealth>0</wealth>
+  </mobile>
+  <mobprog></mobprog>
+  <object>
+    <name>arden village tree</name>
+    <asize>60</asize>
+    <cost>0</cost>
+    <desc>A massive tree with swirly green leaves is here.</desc>
+    <extra>nodegrade</extra>
+    <extra2>nodecay</extra2>
+    <level>0</level>
+    <material>wood</material>
+    <rsize>100</rsize>
+    <short>the arden village tree</short>
+    <type>treasure</type>
+    <values>0 0 0 0 0</values>
+    <vnum>15000</vnum>
+    <weight>10176</weight>
+  </object>
+  <object>
+    <name>arden village grass</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>A small field of emerald green grass is here.</desc>
+    <level>0</level>
+    <material>grass</material>
+    <rsize>50</rsize>
+    <short>a field of emerald green grass</short>
+    <type>furniture</type>
+    <values>50 12000 BEHKR 0 20</values>
+    <vnum>15001</vnum>
+    <weight>0</weight>
+  </object>
+  <object>
+    <name>small bed</name>
+    <asize>0</asize>
+    <cost>150</cost>
+    <desc>A small bed with white cotton sheets is here.</desc>
+    <level>0</level>
+    <material>wood</material>
+    <rsize>50</rsize>
+    <short>a small bed</short>
+    <type>furniture</type>
+    <values>2 600 EHK 2 0</values>
+    <vnum>15002</vnum>
+    <weight>600</weight>
+  </object>
+  <object>
+    <name>small key</name>
+    <asize>0</asize>
+    <cost>50</cost>
+    <desc>A small iron key is here.</desc>
+    <level>1</level>
+    <material>iron</material>
+    <rsize>50</rsize>
+    <short>a small key</short>
+    <type>key</type>
+    <values>0 0 0 0 0</values>
+    <vnum>15003</vnum>
+    <wear>take</wear>
+    <weight>3</weight>
+  </object>
+  <reset></reset>
+  <room>
+    <name>Arden Village - Centre Town Square</name>
+    <copyright>Copyright © 2004  Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</copyright>
+    <desc>Before you is the sacred tree of the town, amid a field of emerald grass.  
+The tree is clearly old and knotted, at least as thick as a tall human.  The 
+sienna trunk extends upwards, rising above the rooftops of the shops.  The 
+round leaves of the tree seem almost painted: a swirl of dark and light 
+greens, mingling with a silvery overtone.  The rich green grass is soft and 
+tall, swaying quietly with even the slightest of breezes.  
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>15003</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>15001</vnum>
+    </exit>
+    <exit>
+      <name>northeast</name>
+      <vnum>15002</vnum>
+    </exit>
+    <exit>
+      <name>northwest</name>
+      <vnum>15008</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15006</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15004</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15005</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15007</vnum>
+    </exit>
+    <history>
+      <date>2004-08-29 10:08:41</date>
+      <person>Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2004-08-29 11:04:04</date>
+      <person>Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2004-08-29 11:05:22</date>
+      <person>Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2004-08-29 11:26:47</date>
+      <person>Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</person>
+    </history>
+    <sector>field</sector>
+    <vnum>15000</vnum>
+  </room>
+  <room>
+    <name>Arden Village - North Town Square</name>
+    <copyright>Copyright © 2004  Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</copyright>
+    <desc>The town square is an energetic place.  The sounds of the small community's 
+gossip, news and debates ring clearly through the aire.  The ground is 
+packed dirt, carefully packed as densely as it could possibly be in an 
+attempt to prevent dust from stirring up.  To the south, you can see a small 
+field of grass and a giant tree.  To the northwest, there is a small tavern. 
+ A wooden sign stands above it declaring it 'The Green Dragon.  ' To the 
+northeast, there is a shop with a 'FOR SALE' sign in its window.  
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>15002</vnum>
+    </exit>
+    <exit>
+      <name>northeast</name>
+      <flags>door closed locked pickproof nopass</flags>
+      <vnum>15009</vnum>
+    </exit>
+    <exit>
+      <name>northwest</name>
+      <vnum>15010</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15000</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15003</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15007</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15008</vnum>
+    </exit>
+    <history>
+      <date>2004-08-29 11:55:17</date>
+      <person>Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2004-08-29 13:29:45</date>
+      <person>Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</person>
+    </history>
+    <sector>city</sector>
+    <vnum>15001</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Northeast Town Square</name>
+    <copyright>Copyright © 2004  Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</copyright>
+    <desc>The town square is an energetic place.  The sounds of the small community's 
+gossip, news and debates ring clearly through the aire.  The ground is 
+packed dirt, carefully packed as densely as it could possibly be in an 
+attempt to prevent dust from stirring up.  To the southwest, you can see a 
+small field of grass and a giant tree.  A sign saying 'Cedar Road' points to 
+the northeast. 
+</desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15027</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15003</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15000</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15001</vnum>
+    </exit>
+    <history>
+      <date>2004-08-29 11:52:51</date>
+      <person>Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2004-08-29 11:59:45</date>
+      <person>Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</person>
+    </history>
+    <sector>city</sector>
+    <vnum>15002</vnum>
+  </room>
+  <room>
+    <name>Arden Village - East Town Square</name>
+    <copyright>Copyright © 2004  Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</copyright>
+    <desc>The town square is an energetic place.  The sounds of the small community's 
+gossip, news and debates ring clearly through the aire.  The ground is 
+packed dirt, carefully packed as densely as it could possibly be in an 
+attempt to prevent dust from stirring up.  To the west, you can see a small 
+field of grass and a giant tree.  To the northeast and southeast, you can 
+see two shops with 'FOR SALE' signs in their windows.  
+</desc>
+    <exit>
+      <name>north</name>
+      <vnum>15002</vnum>
+    </exit>
+    <exit>
+      <name>northeast</name>
+      <flags>door closed locked pickproof nopass</flags>
+      <vnum>15011</vnum>
+    </exit>
+    <exit>
+      <name>northwest</name>
+      <vnum>15001</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15004</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <flags>door closed locked pickproof nopass</flags>
+      <vnum>15012</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15006</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15000</vnum>
+    </exit>
+    <history>
+      <date>2004-08-29 11:55:56</date>
+      <person>Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2004-08-29 11:58:39</date>
+      <person>Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</person>
+    </history>
+    <sector>city</sector>
+    <vnum>15003</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Southeast Town Square</name>
+    <copyright>Copyright © 2004  Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</copyright>
+    <desc>The town square is an energetic place.  The sounds of the small community's 
+gossip, news and debates ring clearly through the aire.  The ground is 
+packed dirt, carefully packed as densely as it could possibly be in an 
+attempt to prevent dust from stirring up.  To the northwest, you can see a 
+small field of grass and a giant tree.  A sign saying 'Pine Road' points to 
+the southeast. 
+</desc>
+    <exit>
+      <name>north</name>
+      <vnum>15003</vnum>
+    </exit>
+    <exit>
+      <name>northwest</name>
+      <vnum>15000</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15035</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15006</vnum>
+    </exit>
+    <history>
+      <date>2004-08-29 11:53:15</date>
+      <person>Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2004-08-29 12:01:16</date>
+      <person>Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</person>
+    </history>
+    <sector>city</sector>
+    <vnum>15004</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Southwest Town Square</name>
+    <copyright>Copyright © 2004  Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</copyright>
+    <desc>The town square is an energetic place.  The sounds of the small community's 
+gossip, news and debates ring clearly through the aire.  The ground is 
+packed dirt, carefully packed as densely as it could possibly be in an 
+attempt to prevent dust from stirring up.  To the northeast, you can see a 
+small field of grass and a giant tree.  A sign saying 'Maple Road' points to 
+the southwest. 
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>15006</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>15007</vnum>
+    </exit>
+    <exit>
+      <name>northeast</name>
+      <vnum>15000</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15034</vnum>
+    </exit>
+    <history>
+      <date>2004-08-29 12:01:39</date>
+      <person>Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</person>
+    </history>
+    <sector>city</sector>
+    <vnum>15005</vnum>
+  </room>
+  <room>
+    <name>Arden Village - South Town Square</name>
+    <copyright>Copyright © 2004  Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</copyright>
+    <desc>The town square is an energetic place.  The sounds of the small community's 
+gossip, news and debates ring clearly through the aire.  The ground is 
+packed dirt, carefully packed as densely as it could possibly be in an 
+attempt to prevent dust from stirring up.  To the north, you can see a small 
+field of grass and a giant tree.  To the southeast and southwest, you can 
+see two shops with 'FOR SALE' signs in their windows.  
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>15004</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>15000</vnum>
+    </exit>
+    <exit>
+      <name>northeast</name>
+      <vnum>15003</vnum>
+    </exit>
+    <exit>
+      <name>northwest</name>
+      <vnum>15007</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <flags>door closed locked pickproof nopass</flags>
+      <vnum>15014</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <flags>door closed locked pickproof nopass</flags>
+      <vnum>15013</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15005</vnum>
+    </exit>
+    <history>
+      <date>2004-08-29 11:58:08</date>
+      <person>Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</person>
+    </history>
+    <sector>city</sector>
+    <vnum>15006</vnum>
+  </room>
+  <room>
+    <name>Arden Village - West Town Square</name>
+    <copyright>Copyright © 2004  Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</copyright>
+    <desc>The town square is an energetic place.  The sounds of the small community's 
+gossip, news and debates ring clearly through the aire.  The ground is 
+packed dirt, carefully packed as densely as it could possibly be in an 
+attempt to prevent dust from stirring up.  To the east, you can see a small 
+field of grass and a giant tree.  To the northwest and southwest, you can 
+see two shops with 'FOR SALE' signs in their windows.  
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>15000</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>15008</vnum>
+    </exit>
+    <exit>
+      <name>northeast</name>
+      <vnum>15001</vnum>
+    </exit>
+    <exit>
+      <name>northwest</name>
+      <flags>door closed locked pickproof nopass</flags>
+      <vnum>15015</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15005</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15006</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <flags>door closed locked pickproof nopass</flags>
+      <vnum>15016</vnum>
+    </exit>
+    <history>
+      <date>2004-08-29 11:47:49</date>
+      <person>Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2004-08-29 11:53:46</date>
+      <person>Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</person>
+    </history>
+    <sector>city</sector>
+    <vnum>15007</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Northwest Town Square</name>
+    <copyright>Copyright © 2004  Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</copyright>
+    <desc>The town square is an energetic place.  The sounds of the small community's 
+gossip, news and debates ring clearly through the aire.  The ground is 
+packed dirt, carefully packed as densely as it could possibly be in an 
+attempt to prevent dust from stirring up.  To the southeast, you can see a 
+small field of grass and a giant tree.  A sign saying 'Oak Road' points to 
+the northwest. 
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>15001</vnum>
+    </exit>
+    <exit>
+      <name>northwest</name>
+      <vnum>15017</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15007</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15000</vnum>
+    </exit>
+    <history>
+      <date>2004-08-29 11:52:22</date>
+      <person>Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2004-08-29 12:00:16</date>
+      <person>Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</person>
+    </history>
+    <sector>city</sector>
+    <vnum>15008</vnum>
+  </room>
+  <room>
+    <name>Arden Village - An Empty Shop</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>southwest</name>
+      <flags>door closed locked pickproof nopass</flags>
+      <vnum>15001</vnum>
+    </exit>
+    <flags>indoors</flags>
+    <sector>inside</sector>
+    <vnum>15009</vnum>
+  </room>
+  <room>
+    <name>Inside the Green Dragon</name>
+    <copyright>Copyright © 2004  Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</copyright>
+    <desc>For a small tavern, its fairly clean.  The walls and floor are made of fine 
+oak, the tables of a heavy cherry.  The bar is made of some material you 
+cannot identify, but is oddly beautiful.  The entire place smells strongly 
+of rosemary and what you can identify as good cooking.  Ancient oil lamps 
+keep the room light, but only barely.  
+</desc>
+    <exit>
+      <name>southeast</name>
+      <vnum>15001</vnum>
+    </exit>
+    <flags>indoors</flags>
+    <history>
+      <date>2004-08-29 13:33:39</date>
+      <person>Paul Kruchoski &lt;paul.kruchoski@gmail.com&gt;</person>
+    </history>
+    <sector>inside</sector>
+    <vnum>15010</vnum>
+  </room>
+  <room>
+    <name>Arden Village - An Empty Shop</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>southwest</name>
+      <flags>door closed locked pickproof nopass</flags>
+      <vnum>15003</vnum>
+    </exit>
+    <flags>indoors</flags>
+    <sector>inside</sector>
+    <vnum>15011</vnum>
+  </room>
+  <room>
+    <name>Arden Village - An Empty Shop</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northwest</name>
+      <flags>door closed locked pickproof nopass</flags>
+      <vnum>15003</vnum>
+    </exit>
+    <flags>indoors</flags>
+    <sector>inside</sector>
+    <vnum>15012</vnum>
+  </room>
+  <room>
+    <name>Arden Village - An Empty Shop</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <flags>door closed locked pickproof nopass</flags>
+      <vnum>15006</vnum>
+    </exit>
+    <flags>indoors</flags>
+    <sector>inside</sector>
+    <vnum>15013</vnum>
+  </room>
+  <room>
+    <name>Arden Village - An Empty Shop</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northwest</name>
+      <flags>door closed locked pickproof nopass</flags>
+      <vnum>15006</vnum>
+    </exit>
+    <flags>indoors</flags>
+    <sector>inside</sector>
+    <vnum>15014</vnum>
+  </room>
+  <room>
+    <name>Arden Village - An Empty Shop</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>southeast</name>
+      <flags>door closed locked pickproof nopass</flags>
+      <vnum>15007</vnum>
+    </exit>
+    <flags>indoors</flags>
+    <sector>inside</sector>
+    <vnum>15015</vnum>
+  </room>
+  <room>
+    <name>Arden Village - An Empty Shop</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <flags>door closed locked pickproof nopass</flags>
+      <vnum>15007</vnum>
+    </exit>
+    <flags>indoors</flags>
+    <sector>inside</sector>
+    <vnum>15016</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Oak Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc>Several tall oak trees line the road, while a few short bushes fill in the 
+spaces between the trees.  This road is well traveled from what can be seen 
+by its condition.  Ruts and pot holes are scattered around the dirt road and 
+several parts of broken carts are strewn across the bumpy surface.  The road 
+winds its way to the northwest and southeast.  
+</desc>
+    <exit>
+      <name>northwest</name>
+      <vnum>15018</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15008</vnum>
+    </exit>
+    <extradesc>
+      <desc>Bright green leaves fill the branches of the oak trees.  A few acorns are 
+forming in the top most limbs, making a few squirrels very happy.  
+</desc>
+      <keywords>oak trees</keywords>
+    </extradesc>
+    <extradesc>
+      <desc>The dense leaves of the oak trees shade the road.
+</desc>
+      <keywords>leaves</keywords>
+    </extradesc>
+    <extradesc>
+      <desc>The acorns hang from the highest branches, causing hungry squirrels to 
+scramble for their newly formed food.  
+</desc>
+      <keywords>acorns</keywords>
+    </extradesc>
+    <extradesc>
+      <desc>Several squirrels call these trees their home.
+</desc>
+      <keywords>squirrels</keywords>
+    </extradesc>
+    <extradesc>
+      <desc>Slightly wilted, the greenish bushes under the trees don't get quite as much sunlight.
+</desc>
+      <keywords>bushes</keywords>
+    </extradesc>
+    <history>
+      <date>2004-12-29 12:16:55</date>
+      <person>Aniline &lt;music4piano@yahoo.com&gt;</person>
+    </history>
+    <history>
+      <date>2004-12-29 12:19:59</date>
+      <person>Aniline &lt;music4piano@yahoo.com&gt;</person>
+    </history>
+    <history>
+      <date>2004-12-29 12:20:35</date>
+      <person>Aniline &lt;music4piano@yahoo.com&gt;</person>
+    </history>
+    <history>
+      <date>2004-12-29 12:49:47</date>
+      <person>Vegard Nossum &lt;vegard.nossum@gmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2004-12-29 12:50:54</date>
+      <person>Vegard Nossum &lt;vegard.nossum@gmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2004-12-29 12:52:24</date>
+      <person>Vegard Nossum &lt;vegard.nossum@gmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2004-12-29 17:05:40</date>
+      <person>Aniline &lt;music4piano@yahoo.com&gt;</person>
+    </history>
+    <sector>trail</sector>
+    <vnum>15017</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Oak Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15036</vnum>
+    </exit>
+    <exit>
+      <name>northwest</name>
+      <vnum>15020</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15017</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15019</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15018</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Oak Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15018</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15021</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15019</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Live Oak Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>north</name>
+      <vnum>15025</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15018</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15020</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Oak Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15019</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15022</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15021</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Oak Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15021</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15023</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15022</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Oak Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15022</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15024</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15023</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Oak Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15023</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15024</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Live Oak Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northwest</name>
+      <vnum>15026</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15020</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15025</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Live Oak Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>southeast</name>
+      <vnum>15025</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15026</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15028</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15002</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15027</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15031</vnum>
+    </exit>
+    <exit>
+      <name>northeast</name>
+      <vnum>15029</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15027</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15028</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15030</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15028</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15029</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15033</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>15032</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15029</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15030</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Red Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15044</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15028</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15031</vnum>
+  </room>
+  <room>
+    <name>Arden Village - White Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15051</vnum>
+    </exit>
+    <exit>
+      <name>northwest</name>
+      <vnum>15052</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15030</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15032</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15042</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15030</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15033</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Maple Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15005</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15062</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15034</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northwest</name>
+      <vnum>15004</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15079</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15035</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Number 1 Oak Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <flags>door closed locked pickproof nopass</flags>
+      <vnum>15037</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15018</vnum>
+    </exit>
+    <sector>city</sector>
+    <vnum>15036</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Centre Town Square</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc>Before you is the sacred tree of the town, amid a field of emerald grass.  
+The tree is clearly old and knotted, at least as thick as a tall human.  The 
+sienna trunk extends upwards, rising above the rooftops of the shops.  The 
+round leaves of the tree seem almost painted: a swirl of dark and light 
+greens, mingling with a silvery overtone.  The rich green grass is soft and 
+tall, swaying quietly with even the slightest of breezes.  
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>15039</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <flags>door closed</flags>
+      <vnum>15038</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <flags>door closed</flags>
+      <vnum>15041</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <flags>door closed locked pickproof nopass</flags>
+      <vnum>15036</vnum>
+    </exit>
+    <sector>field</sector>
+    <vnum>15037</vnum>
+  </room>
+  <room>
+    <name>A Small Kitchen</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>south</name>
+      <flags>door closed</flags>
+      <vnum>15037</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <flags>door closed</flags>
+      <vnum>15039</vnum>
+    </exit>
+    <flags>indoors</flags>
+    <sector>inside</sector>
+    <vnum>15038</vnum>
+  </room>
+  <room>
+    <name>A Hallway</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northwest</name>
+      <flags>door closed</flags>
+      <vnum>15038</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <flags>door closed</flags>
+      <vnum>15040</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15037</vnum>
+    </exit>
+    <sector>inside</sector>
+    <vnum>15039</vnum>
+  </room>
+  <room>
+    <name>A Bedroom</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>north</name>
+      <flags>door closed</flags>
+      <vnum>15039</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <flags>door closed</flags>
+      <vnum>15041</vnum>
+    </exit>
+    <sector>inside</sector>
+    <vnum>15040</vnum>
+  </room>
+  <room>
+    <name>A small Bathroom</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <flags>door closed</flags>
+      <vnum>15040</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <flags>door closed</flags>
+      <vnum>15037</vnum>
+    </exit>
+    <sector>inside</sector>
+    <vnum>15041</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15043</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15105</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15033</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15042</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15056</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>15055</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15042</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15043</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Red Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15050</vnum>
+    </exit>
+    <exit>
+      <name>northeast</name>
+      <vnum>15045</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15031</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15044</vnum>
+  </room>
+  <room>
+    <name>Arden Village - One Red Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>southwest</name>
+      <vnum>15044</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15045</vnum>
+  </room>
+  <room>
+    <name>** Arden Village - Red Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15047</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15048</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15050</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15046</vnum>
+  </room>
+  <room>
+    <name>** ** Arden Village - Red Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15049</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15046</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15047</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Two Red Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northwest</name>
+      <vnum>15046</vnum>
+    </exit>
+    <sector>city</sector>
+    <vnum>15048</vnum>
+  </room>
+  <room>
+    <name>** Arden Village - Three Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>west</name>
+      <vnum>15047</vnum>
+    </exit>
+    <sector>city</sector>
+    <vnum>15049</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Red Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15046</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15044</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15050</vnum>
+  </room>
+  <room>
+    <name>Arden Village - White Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>north</name>
+      <vnum>15054</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15032</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15051</vnum>
+  </room>
+  <room>
+    <name>Arden Village - White Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>southeast</name>
+      <vnum>15032</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15053</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15052</vnum>
+  </room>
+  <room>
+    <name>Arden Village - One White Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15052</vnum>
+    </exit>
+    <sector>city</sector>
+    <vnum>15053</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Two White Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>south</name>
+      <vnum>15051</vnum>
+    </exit>
+    <sector>city</sector>
+    <vnum>15054</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15057</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15043</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15055</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15059</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15058</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15043</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15056</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Two Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>southwest</name>
+      <vnum>15055</vnum>
+    </exit>
+    <sector>city</sector>
+    <vnum>15057</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Three Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northwest</name>
+      <vnum>15056</vnum>
+    </exit>
+    <sector>city</sector>
+    <vnum>15058</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15060</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15056</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15059</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15061</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15059</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15060</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Four Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>southwest</name>
+      <vnum>15060</vnum>
+    </exit>
+    <sector>city</sector>
+    <vnum>15061</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Maple Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15034</vnum>
+    </exit>
+    <exit>
+      <name>northwest</name>
+      <vnum>15063</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15064</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15062</vnum>
+  </room>
+  <room>
+    <name>Arden Village - One Maple Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>southeast</name>
+      <vnum>15062</vnum>
+    </exit>
+    <sector>city</sector>
+    <vnum>15063</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Maple Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15065</vnum>
+    </exit>
+    <exit>
+      <name>northeast</name>
+      <vnum>15062</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15067</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15066</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15064</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Two Maple Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>west</name>
+      <vnum>15064</vnum>
+    </exit>
+    <sector>city</sector>
+    <vnum>15065</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Norway Maple Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15064</vnum>
+    </exit>
+    <exit>
+      <name>northwest</name>
+      <vnum>15074</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15075</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15066</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Maple Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>north</name>
+      <vnum>15064</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15068</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15067</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Maple Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>north</name>
+      <vnum>15067</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15069</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15073</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15068</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Maple Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northwest</name>
+      <vnum>15068</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15070</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15069</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Maple Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northwest</name>
+      <vnum>15069</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15071</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15072</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15070</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Five Maple Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northwest</name>
+      <vnum>15070</vnum>
+    </exit>
+    <sector>city</sector>
+    <vnum>15071</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Four Maple Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15070</vnum>
+    </exit>
+    <sector>city</sector>
+    <vnum>15072</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Three Maple Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15068</vnum>
+    </exit>
+    <sector>city</sector>
+    <vnum>15073</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Norway Maple Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northwest</name>
+      <vnum>15078</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15066</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15074</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Norway Maple Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15066</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15076</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15075</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Norway Maple Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15075</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15077</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15076</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Two Norway Maple Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15076</vnum>
+    </exit>
+    <sector>city</sector>
+    <vnum>15077</vnum>
+  </room>
+  <room>
+    <name>Arden Village - One Norway Maple Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>southeast</name>
+      <vnum>15074</vnum>
+    </exit>
+    <sector>city</sector>
+    <vnum>15078</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northwest</name>
+      <vnum>15035</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15081</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15080</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15079</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Ponderosa Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15083</vnum>
+    </exit>
+    <exit>
+      <name>northwest</name>
+      <vnum>15079</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15080</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>north</name>
+      <vnum>15079</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15082</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15098</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15081</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northwest</name>
+      <vnum>15081</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15090</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15100</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15082</vnum>
+  </room>
+  <room>
+    <name>** Arden Village - Ponderosa Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15084</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15080</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15083</vnum>
+  </room>
+  <room>
+    <name>** Arden Village - Ponderosa Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15086</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15085</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15083</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15084</vnum>
+  </room>
+  <room>
+    <name>Arden Village - One Ponderosa Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northwest</name>
+      <vnum>15084</vnum>
+    </exit>
+    <sector>city</sector>
+    <vnum>15085</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Ponderosa Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15088</vnum>
+    </exit>
+    <exit>
+      <name>northwest</name>
+      <vnum>15087</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15084</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15086</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Two Ponderosa Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>southeast</name>
+      <vnum>15086</vnum>
+    </exit>
+    <sector>city</sector>
+    <vnum>15087</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Ponderosa Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15089</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15086</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15088</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Three Ponderosa Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>west</name>
+      <vnum>15088</vnum>
+    </exit>
+    <sector>city</sector>
+    <vnum>15089</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15101</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>15082</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15091</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15090</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>north</name>
+      <vnum>15090</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15092</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15091</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15093</vnum>
+    </exit>
+    <exit>
+      <name>northwest</name>
+      <vnum>15091</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15094</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15092</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Three Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>southwest</name>
+      <vnum>15092</vnum>
+    </exit>
+    <sector>city</sector>
+    <vnum>15093</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15095</vnum>
+    </exit>
+    <exit>
+      <name>northwest</name>
+      <vnum>15092</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15097</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15094</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15096</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15094</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15095</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Five Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>southwest</name>
+      <vnum>15095</vnum>
+    </exit>
+    <sector>city</sector>
+    <vnum>15096</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Four Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15094</vnum>
+    </exit>
+    <sector>city</sector>
+    <vnum>15097</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15081</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15099</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15098</vnum>
+  </room>
+  <room>
+    <name>Arden Village - One Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15098</vnum>
+    </exit>
+    <sector>city</sector>
+    <vnum>15099</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Two Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15082</vnum>
+    </exit>
+    <sector>city</sector>
+    <vnum>15100</vnum>
+  </room>
+  <room>
+    <name>Arden Village - White Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>15102</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15090</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15101</vnum>
+  </room>
+  <room>
+    <name>Arden Village - White Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>north</name>
+      <vnum>15103</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15104</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15101</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15102</vnum>
+  </room>
+  <room>
+    <name>Arden Village - One White Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>south</name>
+      <vnum>15102</vnum>
+    </exit>
+    <sector>city</sector>
+    <vnum>15103</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Two White Pine Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northwest</name>
+      <vnum>15102</vnum>
+    </exit>
+    <sector>city</sector>
+    <vnum>15104</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Red Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15106</vnum>
+    </exit>
+    <exit>
+      <name>northwest</name>
+      <vnum>15042</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15105</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Red Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>southeast</name>
+      <vnum>15107</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15105</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15106</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Red Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15108</vnum>
+    </exit>
+    <exit>
+      <name>northwest</name>
+      <vnum>15106</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15107</vnum>
+  </room>
+  <room>
+    <name>Arden Village - Red Cedar Road</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15109</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15107</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>15108</vnum>
+  </room>
+  <room>
+    <name>The Hollow Hills</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15112</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>15110</vnum>
+    </exit>
+    <exit>
+      <name>northeast</name>
+      <vnum>15113</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15111</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15114</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15108</vnum>
+    </exit>
+    <sector>hills</sector>
+    <vnum>15109</vnum>
+  </room>
+  <room>
+    <name>The Hollow Hills</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15113</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15109</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15112</vnum>
+    </exit>
+    <sector>hills</sector>
+    <vnum>15110</vnum>
+  </room>
+  <room>
+    <name>The Hollow Hills</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15114</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>15109</vnum>
+    </exit>
+    <exit>
+      <name>northeast</name>
+      <vnum>15112</vnum>
+    </exit>
+    <sector>hills</sector>
+    <vnum>15111</vnum>
+  </room>
+  <room>
+    <name>The Hollow Hills</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15117</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>15113</vnum>
+    </exit>
+    <exit>
+      <name>northeast</name>
+      <vnum>15115</vnum>
+    </exit>
+    <exit>
+      <name>northwest</name>
+      <vnum>15110</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15114</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15116</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15111</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15109</vnum>
+    </exit>
+    <sector>hills</sector>
+    <vnum>15112</vnum>
+  </room>
+  <room>
+    <name>The Hollow Hills</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15115</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15112</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>15117</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15109</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15110</vnum>
+    </exit>
+    <sector>hills</sector>
+    <vnum>15113</vnum>
+  </room>
+  <room>
+    <name>The Hollow Hills</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>15116</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>15112</vnum>
+    </exit>
+    <exit>
+      <name>northeast</name>
+      <vnum>15117</vnum>
+    </exit>
+    <exit>
+      <name>northwest</name>
+      <vnum>15109</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15111</vnum>
+    </exit>
+    <sector>hills</sector>
+    <vnum>15114</vnum>
+  </room>
+  <room>
+    <name>The Hollow Hills</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>south</name>
+      <vnum>15117</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15112</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15113</vnum>
+    </exit>
+    <sector>hills</sector>
+    <vnum>15115</vnum>
+  </room>
+  <room>
+    <name>The Hollow Hills</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>north</name>
+      <vnum>15117</vnum>
+    </exit>
+    <exit>
+      <name>northwest</name>
+      <vnum>15112</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15114</vnum>
+    </exit>
+    <sector>hills</sector>
+    <vnum>15116</vnum>
+  </room>
+  <room>
+    <name>The Hollow Hills</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>north</name>
+      <vnum>15115</vnum>
+    </exit>
+    <exit>
+      <name>northwest</name>
+      <vnum>15113</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15116</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>15114</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15112</vnum>
+    </exit>
+    <sector>hills</sector>
+    <vnum>15117</vnum>
+  </room>
+  <shop></shop>
+  <special></special>
+</area>

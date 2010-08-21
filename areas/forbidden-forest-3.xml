@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    This work is licensed under the Creative Commons
+    Attribution-NonCommercial-ShareAlike 3.0 Unported License. To view a copy of
+    this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/ or send
+    a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco,
+    California, 94105, USA.
+-->
+<area>
+  <areadata>
+    <name>FF for Lumos</name>
+    <builders>tina</builders>
+    <colour></colour>
+    <colourcode>`</colourcode>
+    <credits>tina</credits>
+    <flags>olconly</flags>
+    <flags>noteleport</flags>
+    <flags>noscry</flags>
+    <flags>hidden</flags>
+    <frommud>Legilimensia</frommud>
+    <lrange>0 0</lrange>
+    <maplevel>92</maplevel>
+    <mapscale>0</mapscale>
+    <security>9</security>
+    <shortname>FF</shortname>
+    <version>11</version>
+    <vnum_offset>0</vnum_offset>
+    <vnums>55000 55699</vnums>
+  </areadata>
+  <mobile></mobile>
+  <mobprog></mobprog>
+  <object></object>
+  <reset></reset>
+  <room>
+    <name>Instructions Overview</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>`RDO NOT build until you've read and signed off on the instructions.`X 
+ 
+`WRead the following rooms-
+550035- Animals in the Forbidden Forest
+55036- Plant Life in Forbidden Forest
+55001- Instructions Part 1
+55002- Instructions Part 2
+55032- Instructions Part 3
+55033- Forbidden Forest Overview
+55034- Sign Off on Instructions`X
+ 
+Most of these instructions are really, really long.  You're going to have to scroll up to read the whole content in each room.
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>55036</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>55001</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>55035</vnum>
+    </exit>
+    <history>
+      <date>2008-09-21 20:52:45</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-20 15:16:49</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-22 15:56:35</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>inside</sector>
+    <vnum>55000</vnum>
+  </room>
+  <room>
+    <name>Instructions Part 1</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>.
+This is the first time we're going to try to cross the bridge from DoT, the current engine we're building on now (new folks- Dawn of Time, or DoT, is its name), to our new engine Lumos.  Here's the situation- muds at this time are built 2-dimensionally.  Like a book, you simply read the text and look at the map and move only and look only in the directions of north, south, west, east, northwest, northeast, southwest, southeast, up, and down.  You cannot, for example, move downward towards the southwest.  To move in that type of direction you have to be able to function 3-dimensionally, like we do in 'real life' and video games.  The new engine will function 3-dimensionally, though it will still only display a 2-dimensional realm on the screen.  So, though it will visually appear the same (text, no pictures), you'll be able to move about like it's 3-dimensional, for example up and north at the same time, so to speak.  
+ 
+At this time we don't have precise terms &amp; definitions for our model, so I'll use terms I'm comfortable using though it doesn't mean this is what each of these components will be called once Lumos is finished.  I'm prefacing this so that when we get to the point where we teach you how to work on the new engine you don't confuse the terminology I'm playing with here with what will be used once Lumos is in place.
+
+My terms &amp; definitions:
+
+`CArea`X= like it's used now, a general place like Hogwarts or the Forbidden Forest
+ 
+`CRoom`X= like it's used now, speaking of the specific location we're building within an area
+ 
+`CZone`X= there are 3 per room- lower, mid (or eye-level), and upper.
+ 
+`CRegion`X = there are 9 regions per room.  Imagine a 3 by 3 grid creating 9 squares or units. It would look as follows:
+ 
+NW     N      NE          
+E      M      W        (M= Middle)
+SW     S      SE
+ 
+`CEntity`X= what we've been loosely calling mobjects, a joining of mobiles and objects.
+ 
+`CEntrance desc`X= a few sentences long, a brief overview of the room. The entities in the room will affect this desc.
+ 
+`CFull desc`X= the entire room desc full of descriptive, fluid elements. This is akin to how our descs are written currently on DoT and display when a player types 'look'.  The entities in the room will affect this desc.
+ 
+`CFluid desc`X= segments of descs (in rooms, entities, etc.) that change due to outside factors, like magic or the season
+ 
+`C[ ]`X= fluid descs- all words contained within these [brackets] are part of the fluid desc
+ 
+`C{ }`X= entities- all words contained within these {brackets} are part of the entity
+ 
+Okay, more on entities.  We've had to redevelop how objects and mobiles operate so they could work in the HP magical world system.  In other words, we need the animate to become inanimate and vice versa, meaning we need these things to be fluid.  Since in JKR's world you can change a pin cushion into a porcupine, the ability to morph from animate to inanimate is paramount.  Our room descs need to be the same way.  They need to be able to alter and adapt immediately according to what time of the day it is, what the weather is, but most importantly because of the magic that will performed in them.
+ 
+On DoT we've been writing one generic room desc, trying to avoid specifics like weather or time of year unless we explain its need in said desc.  This is now changing.
+ 
+The following is room 84044, Quickley Lane in LH
+ 
+`WThe country lane turns here in a smooth, rounded bend, heading west and northeast.  On the inside of the curve to the northwest, stands a solitary, great oak.  Its powerful, old branches are wrinkled and knobbly; running down its large trunk are scars appearing to have belonged to a tall, savage animal.  The tree generally gives its shade to the infinitely-spreading grass around and below it.  In the warmer part of the year, the mass of green is littered with pink, scarlet, yellow, and white buds.  To the southeast, the path stumbles before the entrance to a cosy-looking, grey house.  The vague marks of a crucifix indicate that this building might once have belonged to a vicarage; instead of the cross now hangs a small, golden plaque.  The words 'Faded Fables' are written in cursive white upon a wooden sign, just above the oak, front door. `X
+ 
+I will now change this full desc into an entrance desc:
+ 
+`WThe country lane turns here in a smooth, rounded bend, heading west and northeast.  To the northwest stands a solitary, great oak.  To the southeast, the path stumbles before the entrance of a cosy-looking, grey house.  The words 'Faded Fables' are just above the oak, front door.`X
+ 
+Notice that the entrance desc is only a few sentences long because I removed a lot of the descriptive elements in the original desc.  The entrance desc is what we'll see when we first enter a room on Lumos; it gives a simple, general overview.  This is for those players who are in a hurry, for example, those who are in the middle of a battle.  If you're running from a troll, we no longer want to spam them with our full descs.
+
+Ok, now the original desc is the full (or 'look') desc.  This allows the players who have the time or the interest to fully investigate the whole room.  Players who are interested in questing, for example, will need to read the full descs to get clues on hidden places, etc.
+ 
+Let's move to fluid descs now by looking back at the full desc:
+ 
+`WThe country lane turns here in a smooth, rounded bend, heading west and northeast.  On the inside of the curve to the northwest, stands a solitary, great oak.  Its powerful, old branches are wrinkled and knobbly; running down its large trunk are scars appearing to have belonged to a tall, savage animal.  The tree generally gives its shade to the infinitely-spreading grass around and below it.  In the warmer part of the year, the mass of green is littered with pink, scarlet, yellow, and white buds.  To the southeast, the path stumbles before the entrance to a cosy-looking, grey house.  The vague marks of a crucifix indicate that this building might once have belonged to a vicarage; instead of the cross now hangs a small, golden plaque.  The words 'Faded Fables' are written in cursive white upon a wooden sign, just above the oak, front door. `X
+ 
+Overall this is a well-written, generic room, which is great for DoT.  There are a couple of places that do deal with the weather, however, which we'll change into fluid descs.  The following are conditions that alter will your desc:
+ 
+`WWeather
+Season
+Entities
+Day
+Night`X
+ 
+Let's apply these to the full desc.  The great oak in the desc is an entity.  All entities will now work fluidly `Wwithin`X the room instead of mobs &amp; objs listed after the desc as it does on DoT.  Though these items will almost always be at or near the end of the room descs (so that changes to the entities won't mess too much with the room descs) they will be part of the room description instead of the blue and green list after a room desc.  In other words, think about what you notice when you physically look in a room.  In the room I'm in at the moment I don't really think of the floor, walls, etc., separately from the TV in front of me or the recliner I'm sitting in.  To me the TV and recliner are part of the room.  
+On DoT we tend to think of the rooms as empty vessels then we fill them in, like when we move into a place and unpack our things.  However, in the every day we consider the items within a room just as much part of the room as the construction of the room itself.  We're having Lumos work more like 'real life.'  Now the entity story is something we'll deal with at a later time, nonetheless keep this little tidbit of info in mind as we move forward.
+ 
+`RMove west (room 55002) to continue reading the instructions.`X
+</desc>
+    <exit>
+      <name>north</name>
+      <vnum>55003</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>55000</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>55002</vnum>
+    </exit>
+    <history>
+      <date>2008-10-20 15:18:45</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-20 15:24:10</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-20 15:31:39</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-20 15:38:35</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-20 15:43:26</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-20 15:46:27</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-20 15:46:51</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-20 15:47:23</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-20 18:11:45</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-20 21:29:38</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>inside</sector>
+    <vnum>55001</vnum>
+  </room>
+  <room>
+    <name>`RInstructions Part 2`X</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>.
+`rContinuation from Part 1, Room 55001`X
+ 
+Okay, so back to the great oak in the full desc.  I may be mistaken, but this looks like a Cristina room (if it's someone else's, I apologize for the assumption), so let's take her phrase &quot;wrinkled and knobbly&quot; and make it fluid.  Wrinkled and knobbly are great words, but she may want it to change when it's snowed.  She would now take the sentence and change it to:
+ 
+`W&quot;It's powerful branches are [1].&quot;`X
+ 
+Under 1 we'll put (don't worry, this will be more self-explanatory on Lumos as you'll be filling in a template like you do on DoT):
+ 
+1: [standard= wrinkled and knobbly]
+[snow= draped with snow]
+[rain= splattering the raindrops]
+[windy= scraping against the sky as the wind blusters against them]
+[night= casting long, twisted shadows]
+ 
+So, because of our input here, during the daytime when not affected by weather the sentence will read, `W&quot;Its powerful old branches are wrinkled and knobbly;&quot;`X  When it's snowing it will read, `W&quot;Its powerful old branches are draped with snow;&quot;`X  When it's raining it will read, `W&quot;Its powerful old branches are splattering the raindrops;&quot;`X  When it's windy it will read, `W&quot;Its powerful old branches are scraping against the sky as the wind blusters against them;&quot;`X  When it's nighttime it will read, `W&quot;Its powerful old branches are casting long, twisted shadows;&quot;`X
+ 
+Back to the full desc as it would read now:
+`WThe country lane turns here in a smooth, rounded bend, heading west and northeast.  On the inside of the curve to the northwest, stands a solitary, great oak.  Its powerful, old branches are [1]; running down its large trunk are scars appearing to have belonged to a tall, savage animal.  The tree generally gives its shade to the infinitely-spreading grass around and below it.  In the warmer part of the year, the mass of green is littered with pink, scarlet, yellow, and white buds.  To the southeast, the path stumbles before the entrance to a cosy-looking, grey house.  The vague marks of a crucifix indicate that this building might once have belonged to a vicarage; instead of the cross now hangs a small, golden plaque.  The words 'Faded Fables' are written in cursive white upon a wooden sign, just above the oak, front door. `X
+ 
+From the sentence &quot;The tree generally gives its shade to the infinitely-spreading grass around and below it&quot; we're going to label &quot;infinitely-spreading grass around and below it&quot; [2].  We're also going to label the next full sentence, &quot;In the warmer part of the year, the mass of green is littered with pink, scarlet, yellow, and white buds&quot; [3].
+ 
+Ok, #2 works for most of the year and day or night, though winter will alter this.  But #3 can no longer exist as is since it's talking about a specific time of year.  Let's change [2] to be affected by rain as well, just for the heck of it.  So:
+ 
+2: [standard= infinitely-spreading grass around and below it]
+[snow or ice= icy snow around and below it]
+[winter= cold, hard ground below it]
+[rain= infinitely-spreading grass and intermittent mud puddles around and below it]
+ 
+I put snow or ice as either of these conditions will produce will produce this same fluid desc.  I have winter as there will be no grass in the winter, hence needing a new desc.
+ 
+As for #3 we'll remove the 1st part of the sentence since the game will work fluidly with seasons and we no longer have to put an addendum like &quot;In the warmer part of the year.&quot;  I didn't create a winter fluid desc since fluid desc 2 summed it up enough for me.
+ 
+3: [spring= The blades of green are littered with {pink, scarlet, yellow, and white buds}.]  I put the buds in { } because as they're entities, but again, that's a story for a later date.
+[summer= The blades of green are littered with {pink, scarlet, yellow, and white blossoms}.]
+[autumn= The blades of green and brown are littered with {yellow, orange, and red leaves}.]
+[night= A blanket of pitch caresses the earth.]
+ 
+So, with these changes, the full desc would now look like this:
+`WThe country lane turns here in a smooth, rounded bend, heading west and northeast.  On the inside of the curve to the northwest, stands a solitary, great oak.  Its powerful, old branches are [1]; running down its large trunk are scars appearing to have belonged to a tall, savage animal.  The tree generally gives its shade to the [2].  [3].  To the southeast, the path stumbles before the entrance to a cosy-looking, grey house.  The vague marks of a crucifix indicate that this building might once have belonged to a vicarage; instead of the cross now hangs a small, golden plaque.  The words 'Faded Fables' are written in cursive white upon a wooden sign, just above the oak, front door. `X
+ 
+`c*notice that I put a period after both [2] &amp; [3].  I did this so that the period will remain constant (&amp; signifies that [3] is its own separate fluid desc) and the only changes are to the words contained within the description themselves.`X
+ 
+Okay, now we've seen how to write fluid descs.  Let's go back to grids &amp; regions.  Again, on Lumos building will be more obvious as you'll have a template to fill in.  Lumos' edit system will look vaguely like DoTs, just more comprehensive.
+ 
+But as for your writing now:  Imagine the Great Hall (GH) in Hogwarts (HW).  On DoT we had to write 1 single room, whether it be the size of the GH or a broom closet.  This was a nightmare mapping and building this.  Luckily Alturin's a genius and we don't have to worry about this any longer.
+
+If the room you're writing is a broom closet then the region-system on Lumos won't matter much since it's a small spot.  But in the GH regions become important.  When you walk into the GH we have exits to the north and east and there are the 4 House Tables and 1 Staff Table. 
+ 
+Having regions now allows a ton of people to be within the room without having 20 people's names in a long list under the desc or be spammed by 20 different conversations within 1 room.  As you move from the Slytherin Table to the Hufflepuff Table, the region changes and the desc alters.  The standard desc would pop, but the entities would alter depending on where in the room you're standing.  This allows you to carry on a conversation by the Staff Table, but people at the other end of the room can't hear you since the room is so large.
+ 
+This also means someone by the Ravenclaw Table can cast magic at someone by the antechamber door and miss since they're far away.  This also gives people a chance to jump behind a table.  Having regions and zones allow players to experience magic like Harry did because they can dodge behind entities, other people, etc.  As you build remember you're no longer `ronly`X writing 1 distinct desc like we have thus far in DoT.  Regions are important when dealing with entities, so make sure you visualize each of these different portions of a room and not just 1 overarching desc.
+ 
+Zones are equally important for both writing descs &amp; entities.  People can fly in JKR's world.  Almost everywhere in the world is open so think of the room overall.  The standard desc is eyelevel.  We need a new desc when a person looks at the ground or looks up.  In the GH it would be something like
+ 
+[lower= The flagstones, though worn down from millions of footfalls, are buffed to a brilliant sheen.]
+
+[upper= And here would be a desc about the bewitched ceiling in each type of weather.]
+ 
+`RMove west (room 55032) to continue reading Part 3 of the instructions. Move east (room 55001) for Part 1 of the instructions.`X
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>55001</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>55032</vnum>
+    </exit>
+    <history>
+      <date>2008-10-20 15:55:04</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-20 15:56:35</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-20 15:59:27</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-20 16:03:42</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-20 18:04:54</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-20 18:10:37</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-20 18:11:55</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-20 18:31:24</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>inside</sector>
+    <vnum>55002</vnum>
+  </room>
+  <room>
+    <name>Entering the Building Area</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>. 
+`R Do not build in here until you've read the instructions, signed off on them, and wrote a note to mythos that you have done so.`X
+Have fun and write well!! =)
+</desc>
+    <exit>
+      <name>north</name>
+      <vnum>55004</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>55001</vnum>
+    </exit>
+    <history>
+      <date>2008-10-22 19:21:47</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>trail</sector>
+    <vnum>55003</vnum>
+  </room>
+  <room>
+    <name>6</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>Rooms 45, 46
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>55005</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>55010</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>55003</vnum>
+    </exit>
+    <history>
+      <date>2008-09-21 21:59:34</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-09-21 22:00:23</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-03 21:53:22</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>forest</sector>
+    <vnum>55004</vnum>
+  </room>
+  <room>
+    <name>6</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>Rooms 42-44, 68-70
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>55006</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>55009</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>55004</vnum>
+    </exit>
+    <history>
+      <date>2008-10-03 22:04:21</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>forest</sector>
+    <vnum>55005</vnum>
+  </room>
+  <room>
+    <name>Forbidden Forest</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc>Rooms 4010, 4040, 4041, 4100, 4105
+Claimed by Noon/Carole
+</desc>
+    <exit>
+      <name>north</name>
+      <vnum>55007</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>55005</vnum>
+    </exit>
+    <history>
+      <date>2008-10-03 22:04:55</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2009-01-24 12:58:15</date>
+      <person>Carole Vaudry &lt;Vaudry2@hotmail.com&gt;</person>
+    </history>
+    <sector>forest</sector>
+    <vnum>55006</vnum>
+  </room>
+  <room>
+    <name>6</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>Rooms 4092-4094, 4101-4103, 4106, 4107, 4111
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>55013</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>55008</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>55006</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>55009</vnum>
+    </exit>
+    <history>
+      <date>2008-10-03 22:06:20</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>forest</sector>
+    <vnum>55007</vnum>
+  </room>
+  <room>
+    <name>6</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>Rooms 4095-4097, 4104, 4112-4115, 4142
+</desc>
+    <exit>
+      <name>south</name>
+      <vnum>55007</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>55011</vnum>
+    </exit>
+    <history>
+      <date>2008-10-03 22:16:38</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>forest</sector>
+    <vnum>55008</vnum>
+  </room>
+  <room>
+    <name>6</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>Rooms 4108-4110, 4114, 4116-4118, 4122, 4129
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>55007</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>55011</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>55005</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>55010</vnum>
+    </exit>
+    <history>
+      <date>2008-10-03 22:09:01</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-03 22:11:51</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>forest</sector>
+    <vnum>55009</vnum>
+  </room>
+  <room>
+    <name>6</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>Rooms 4047, 4120, 4121, 4123-4128
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>55009</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>55012</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>55004</vnum>
+    </exit>
+    <history>
+      <date>2008-10-03 22:10:21</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>forest</sector>
+    <vnum>55010</vnum>
+  </room>
+  <room>
+    <name>6</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>Rooms 4095-4097, 4104, 4112-4115, 4142
+Rooms 4130-4132, 4139-4141, 4143-4145
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>55008</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>55009</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>55012</vnum>
+    </exit>
+    <history>
+      <date>2008-10-03 22:13:24</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-03 22:17:54</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>hills</sector>
+    <vnum>55011</vnum>
+  </room>
+  <room>
+    <name>6</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>Rooms 4130-4132, 4139-4141, 4143-4145
+Rooms 4133-4238, 4146-4148
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>55011</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>55010</vnum>
+    </exit>
+    <history>
+      <date>2008-10-03 22:12:25</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-03 22:19:58</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>hills</sector>
+    <vnum>55012</vnum>
+  </room>
+  <room>
+    <name></name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>55014</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>55007</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>55013</vnum>
+  </room>
+  <room>
+    <name>1</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>Rooms 
+4072-4074, 4078-4080, 4085-4087
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>55021</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>55015</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>55022</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>55013</vnum>
+    </exit>
+    <history>
+      <date>2008-10-04 00:10:20</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-04 00:30:32</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>forest</sector>
+    <vnum>55014</vnum>
+  </room>
+  <room>
+    <name>1</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>Rooms 
+4051, 4075, 4076, 4081-4083, 4088-4090
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>55016</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>55014</vnum>
+    </exit>
+    <history>
+      <date>2008-10-04 00:21:39</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>forest</sector>
+    <vnum>55015</vnum>
+  </room>
+  <room>
+    <name>1</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>Rooms 
+4015-4017, 4029, 4035, 4039
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>55017</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>55023</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>55021</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>55015</vnum>
+    </exit>
+    <history>
+      <date>2008-10-04 00:23:36</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>forest</sector>
+    <vnum>55016</vnum>
+  </room>
+  <room>
+    <name>1</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>Rooms 
+4014
+</desc>
+    <exit>
+      <name>south</name>
+      <vnum>55018</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>55016</vnum>
+    </exit>
+    <history>
+      <date>2008-10-04 00:26:05</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>forest</sector>
+    <vnum>55017</vnum>
+  </room>
+  <room>
+    <name>1</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>Rooms 
+4005, 4006, 4013, 4018, 4019, 4021-4023
+</desc>
+    <exit>
+      <name>north</name>
+      <vnum>55017</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>55019</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>55021</vnum>
+    </exit>
+    <history>
+      <date>2008-10-04 00:26:39</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>forest</sector>
+    <vnum>55018</vnum>
+  </room>
+  <room>
+    <name>1</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>Rooms 
+4003, 4004, 4020
+</desc>
+    <exit>
+      <name>north</name>
+      <vnum>55018</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>55020</vnum>
+    </exit>
+    <history>
+      <date>2008-10-04 00:27:25</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>forest</sector>
+    <vnum>55019</vnum>
+  </room>
+  <room>
+    <name>1</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>Rooms 
+4000-4002, 4011, 4012, 4024, 4025, 4030, 4031
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>55019</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>55021</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>55022</vnum>
+    </exit>
+    <history>
+      <date>2008-10-04 00:28:09</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>forest</sector>
+    <vnum>55020</vnum>
+  </room>
+  <room>
+    <name>1</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>Rooms 
+4026-4028, 4032-4034, 4036-4038
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>55018</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>55016</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>55020</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>55014</vnum>
+    </exit>
+    <history>
+      <date>2008-10-04 00:28:59</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>forest</sector>
+    <vnum>55021</vnum>
+  </room>
+  <room>
+    <name>1</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>Rooms 
+4007-4009, 4071, 4077, 4084
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>55020</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>55014</vnum>
+    </exit>
+    <history>
+      <date>2008-10-04 00:29:55</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>forest</sector>
+    <vnum>55022</vnum>
+  </room>
+  <room>
+    <name></name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>55024</vnum>
+    </exit>
+    <exit>
+      <name>northwest</name>
+      <vnum>55028</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>55016</vnum>
+    </exit>
+    <sector>trail</sector>
+    <vnum>55023</vnum>
+  </room>
+  <room>
+    <name>2</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>Rooms 
+4063-4065, 4585, 4586
+</desc>
+    <exit>
+      <name>north</name>
+      <vnum>55025</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>55023</vnum>
+    </exit>
+    <history>
+      <date>2008-10-04 00:38:13</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-04 00:51:40</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>forest</sector>
+    <vnum>55024</vnum>
+  </room>
+  <room>
+    <name>2</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>Rooms 
+4587-4589, 4592-4595, 4597, 4598
+</desc>
+    <exit>
+      <name>north</name>
+      <vnum>55031</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>55024</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>55026</vnum>
+    </exit>
+    <history>
+      <date>2008-10-04 00:52:34</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>forest</sector>
+    <vnum>55025</vnum>
+  </room>
+  <room>
+    <name>2</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>Rooms 
+4060-4062, 4596, 4599, 4600
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>55025</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>55030</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>55027</vnum>
+    </exit>
+    <history>
+      <date>2008-10-04 00:50:46</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>forest</sector>
+    <vnum>55026</vnum>
+  </room>
+  <room>
+    <name>2</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>Rooms 
+4056-4059
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>55026</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>55029</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>55028</vnum>
+    </exit>
+    <history>
+      <date>2008-10-04 00:47:38</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>forest</sector>
+    <vnum>55027</vnum>
+  </room>
+  <room>
+    <name>2</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>Rooms 
+4052, 4053
+</desc>
+    <exit>
+      <name>north</name>
+      <vnum>55027</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>55023</vnum>
+    </exit>
+    <history>
+      <date>2008-10-04 00:47:11</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>forest</sector>
+    <vnum>55028</vnum>
+  </room>
+  <room>
+    <name>2</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>Rooms 
+4208, 4606, 4607, 4613-4615, 4622-4624
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>55030</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>55027</vnum>
+    </exit>
+    <history>
+      <date>2008-10-04 00:47:57</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>forest</sector>
+    <vnum>55029</vnum>
+  </room>
+  <room>
+    <name>2</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>Rooms 
+4603-4605, 4610-4612, 4619-4621
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>55031</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>55026</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>55029</vnum>
+    </exit>
+    <history>
+      <date>2008-10-04 00:48:55</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>forest</sector>
+    <vnum>55030</vnum>
+  </room>
+  <room>
+    <name>2</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>Rooms 
+4590, 4591, 4601, 4602, 4608, 4609, 4616-4618
+</desc>
+    <exit>
+      <name>south</name>
+      <vnum>55025</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>55030</vnum>
+    </exit>
+    <history>
+      <date>2008-10-04 00:54:17</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>forest</sector>
+    <vnum>55031</vnum>
+  </room>
+  <room>
+    <name>`RInstructions Part 3`X</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>.
+`rContinuation from Part 2, Room 55002`X
+ 
+So back to the Forbidden Forest, as you write it think of the room you're writing as larger than the spots you've been writing on DoT.  To help you understand this I've been building an 'old' DoT prototype and a 2nd FF version that will be our bridge to Lumos.  In each room of the Lumos FF version are corresponding DoT FF prototype room numbers.  Visit the rooms in the DoT prototype and read what notes I've left there.  The DoT FF will tell you where magical creatures are located, how the forest is laid out in that location, etc.  
+ 
+If you want to put more detail in your rooms, please feel free to do so by breaking it into regions.  If there are particular trees, plants, dens, etc., that you want to write in detail, do so by titling it thusly:
+ 
+Entity=  Beech Sapling or whatever (NW Region)
+ 
+Your entity desc
+ 
+Ok, for clarification's sake I'm going to use a room in HW to show how you should write a room.  The old room is the following:
+ 
+Short Story Classroom [Hogwarts] [Room 1292]
+The floor and ceiling are covered with dull, unimpressive grey slate.  Burning torches are set into brackets attached to the walls around the room.  Windows show the outside grounds and permit the outside light to stream in.  Desks are set in a circle to encourage open dialogue amongst the students and their instructor.  Set onto shelves are books from famous wizard short story authors.  One such title is, &quot;The Phoenix in Me.&quot;  Another is &quot;Run, Run, Run When the Dementors Come, Come, Come.&quot;  The exit is to the east through the mahogany door with a golden S etched into it.  
+ 
+Here is how it should now be written:
+ 
+`WEntrance desc:  The floor and ceiling are covered with dull, unimpressive grey slate.  Windows display the grounds lying outside.  To the east a {mahogany door} sits between bookshelves built into the wall.  
+ 
+Full desc:  The floor and ceiling are covered with dull, unimpressive grey slate.  Windows, shaped like open books, study the outside grounds and permit [1].  {Burning torches} are set into brackets attached to the walls around the room.  The exit, situated easterly between bookshelves built directly into the wall, is through the {mahogany door with a golden S etched into it}.  {Desks are set in a circle to encourage open dialogue amongst the students and their instructor.}  `X
+ 
+`c*I moved the location of the torches &amp; desks to the end of the desc since these are entities that could potentially change with magic cast upon them.  E.g., the torches could be distinguished or changed into rabbits and the desks could start running around like Professor McGonagall had them do in book 7.`X
+ 
+`W[east=  Mahogany bookshelves are built into the eastern wall, situated on either side of the {mahogany door}.  Set onto shelves are books from famous wizard short story authors.  One such title is, &quot;{The Phoenix in Me}.&quot;  Another is &quot;{Run, Run, Run When the Dementors Come, Come, Come}.&quot;]`X
+ 
+`c*I didn't write any of the other regions as the desks and torches will be scattered across these areas and will be altered once the entities are created.  In the entity template there will be a place where you'll put which region the entity will be placed.`X
+ 
+`W[lower=  Nondescript grey slate lies under everyone's feet.  The only seemingly impressive feature of the stone is there are no cracks or blemishes.  Instead it's as smooth and unblemished as glass.]
+ 
+[upper=  Featureless grey slate , as uniform as the floor, stretches above room.]
+ 
+1:  [standard= the outside light to stream in]
+[night= an occasional flicker of light from the moon or stars to peek in]`X  
+ 
+`c*I could have kept this original sentence as is.  I didn't need to make a nighttime flag since moonlight &amp; starlight are still &quot;outside light&quot;, but I just decided to write it for the hey of it.`X
+ 
+`WEntity= Mahogany door with a golden S etched into it  (E Region)`X
+ 
+`c*If I felt like writing a desc for this entity, then I would.  That goes for the books as well, but I don't really feel like writing more descriptions right now.  If you don't feel like writing entity descs, you don't have to either, but still place them in their {brackets} in the entrance and full descs as a flag for later writing.`X
+ 
+`RMove west (room 55033) for an overview of the FF. Move east (room 55002) for Part 2 of the instructions.`X
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>55002</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>55033</vnum>
+    </exit>
+    <history>
+      <date>2008-10-20 21:16:44</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-20 21:33:59</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-20 21:39:25</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>inside</sector>
+    <vnum>55032</vnum>
+  </room>
+  <room>
+    <name>`RFF Overview`X</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>. 
+`RBefore`X you begin writing in the FF you must either 1) read rooms 55001, 55002, 55032, 55035, 55036, and obviously this room &amp; then 2) post in room 55034 that you have read it OR read all of this on the forum and sign it there.  After you've read all the instructions and sign off here on the game or sign off on the forum, send a note to mythos telling us you're starting to write and where you signed off on.
+ 
+Before you begin writing a room you must look at the immediate rooms around it so that we don't have 3 fox lairs written in 3 subsequent rooms and then no others throughout the whole of the forest. You may be fond of rabbits, liking their cute little bunny noses, so would love to build them some homes. However, hares are cautious creatures so they wouldn't burrow a home next to the Acromantula den. You must be aware of your surroundings.
+ 
+There are 3 labels in the FF- A, B, C- each of these are a section of the forest.  The labels are in the name in the FF DoT Template rooms.
+ 
+`YSection A`X- the edge of the FF. Like with all rooms check your location, but keep in mind that you can see the areas adjacent to the FF in this neck of the woods. If these A rooms are by the Lake, then you can mention the Lake as part of the view. Some of the A rooms by the Lake, for example, will be right on HW Lake so the lake would be a larger focus on these rooms than say the A rooms by HW Lake that are further into the FF. All of the FF is surrounded by HW Grounds, HW Lake, HW Wall, and a mountain.
+ 
+These rooms are thinner in foliage &amp; the sky can be seen above the trees. Details are easily seen since they aren't buried by the dark.
+ 
+`YSection B`X- the section between the A band (edge of the FF) &amp; the C band (the heart of the FF.) The majority of the forest is in this band.
+ 
+The forest is thick here. People's clothes &amp; hair snag on the foliage. The trees are so plentiful you cannot see the sky and, if snowing or raining, snowflakes &amp; raindrops do not reach the ground. And I quote &quot;was as dark as twilight and there was no snow on the ground at all.&quot;
+ 
+`YSection C`X- the heart of the FF. the foliage is so dense you cannot see without a light, even in the middle of the day. And I quote &quot;dense canopy blocked out all light.&quot;
+ 
+The Lumos rooms begin with 55003.
+ 
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>55032</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>55034</vnum>
+    </exit>
+    <history>
+      <date>2008-10-20 21:49:28</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-20 22:19:25</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-20 22:22:11</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-20 22:24:28</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-22 19:25:46</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-22 19:26:32</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>inside</sector>
+    <vnum>55033</vnum>
+  </room>
+  <room>
+    <name>`RSign Off on Instructions`X</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>. 
+`GAfter you have read the following rooms, please open up the desc and sign your name here or read the instructions &amp; sign your name on the forum.  After you've read the instructions on here or the forum and signed off, send a note to mythos stating you're ready to build and then, voila.  Begin building! =)`X
+ 
+`YRooms:
+55000- Instructions Overview
+55035- Animals in the Forbidden Forest
+55036- Plant Life in the Foribidden Forest
+55001- Instructions Part 1
+55002- Instructions Part 2
+55032- Instructions Part 3
+55033- Forbidden Forest Overview`X
+ 
+`RI have read the instructions and am ready to write!`X
+</desc>
+    <exit>
+      <name>south</name>
+      <vnum>55033</vnum>
+    </exit>
+    <history>
+      <date>2008-10-22 15:33:32</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-22 15:40:54</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-22 15:53:10</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-22 15:54:04</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-22 19:23:34</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>inside</sector>
+    <vnum>55034</vnum>
+  </room>
+  <room>
+    <name>Animals in the Forbidden Forest</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>.
+The following animals are both animals JKR created, as well as research into the types of animals that would live in the forests of Scotland.
+ 
+`YMagical:`X
+
+Acromantulas
+Centaurs
+Thestrals
+Trolls
+Unicorns
+ 
+`YNon-Magical:`X
+
+Birds
+Boars
+Deer
+Fish
+Foxes
+Hares
+Lynx
+Mice
+Pheasant
+Pine Martins
+Rabbits
+Shrews
+Squirrels
+Stoats
+Wildcats
+ 
+JKR's animals are dealt with mapping-wise. They already have &quot;designated&quot; living spots. However, feel free to put an echo or ed that refs these creatures. For example, &quot;Dozens of hoofprints are splattered on the bank.&quot;
+ 
+For the &quot;normal&quot; animals, however, create places for them throughout the Forbidden Forest. I made a couple of deer clearings, but feel free to write more in. So write in fox lairs, rabbit burrows, birds' nests, etc.
+ 
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>55000</vnum>
+    </exit>
+    <history>
+      <date>2008-10-20 21:51:37</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2008-10-20 21:59:21</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>inside</sector>
+    <vnum>55035</vnum>
+  </room>
+  <room>
+    <name>Plant Life in the Forbidden Forest</name>
+    <copyright>Copyright © 2008  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
+    <desc>. 
+The following are items that JKR has mentioned specifically in the books or come from the research I did on what sort of plant life there is in the forests of Scotland. The items I've placed in quotes are exact quotations from JKR. I put them word for word so that you get feel of what she was trying for. As for magical plants, feel free to stick them in if they'd grow here. Some of the plants in the Green Houses are from tropical locations, so they wouldn't grow in the FF. But feel free to stick in some magical things here and there. Don't go overboard, however, since Harry never mentions having seen them. 
+ 
+Trees:
+ 
+Alder
+Ash
+Aspen
+Beech
+Birch- the most common tree in Scotland
+Chestnut
+Elm
+Hazel
+ Holly
+Larch
+Oak
+Pines &amp; Conifers of all sorts
+Rowan
+Scots Pine
+Silver Birch
+Spruce
+Sycamore
+Yew
+ 
+All things not trees:
+ 
+Brambles
+Bushes
+Ferns
+Fungi- according to 1 website &quot;fungi often form dense mat around tips of tree roots&quot;
+Knotgrass
+Liverworts
+Mushrooms
+Nettles
+Shrubs
+Wildflowers
+ 
+Quotes:
+ 
+&quot;branches tangled, roots gnarled &amp; twisted&quot;
+&quot;bush on edge of clearing&quot;
+&quot;clumps of trees&quot;
+&quot;dark clearing&quot;
+&quot;fallen sapling&quot;
+&quot;low-hanging&quot; or &quot;low slung&quot; branches
+&quot;mossy trees&quot; (especially by the stream and the heart of the forest)
+&quot;tangle of shrubs&quot;
+&quot;thickets of thorns&quot;
+ 
+</desc>
+    <exit>
+      <name>west</name>
+      <vnum>55000</vnum>
+    </exit>
+    <history>
+      <date>2008-10-20 22:03:38</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>inside</sector>
+    <vnum>55036</vnum>
+  </room>
+  <shop></shop>
+  <special></special>
+</area>

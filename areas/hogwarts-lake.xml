@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    This work is licensed under the Creative Commons
+    Attribution-NonCommercial-ShareAlike 3.0 Unported License. To view a copy of
+    this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/ or send
+    a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco,
+    California, 94105, USA.
+-->
+<area>
+  <areadata>
+    <name>Hogwarts Lake</name>
+    <builders>None</builders>
+    <colour>R</colour>
+    <colourcode>`</colourcode>
+    <credits>Calliope</credits>
+    <flags>olconly</flags>
+    <flags>noteleport</flags>
+    <flags>noscry</flags>
+    <flags>hidden</flags>
+    <frommud>Legilimensia</frommud>
+    <lrange>0 0</lrange>
+    <maplevel>1</maplevel>
+    <mapscale>5</mapscale>
+    <security>9</security>
+    <shortname>lake</shortname>
+    <version>11</version>
+    <vnum_offset>0</vnum_offset>
+    <vnums>9000 9999</vnums>
+  </areadata>
+  <mobile></mobile>
+  <mobprog></mobprog>
+  <object>
+    <name>mounted nundu head plaque</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>The head of a nundu hangs above the north-eastern door, two mammoth fangs protruding viciously from its open maw.</desc>
+    <extra>nodegrade</extra>
+    <extra2>nodecay</extra2>
+    <extradesc>
+      <desc>Mounted on a walnut plaque, this is one of the closest glimpses a wizard can get of the legendary creature. Its feline eyes stare coldly at wandering visitors, following them perniciously until they leave.
+</desc>
+      <keywords>nundu head plaque mounted north-eastern</keywords>
+    </extradesc>
+    <level>10</level>
+    <material>nundu</material>
+    <rsize>50</rsize>
+    <short>a mounted nundu head</short>
+    <type>trash</type>
+    <values>0 0 0 0 0</values>
+    <vnum>9250</vnum>
+    <weight>0</weight>
+  </object>
+  <reset></reset>
+  <room>
+    <name>Hogwarts Lake</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>south</name>
+      <vnum>2033</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>9001</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>2032</vnum>
+    </exit>
+    <sector>underwater</sector>
+    <vnum>9000</vnum>
+  </room>
+  <room>
+    <name>Hogwarts Lake</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northwest</name>
+      <vnum>9000</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>2034</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <vnum>9002</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>2033</vnum>
+    </exit>
+    <sector>underwater</sector>
+    <vnum>9001</vnum>
+  </room>
+  <room>
+    <name>Hogwarts Lake</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northwest</name>
+      <vnum>9001</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>9003</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>2034</vnum>
+    </exit>
+    <sector>underwater</sector>
+    <vnum>9002</vnum>
+  </room>
+  <room>
+    <name>Hogwarts Lake</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>north</name>
+      <vnum>9002</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>9004</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>2163</vnum>
+    </exit>
+    <sector>underwater</sector>
+    <vnum>9003</vnum>
+  </room>
+  <room>
+    <name>Hogwarts Lake</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>north</name>
+      <vnum>9003</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>9005</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>2164</vnum>
+    </exit>
+    <sector>underwater</sector>
+    <vnum>9004</vnum>
+  </room>
+  <room>
+    <name>Hogwarts Lake</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>north</name>
+      <vnum>9004</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>9006</vnum>
+    </exit>
+    <exit>
+      <name>up</name>
+      <vnum>2165</vnum>
+    </exit>
+    <sector>underwater</sector>
+    <vnum>9005</vnum>
+  </room>
+  <room>
+    <name>Hogwarts Lake</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>north</name>
+      <vnum>9005</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>9007</vnum>
+    </exit>
+    <exit>
+      <name>up</name>
+      <vnum>2166</vnum>
+    </exit>
+    <sector>underwater</sector>
+    <vnum>9006</vnum>
+  </room>
+  <room>
+    <name>Hogwarts Lake</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>north</name>
+      <vnum>9006</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>9008</vnum>
+    </exit>
+    <exit>
+      <name>up</name>
+      <vnum>2167</vnum>
+    </exit>
+    <sector>underwater</sector>
+    <vnum>9007</vnum>
+  </room>
+  <room>
+    <name>Hogwarts Lake</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>9007</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>9009</vnum>
+    </exit>
+    <exit>
+      <name>up</name>
+      <vnum>2168</vnum>
+    </exit>
+    <sector>underwater</sector>
+    <vnum>9008</vnum>
+  </room>
+  <room>
+    <name>Hogwarts Lake</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>north</name>
+      <vnum>9008</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>9010</vnum>
+    </exit>
+    <exit>
+      <name>up</name>
+      <vnum>2186</vnum>
+    </exit>
+    <sector>underwater</sector>
+    <vnum>9009</vnum>
+  </room>
+  <room>
+    <name>Hogwarts Lake</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>9009</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>9011</vnum>
+    </exit>
+    <exit>
+      <name>up</name>
+      <vnum>2185</vnum>
+    </exit>
+    <sector>underwater</sector>
+    <vnum>9010</vnum>
+  </room>
+  <room>
+    <name>Hogwarts Lake</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>north</name>
+      <vnum>9010</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>9012</vnum>
+    </exit>
+    <exit>
+      <name>up</name>
+      <vnum>2188</vnum>
+    </exit>
+    <sector>underwater</sector>
+    <vnum>9011</vnum>
+  </room>
+  <room>
+    <name>Hogwarts Lake</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>north</name>
+      <vnum>9011</vnum>
+    </exit>
+    <exit>
+      <name>up</name>
+      <vnum>2189</vnum>
+    </exit>
+    <sector>underwater</sector>
+    <vnum>9012</vnum>
+  </room>
+  <shop></shop>
+  <special></special>
+</area>

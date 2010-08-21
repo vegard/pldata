@@ -1,0 +1,1017 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    This work is licensed under the Creative Commons
+    Attribution-NonCommercial-ShareAlike 3.0 Unported License. To view a copy of
+    this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/ or send
+    a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco,
+    California, 94105, USA.
+-->
+<area>
+  <areadata>
+    <name>Newbie Area</name>
+    <builders>artemis</builders>
+    <colour>B</colour>
+    <colourcode>`</colourcode>
+    <continent>britain</continent>
+    <credits>Calliope</credits>
+    <flags>noteleport</flags>
+    <flags>noscry</flags>
+    <flags>hidden</flags>
+    <frommud>Legilimensia</frommud>
+    <lcomment>Newbies</lcomment>
+    <lrange>1 2</lrange>
+    <maplevel>1</maplevel>
+    <mapscale>5</mapscale>
+    <security>9</security>
+    <shortname></shortname>
+    <version>11</version>
+    <vnum_offset>0</vnum_offset>
+    <vnums>11000 11099</vnums>
+  </areadata>
+  <mobile>
+    <name>professor albus dumbledore painting portrait</name>
+    <ac>0 0 0 0</ac>
+    <act>npc dont_wander no_tame stay_area update_always</act>
+    <act2>avoids_all_attacks</act2>
+    <align>0 0</align>
+    <damdice>1d1+0</damdice>
+    <damtype>none</damtype>
+    <defpos>standing</defpos>
+    <desc>A portrait of Albus Dumbledore hangs here, encircled by bevelled crystal 
+sparkling like his kind, blue eyes.  
+</desc>
+    <form>edible sentient biped mammal</form>
+    <hitdice>1d1+0</hitdice>
+    <hitroll>0</hitroll>
+    <level>100</level>
+    <long>`w</long>
+    <manadice>1d1+0</manadice>
+    <material>unknown</material>
+    <mprog>
+      <phrase>enter</phrase>
+      <trigger>COMMAND</trigger>
+      <vnum>11015</vnum>
+    </mprog>
+    <mprog>
+      <phrase>100</phrase>
+      <trigger>LOGINROOM</trigger>
+      <vnum>11014</vnum>
+    </mprog>
+    <mprog>
+      <phrase>100</phrase>
+      <trigger>GRALL</trigger>
+      <vnum>11014</vnum>
+    </mprog>
+    <mprog>
+      <phrase>looks at you.</phrase>
+      <trigger>ACT</trigger>
+      <vnum>11026</vnum>
+    </mprog>
+    <mprog>
+      <phrase>waves</phrase>
+      <trigger>ACT</trigger>
+      <vnum>11014</vnum>
+    </mprog>
+    <part>head arms legs heart brains guts hands feet fingers ear eye</part>
+    <race>human</race>
+    <sex>male</sex>
+    <short>`XProfessor Dumbledore</short>
+    <size>medium</size>
+    <startp>standing</startp>
+    <vnum>11000</vnum>
+    <wealth>0</wealth>
+  </mobile>
+  <mobile>
+    <name>professor godric gryffindor painting</name>
+    <ac>0 0 0 0</ac>
+    <act>npc dont_wander no_tame stay_area update_always</act>
+    <act2>avoids_all_attacks</act2>
+    <align>0 0</align>
+    <damdice>1d1+0</damdice>
+    <damtype>none</damtype>
+    <defpos>standing</defpos>
+    <desc>The image of Godric Gryffindor is sheathed in a brilliant gold frame 
+embellished with a frieze of olive branches and palmettes.  
+</desc>
+    <form>edible sentient biped mammal</form>
+    <hitdice>1d1+0</hitdice>
+    <hitroll>0</hitroll>
+    <level>100</level>
+    <long>`w</long>
+    <manadice>1d1+0</manadice>
+    <material>unknown</material>
+    <mprog>
+      <phrase>100</phrase>
+      <trigger>GRALL</trigger>
+      <vnum>11016</vnum>
+    </mprog>
+    <mprog>
+      <phrase>100</phrase>
+      <trigger>LOGINROOM</trigger>
+      <vnum>11016</vnum>
+    </mprog>
+    <part>head arms legs heart brains guts hands feet fingers ear eye</part>
+    <race>human</race>
+    <sex>male</sex>
+    <short>`XGodric Gryffindor</short>
+    <size>medium</size>
+    <startp>standing</startp>
+    <vnum>11001</vnum>
+    <wealth>0</wealth>
+  </mobile>
+  <mobile>
+    <name>professor rowena ravenclaw painting</name>
+    <ac>0 0 0 0</ac>
+    <act>npc dont_wander no_tame stay_area update_always</act>
+    <act2>avoids_all_attacks</act2>
+    <align>0 0</align>
+    <damdice>1d1+0</damdice>
+    <damtype>none</damtype>
+    <defpos>standing</defpos>
+    <desc>Ribbons of blue and bronze metal, woven around the image of Rowena 
+Ravenclaw, are adorned with bronze lotus leaves and female herms.  
+</desc>
+    <form>edible sentient biped mammal</form>
+    <hitdice>1d1+0</hitdice>
+    <hitroll>0</hitroll>
+    <level>100</level>
+    <long>`w</long>
+    <manadice>1d1+0</manadice>
+    <material>unknown</material>
+    <mprog>
+      <phrase>100</phrase>
+      <trigger>GREET</trigger>
+      <vnum>11017</vnum>
+    </mprog>
+    <mprog>
+      <phrase>100</phrase>
+      <trigger>LOGINROOM</trigger>
+      <vnum>11017</vnum>
+    </mprog>
+    <mprog>
+      <phrase>i understand</phrase>
+      <trigger>SAYTO</trigger>
+      <vnum>11021</vnum>
+    </mprog>
+    <part>head arms legs heart brains guts hands feet fingers ear eye</part>
+    <race>human</race>
+    <sex>female</sex>
+    <short>`XRowena Ravenclaw</short>
+    <size>medium</size>
+    <startp>standing</startp>
+    <vnum>11002</vnum>
+    <wealth>0</wealth>
+  </mobile>
+  <mobile>
+    <name>professor helga hufflepuff painting</name>
+    <ac>0 0 0 0</ac>
+    <act>npc dont_wander no_tame stay_area update_always</act>
+    <act2>avoids_all_attacks</act2>
+    <align>0 0</align>
+    <damdice>1d1+0</damdice>
+    <damtype>none</damtype>
+    <defpos>standing</defpos>
+    <desc>A portrait of Helga Hufflepuff smiles from her frame of ebony and satinwood graced with volutes and scrolls interwoven with winged putti and rosettes.
+</desc>
+    <form>edible sentient biped mammal</form>
+    <hitdice>1d1+0</hitdice>
+    <hitroll>0</hitroll>
+    <level>100</level>
+    <long>`</long>
+    <manadice>1d1+0</manadice>
+    <material>unknown</material>
+    <mprog>
+      <phrase>100</phrase>
+      <trigger>GRALL</trigger>
+      <vnum>11022</vnum>
+    </mprog>
+    <mprog>
+      <phrase>gets a carved, elm wand.</phrase>
+      <trigger>ACT</trigger>
+      <vnum>11024</vnum>
+    </mprog>
+    <mprog>
+      <phrase>gets a simple, black robe.</phrase>
+      <trigger>ACT</trigger>
+      <vnum>11023</vnum>
+    </mprog>
+    <mprog>
+      <phrase>gets a cyan-blue egg.</phrase>
+      <trigger>ACT</trigger>
+      <vnum>11041</vnum>
+    </mprog>
+    <mprog>
+      <phrase>100</phrase>
+      <trigger>LOGINROOM</trigger>
+      <vnum>11022</vnum>
+    </mprog>
+    <mprog>
+      <phrase>gives a cyan-blue egg</phrase>
+      <trigger>ACT</trigger>
+      <vnum>11043</vnum>
+    </mprog>
+    <part>head arms legs heart brains guts hands feet fingers ear eye</part>
+    <race>human</race>
+    <sex>female</sex>
+    <short>`XHelga Hufflepuff</short>
+    <size>medium</size>
+    <startp>standing</startp>
+    <vnum>11003</vnum>
+    <wealth>0</wealth>
+  </mobile>
+  <mobile>
+    <name>salazar slytherin professor</name>
+    <ac>0 0 0 0</ac>
+    <act>npc dont_wander no_tame stay_area noautosocial update_always</act>
+    <act2>avoids_all_attacks</act2>
+    <affby>detect_invis detect_hidden dark_vision</affby>
+    <align>0 0</align>
+    <damdice>1d1+0</damdice>
+    <damtype>none</damtype>
+    <defpos>standing</defpos>
+    <desc>A portrait of Salazar Slytherin's visage hangs here, wrapped in sparkling 
+sterling fashioned into a snake-like garland winding around him.  
+</desc>
+    <form>edible sentient biped mammal</form>
+    <hitdice>1d1+0</hitdice>
+    <hitroll>0</hitroll>
+    <level>100</level>
+    <long>`w</long>
+    <manadice>1d1+0</manadice>
+    <material>unknown</material>
+    <mprog>
+      <phrase>100</phrase>
+      <trigger>GRALL</trigger>
+      <vnum>11030</vnum>
+    </mprog>
+    <mprog>
+      <phrase>100</phrase>
+      <trigger>LOGINROOM</trigger>
+      <vnum>11030</vnum>
+    </mprog>
+    <mprog>
+      <phrase>smiles warmly.</phrase>
+      <trigger>ACT</trigger>
+      <vnum>11031</vnum>
+    </mprog>
+    <mprog>
+      <phrase>bows before you.</phrase>
+      <trigger>ACT</trigger>
+      <vnum>11032</vnum>
+    </mprog>
+    <part>head arms legs heart brains guts hands feet fingers ear eye</part>
+    <race>human</race>
+    <sex>male</sex>
+    <short>`XSalazar Slytherin</short>
+    <size>medium</size>
+    <startp>standing</startp>
+    <vnum>11004</vnum>
+    <wealth>0</wealth>
+  </mobile>
+  <mobile>
+    <name>hh pimsee house-elf</name>
+    <ac>0 0 0 0</ac>
+    <act>npc dont_wander no_tame stay_area</act>
+    <act2>avoids_all_attacks</act2>
+    <align>0 0</align>
+    <damdice>1d1+0</damdice>
+    <damtype>none</damtype>
+    <defpos>standing</defpos>
+    <desc>Pimsee, a tiny, happy house-elf stands before you.  Her wide, bright eyes 
+dart this way and that, gleefully appraising her surroundings.  She wears a 
+tattered, yet crisply-ironed potato sack around her waist, adorned with what 
+seem to be crayoned-on pink and white daisies.  
+</desc>
+    <form>edible sentient biped mammal</form>
+    <hitdice>1d1+0</hitdice>
+    <hitroll>0</hitroll>
+    <level>99</level>
+    <long>A sweet-looking, smiling house-elf stands here, hopping from one foot to the other.</long>
+    <manadice>1d1+0</manadice>
+    <material>unknown</material>
+    <part>head arms legs heart brains guts hands feet fingers ear eye</part>
+    <race>human</race>
+    <sex>female</sex>
+    <short>`XPimsee</short>
+    <size>small</size>
+    <startp>standing</startp>
+    <vnum>11005</vnum>
+    <wealth>0</wealth>
+  </mobile>
+  <mobile>
+    <name>pimsee room 11005 (last room) only!!</name>
+    <ac>-620 -620 -620 -527</ac>
+    <act>npc dont_wander no_tame stay_area</act>
+    <align>0 0</align>
+    <damdice>10d11+47</damdice>
+    <damtype>none</damtype>
+    <defpos>standing</defpos>
+    <desc>Pimsee, a tiny, happy house-elf stands before you.  Her wide, bright eyes 
+dart this way and that, gleefully appraising her surroundings.  She wears a 
+tattered, yet crisply-ironed potato sack around her waist, adorned with what 
+seem to be crayoned-on pink and white daisies.  
+</desc>
+    <form>edible sentient biped mammal</form>
+    <hitdice>9d13+445</hitdice>
+    <hitroll>0</hitroll>
+    <level>92</level>
+    <long>A sweet-looking, smiling house-elf stands here, hopping from one foot to the other.</long>
+    <manadice>9d13+575</manadice>
+    <material>unknown</material>
+    <mprog>
+      <phrase>100</phrase>
+      <trigger>GRALL</trigger>
+      <vnum>11027</vnum>
+    </mprog>
+    <mprog>
+      <phrase>100</phrase>
+      <trigger>LOGINROOM</trigger>
+      <vnum>11027</vnum>
+    </mprog>
+    <part>head arms legs heart brains guts hands feet fingers ear eye</part>
+    <race>human</race>
+    <sex>female</sex>
+    <short>`XPimsee</short>
+    <size>small</size>
+    <startp>standing</startp>
+    <vnum>11006</vnum>
+    <wealth>0</wealth>
+  </mobile>
+  <mobprog></mobprog>
+  <object>
+    <name>a glowing cookie</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>A glowing cookie is here.</desc>
+    <extra>glow magic nodegrade</extra>
+    <extra2>nodecay</extra2>
+    <level>1</level>
+    <material>unknown</material>
+    <rsize>50</rsize>
+    <short>a glowing cookie</short>
+    <type>food</type>
+    <values>5 5 0 0 0</values>
+    <vnum>11000</vnum>
+    <wear>take</wear>
+    <weight>1</weight>
+  </object>
+  <object>
+    <name>elm wand</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>A carved, elm wand lies here.</desc>
+    <extra>nodegrade</extra>
+    <extra2>nodecay</extra2>
+    <extradesc>
+      <desc>Made of elm wood, this wand has been carved with a fair amount of skill.  
+</desc>
+      <keywords>elm wand</keywords>
+    </extradesc>
+    <level>0</level>
+    <material>none</material>
+    <rsize>50</rsize>
+    <short>a carved, elm wand</short>
+    <type>wand</type>
+    <values>0 0 0 (null) 0</values>
+    <vnum>11001</vnum>
+    <wear>take wield hold</wear>
+    <weight>0</weight>
+  </object>
+  <object>
+    <name>simple black robe</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>A simple, black robe lies here.</desc>
+    <extra>nodegrade</extra>
+    <extra2>nodecay</extra2>
+    <extradesc>
+      <desc>A plain, unembellished, black robe, meant for general wear.  
+</desc>
+      <keywords>simple black robe</keywords>
+    </extradesc>
+    <level>0</level>
+    <material>unknown</material>
+    <rsize>50</rsize>
+    <short>a simple, black robe</short>
+    <type>clothing</type>
+    <values>0 0 0 0 0</values>
+    <vnum>11002</vnum>
+    <wear>take about</wear>
+    <weight>0</weight>
+  </object>
+  <object>
+    <name>faded leather rucksack</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>This faded, leather rucksack looks close to collapse.</desc>
+    <extra>nodegrade</extra>
+    <extra2>nodecay</extra2>
+    <level>0</level>
+    <material>none</material>
+    <rsize>50</rsize>
+    <short>a faded, leather rucksack</short>
+    <type>container</type>
+    <values>100 A 0 100 0</values>
+    <vnum>11003</vnum>
+    <wear>take hold back</wear>
+    <weight>5</weight>
+  </object>
+  <object>
+    <name>small candle</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>A small candle sits here.</desc>
+    <extra>nodegrade</extra>
+    <extra2>nodecay</extra2>
+    <extradesc>
+      <desc>Though continuously burning, this candle never seems to get any shorter.  A 
+small inscription on the base reads &quot;WWW&quot;.  
+</desc>
+      <keywords>candle small</keywords>
+    </extradesc>
+    <level>0</level>
+    <material>unknown</material>
+    <rsize>50</rsize>
+    <short>a small candle</short>
+    <type>light</type>
+    <values>0 0 -1 0 0</values>
+    <vnum>11004</vnum>
+    <wear>take wield hold</wear>
+    <weight>0</weight>
+  </object>
+  <object>
+    <name>scaly dragonskin blanket</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>A scaly-looking blanket lies here.</desc>
+    <extra>nodegrade</extra>
+    <extra2>nodecay</extra2>
+    <extradesc>
+      <desc>This dragonskin blanket is a reddish ochre colour and extremely tough.  
+</desc>
+      <keywords>scaly dragonskin blanket</keywords>
+    </extradesc>
+    <level>0</level>
+    <material>unknown</material>
+    <rsize>50</rsize>
+    <short>a dragonskin blanket</short>
+    <type>furniture</type>
+    <values>2 60 BEHKNR 10 10</values>
+    <vnum>11005</vnum>
+    <wear>take shield hold</wear>
+    <weight>1</weight>
+  </object>
+  <object>
+    <name>empty</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>(no description 11006)</desc>
+    <level>0</level>
+    <material>unknown</material>
+    <rsize>50</rsize>
+    <short>(no short description 11006)</short>
+    <type>trash</type>
+    <values>0 0 0 0 0</values>
+    <vnum>11006</vnum>
+    <weight>0</weight>
+  </object>
+  <object>
+    <name>empty</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>(no description 11007)</desc>
+    <level>0</level>
+    <material>unknown</material>
+    <rsize>50</rsize>
+    <short>(no short description 11007)</short>
+    <type>trash</type>
+    <values>0 0 0 0 0</values>
+    <vnum>11007</vnum>
+    <weight>0</weight>
+  </object>
+  <object>
+    <name>side table</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>An eggshell-coloured, side table is embellished with tiny pink rosettes.</desc>
+    <extra>nodegrade</extra>
+    <extra2>nodecay</extra2>
+    <extradesc>
+      <desc>This delicately cut table has baby, blush rosettes along the edges of its ecru top.
+</desc>
+      <keywords>eggshell-coloured eggshell side table</keywords>
+    </extradesc>
+    <level>1</level>
+    <material>unknown</material>
+    <rsize>50</rsize>
+    <short>`WAn eggshell-coloured side table</short>
+    <type>furniture</type>
+    <values>4 500 N 0 0</values>
+    <vnum>11008</vnum>
+    <weight>400</weight>
+  </object>
+  <object>
+    <name>cyan blue egg</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>A cyan-blue egg lies on the floor.</desc>
+    <extra>nodegrade</extra>
+    <extra2>nodecay</extra2>
+    <extradesc>
+      <desc>This reasonably large, vividly coloured egg appears to be hollow.  
+</desc>
+      <keywords>cyan blue egg</keywords>
+    </extradesc>
+    <level>1</level>
+    <material>none</material>
+    <rsize>50</rsize>
+    <short>a cyan-blue egg</short>
+    <type>trash</type>
+    <values>0 0 0 0 0</values>
+    <vnum>11009</vnum>
+    <wear>take</wear>
+    <weight>5</weight>
+  </object>
+  <object>
+    <name>lacewood wand engraved floral</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>A lacewood wand with an engraved floral pattern.</desc>
+    <extra>nodegrade</extra>
+    <extra2>nodecay</extra2>
+    <extradesc>
+      <desc>This elegantly carved wand is made of springy lacewood.  Delicately etched upon it are exquisitely-shaped flowers.  
+</desc>
+      <keywords>lacewood wand engraved floral pattern</keywords>
+    </extradesc>
+    <level>10</level>
+    <material>rosewood and unicorn hair</material>
+    <rsize>50</rsize>
+    <short>a lacewood wand engraved with a floral pattern</short>
+    <type>wand</type>
+    <values>10 10 10 sanctuary 0</values>
+    <vnum>11010</vnum>
+    <wear>take wield hold</wear>
+    <weight>2</weight>
+  </object>
+  <object>
+    <name>orchid velvet robe</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>An orchid-coloured, velvet robe, with bell-shaped sleeves, ends with an amethyst-jeweled train.</desc>
+    <extra>nodegrade</extra>
+    <extra2>nodecay</extra2>
+    <extradesc>
+      <desc>This velvet robe wraps one as if in a whisper of air.  As rare as the flower, this orchid-coloured robe flows in a waterfall of amethyst gems to the tip of the train.  The bell-shaped sleeves dance gracefully around the wrists.
+</desc>
+      <keywords>orchid velvet robe bell-shaped sleeves amethyst-jeweled train</keywords>
+    </extradesc>
+    <level>0</level>
+    <material>unknown</material>
+    <rsize>50</rsize>
+    <short>an orchid-coloured, velvet robe</short>
+    <type>clothing</type>
+    <values>0 0 0 0 0</values>
+    <vnum>11011</vnum>
+    <wear>take about</wear>
+    <weight>0</weight>
+  </object>
+  <object>
+    <name>*dyertoken*</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>`w</desc>
+    <extra>invis nodrop nodegrade</extra>
+    <extra2>nodecay</extra2>
+    <level>0</level>
+    <material>unknown</material>
+    <rsize>50</rsize>
+    <short>`w</short>
+    <type>token</type>
+    <values>0 0 0 0 0</values>
+    <vnum>11012</vnum>
+    <weight>0</weight>
+  </object>
+  <object>
+    <name>*daltontoken*</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>`w</desc>
+    <extra>invis nodrop nodegrade</extra>
+    <extra2>nodecay</extra2>
+    <level>0</level>
+    <material>unknown</material>
+    <rsize>50</rsize>
+    <short>`w</short>
+    <type>token</type>
+    <values>0 0 0 0 0</values>
+    <vnum>11013</vnum>
+    <weight>0</weight>
+  </object>
+  <object>
+    <name>*lundtoken*</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>`w</desc>
+    <extra>invis nodrop nodegrade</extra>
+    <extra2>nodecay</extra2>
+    <level>0</level>
+    <material>unknown</material>
+    <rsize>50</rsize>
+    <short>`w</short>
+    <type>token</type>
+    <values>0 0 0 0 0</values>
+    <vnum>11014</vnum>
+    <weight>0</weight>
+  </object>
+  <object>
+    <name>*ecclestoken*</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>`w</desc>
+    <extra>invis nodrop nodegrade</extra>
+    <extra2>nodecay</extra2>
+    <level>0</level>
+    <material>unknown</material>
+    <rsize>50</rsize>
+    <short>`w</short>
+    <type>token</type>
+    <values>0 0 0 0 0</values>
+    <vnum>11015</vnum>
+    <weight>0</weight>
+  </object>
+  <object>
+    <name>light</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>`w</desc>
+    <extra>nodegrade</extra>
+    <extra2>nodecay</extra2>
+    <level>0</level>
+    <material>unknown</material>
+    <rsize>50</rsize>
+    <short>`w</short>
+    <type>light</type>
+    <values>0 0 -1 0 0</values>
+    <vnum>11016</vnum>
+    <wear>take hold</wear>
+    <weight>0</weight>
+  </object>
+  <object>
+    <name>shirt</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>A simple, white t-shirt lies here.</desc>
+    <level>0</level>
+    <material>unknown</material>
+    <rsize>50</rsize>
+    <short>a simple, white t-shirt.</short>
+    <type>trash</type>
+    <values>0 0 0 0 0</values>
+    <vnum>11017</vnum>
+    <wear>take torso</wear>
+    <weight>0</weight>
+  </object>
+  <reset></reset>
+  <room>
+    <name>The Beginning...</name>
+    <copyright>Copyright © 2004  Roman</copyright>
+    <desc>A serene, kind-looking man, quite well along in his years, smiles 
+benevolently from his portrait.  His dancing, blue eyes glint whimsically as 
+much as his sparkling, sterling, half-moon spectacles do.  His hair is long, 
+silver, and flowing from beneath his pointed, wizard hat.  His distinctive, 
+pearly beard falls over his azure and plum-coloured robe and ends at his 
+waist.  He sits on a plush, buttercream-coloured armchair.  A gold and 
+scarlet, beautifully-plumed phoenix sits upon the back of the chair.  
+</desc>
+    <exit>
+      <name>south</name>
+      <flags>door closed oneway</flags>
+      <vnum>11001</vnum>
+    </exit>
+    <flags>safe nowhere noautomap</flags>
+    <history>
+      <date>2004-10-12 19:23:58</date>
+      <person>Roman</person>
+    </history>
+    <history>
+      <date>2004-10-12 19:25:04</date>
+      <person>Roman</person>
+    </history>
+    <sector>inside</sector>
+    <vnum>11000</vnum>
+  </room>
+  <room>
+    <name>** Movement</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc>A portrait depicts the broad, powerful frame of Godric Gryffindor sitting 
+proudly on an ornate, high-backed chair.  A heavy hand rests atop the 
+cascade of flowing, crimson robes surrounding his crushed-velvet arming 
+doublet.  He wears a gleaming steel pauldron on one shoulder, bearing the 
+Gryffindor coat of arms.  A mane of golden hair surrounds his striking, 
+pale-blue eyes, enhancing his handsome, self-assured smile.  
+</desc>
+    <ekeywords>door</ekeywords>
+    <exit>
+      <name>north</name>
+      <vnum>11000</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <flags>door closed obvious</flags>
+      <vnum>11002</vnum>
+    </exit>
+    <flags>safe nowhere</flags>
+    <history>
+      <date>2004-11-09 20:20:19</date>
+      <person>Caesar &lt;caesar@chat.mugglenet.com&gt;</person>
+    </history>
+    <history>
+      <date>2004-11-09 20:22:11</date>
+      <person>Caesar &lt;caesar@chat.mugglenet.com&gt;</person>
+    </history>
+    <history>
+      <date>2004-11-09 20:36:05</date>
+      <person>Caesar &lt;caesar@chat.mugglenet.com&gt;</person>
+    </history>
+    <history>
+      <date>2004-11-09 20:37:20</date>
+      <person>Caesar &lt;caesar@chat.mugglenet.com&gt;</person>
+    </history>
+    <history>
+      <date>2006-03-27 17:25:48</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <history>
+      <date>2006-03-27 17:26:01</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>inside</sector>
+    <vnum>11001</vnum>
+  </room>
+  <room>
+    <name>Speech</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc>In a scene of lush forest greenery, sitting atop a swing, Rowena Ravenclaw 
+gently sways to and fro within her picture.  Her hands are clasped around an 
+indigo, leather-bound book.  Sleek, black hair, tied into a long ponytail, 
+falls down past her cerulean blue corset.  She wears a beautiful sapphire 
+pendant and matching earrings.  Her pale features are soft and delicate, 
+framing her brightly sparkling eyes.  With a playful smile, she quietly hums 
+a lilting tune to herself.  
+</desc>
+    <ekeywords>door</ekeywords>
+    <exit>
+      <name>north</name>
+      <flags>door closed obvious</flags>
+      <vnum>11001</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <flags>door closed</flags>
+      <vnum>11003</vnum>
+    </exit>
+    <flags>safe nowhere noautomap</flags>
+    <sector>inside</sector>
+    <vnum>11002</vnum>
+  </room>
+  <room>
+    <name>Inventory/Equipment</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc>Reclining on a quilted, comfy-looking divan, Helga Hufflepuff, inside her 
+painting, holds out a finger as a perch for the dozens of yellow songbirds 
+flitting and fluttering around the scene.  Dressed in a luxurious swathe of 
+heavy, golden fabric, she looks truly relaxed and cosy.  Her 
+buttercup-yellow hair is braided into two swirls pinned tightly to her head. 
+ Her full, rosy-red lips are pursed in a smile and her long, dark eyelashes 
+regularly give a coy wink to her admirers.  
+</desc>
+    <exit>
+      <name>north</name>
+      <flags>door closed</flags>
+      <vnum>11002</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <flags>door closed oneway</flags>
+      <vnum>11004</vnum>
+    </exit>
+    <flags>safe nowhere noautomap</flags>
+    <sector>inside</sector>
+    <vnum>11003</vnum>
+  </room>
+  <room>
+    <name>** Roleplaying</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc>Portrayed standing before a large, marble fireplace, Salazar Slytherin 
+flashes a capricious grin from beneath his hunter-green hooded robes.  His 
+leather gloved hands clasp a long, silver cane, slowly tapping against the 
+stone floor.  A wiry, ashen beard groomed to a fine point surrounds his 
+stark cheekbones, while thick, black curls of hair fall to rest against his 
+pristine, white, fur collar.  
+</desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>11003</vnum>
+    </exit>
+    <exit>
+      <name>northwest</name>
+      <flags>door closed oneway</flags>
+      <vnum>11005</vnum>
+    </exit>
+    <flags>safe nowhere noautomap</flags>
+    <sector>inside</sector>
+    <vnum>11004</vnum>
+  </room>
+  <room>
+    <name>Gateway</name>
+    <copyright>Copyright © 2004  Caesar &lt;caesar@chat.mugglenet.com&gt;</copyright>
+    <desc>This brightly-lit stone chamber is covered with hundreds of picture frames.  
+Some are large, elaborate works in their own right, while others occupy 
+their tiny space as if trying not to be noticed.  An enormous golden compass 
+is inlaid into the flagstone floor.  
+</desc>
+    <exit>
+      <name>southeast</name>
+      <flags>door closed</flags>
+      <vnum>11004</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <flags>door closed locked nopass</flags>
+      <vnum>11006</vnum>
+    </exit>
+    <extradesc>
+      <desc>The large, carefully inscribed compass comprises of two nested, golden 
+circles and a series of lines pointing out the directions and bearings.  In 
+the outer circle, a single silver marble rests towards magnetic north.  
+</desc>
+      <keywords>golden compass floor</keywords>
+    </extradesc>
+    <flags>safe nowhere noautomap noautoexits</flags>
+    <history>
+      <date>2004-11-17 18:45:11</date>
+      <person>Caesar &lt;caesar@chat.mugglenet.com&gt;</person>
+    </history>
+    <sector>inside</sector>
+    <vnum>11005</vnum>
+  </room>
+  <room>
+    <name>Family Emporium</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc>Hematite envelops the entire room in a lustrous, silvery-grey.  A warmth 
+radiates and a soothing, mellifluousness vibration shivers throughout the 
+room.  A greyish-blue, illuminable hue shimmers along the sheeny surfaces.  
+Along the eastern wall a figure of a lithe woman is iridescently traced.  
+Her pearlescent silhouette moves gracefully, glinting off the glossy 
+interior.  She smiles as prismatic words unveil themselves next to her.  
+&quot;There are seven doors leading to seven rooms.  In the hamlet of Little 
+Hangleton there are six wizarding families.  Descriptions of each family 
+reside through six of these doors.  The seventh room discloses what 
+alternative is available for those who decide to opt out of a familial 
+prospect.  The benefit of being in a family is that you are guaranteed 
+housing, money, and allies.  Those who decide to go it alone are just that, 
+left to their own devices.  Typing `slook &lt;direction&gt;`X reveals the name of the 
+room.  Explore at your leisure; when you have reached a decision follow the 
+directions in the room of your choice.&quot;  
+</desc>
+    <exit>
+      <name>east</name>
+      <description>The Elegant, Female Form
+</description>
+      <flags>door closed locked nopass oneway</flags>
+      <vnum>11005</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <description>The Lunds
+</description>
+      <vnum>11012</vnum>
+    </exit>
+    <exit>
+      <name>northeast</name>
+      <description>The Ecclestons
+</description>
+      <vnum>11013</vnum>
+    </exit>
+    <exit>
+      <name>northwest</name>
+      <description>The Daltons
+</description>
+      <vnum>11011</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <description>The Ikins
+</description>
+      <vnum>11009</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <description>The Reynells
+</description>
+      <vnum>11008</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <description>The Dyers
+</description>
+      <vnum>11010</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <description>The Travellers
+</description>
+      <vnum>11007</vnum>
+    </exit>
+    <history>
+      <date>2004-11-18 21:20:24</date>
+      <person>Caesar &lt;caesar@chat.mugglenet.com&gt;</person>
+    </history>
+    <history>
+      <date>2004-11-18 21:21:51</date>
+      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
+    </history>
+    <sector>inside</sector>
+    <vnum>11006</vnum>
+  </room>
+  <room>
+    <name>The Travellers</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>11006</vnum>
+    </exit>
+    <sector>inside</sector>
+    <vnum>11007</vnum>
+  </room>
+  <room>
+    <name>The Reynells</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northwest</name>
+      <vnum>11006</vnum>
+    </exit>
+    <sector>inside</sector>
+    <vnum>11008</vnum>
+  </room>
+  <room>
+    <name>The Ikins</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>north</name>
+      <vnum>11006</vnum>
+    </exit>
+    <sector>inside</sector>
+    <vnum>11009</vnum>
+  </room>
+  <room>
+    <name>The Dyers</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>northeast</name>
+      <vnum>11006</vnum>
+    </exit>
+    <sector>inside</sector>
+    <vnum>11010</vnum>
+  </room>
+  <room>
+    <name>The Daltons</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>southeast</name>
+      <vnum>11006</vnum>
+    </exit>
+    <sector>inside</sector>
+    <vnum>11011</vnum>
+  </room>
+  <room>
+    <name>The Lunds</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>south</name>
+      <vnum>11006</vnum>
+    </exit>
+    <sector>inside</sector>
+    <vnum>11012</vnum>
+  </room>
+  <room>
+    <name>The Ecclestons</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>southwest</name>
+      <vnum>11006</vnum>
+    </exit>
+    <sector>inside</sector>
+    <vnum>11013</vnum>
+  </room>
+  <shop></shop>
+  <special></special>
+</area>

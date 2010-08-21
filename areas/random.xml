@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    This work is licensed under the Creative Commons
+    Attribution-NonCommercial-ShareAlike 3.0 Unported License. To view a copy of
+    this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/ or send
+    a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco,
+    California, 94105, USA.
+-->
+<area>
+  <areadata>
+    <name>Random Rooms</name>
+    <builders>everyone</builders>
+    <colour></colour>
+    <colourcode>`</colourcode>
+    <credits>Calliope</credits>
+    <flags>olconly</flags>
+    <flags>noteleport</flags>
+    <flags>noscry</flags>
+    <flags>hidden</flags>
+    <frommud>Legilimensia</frommud>
+    <lrange>0 0</lrange>
+    <maplevel>92</maplevel>
+    <mapscale>0</mapscale>
+    <security>6</security>
+    <shortname>Random Rooms</shortname>
+    <version>11</version>
+    <vnum_offset>0</vnum_offset>
+    <vnums>15500 15549</vnums>
+  </areadata>
+  <mobile>
+    <name>auburn cream-coloured belly squirrel</name>
+    <ac>0 0 0 0</ac>
+    <act>npc dont_wander stay_area pet</act>
+    <affby>calm dark_vision</affby>
+    <align>0 0</align>
+    <damdice>0d0+1</damdice>
+    <damtype>none</damtype>
+    <defpos>standing</defpos>
+    <desc>This fuzzy, little creature has an auburn-coloured coat.  Her tummy is cream-coloured and her bushy tail has a black band running through it, with white fringe. A little chatterbox, this tiny animal is affectionate as well as adorable.  Her little paws love to pull things apart and clean her precious face.
+</desc>
+    <form>edible instant_decay animal mammal</form>
+    <hitdice>0d0+1</hitdice>
+    <hitroll>0</hitroll>
+    <level>0</level>
+    <long>An auburn squirrel, with a cream-coloured belly, has a black banned, bushy tail edged in white.</long>
+    <manadice>0d0+1</manadice>
+    <material>unknown</material>
+    <off>dodge fast parry tail uppercut</off>
+    <part>head arms legs heart brains guts feet ear eye tail claws fangs</part>
+    <race>fox</race>
+    <sex>neutral</sex>
+    <short>an auburn squirrel with a cream-coloured belly</short>
+    <size>medium</size>
+    <startp>standing</startp>
+    <vnum>15500</vnum>
+    <wealth>0</wealth>
+  </mobile>
+  <mobprog></mobprog>
+  <object>
+    <name>pensieve memory vial</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>The pensieve memory of the herbology office corridor is within this vial- room 1234.</desc>
+    <extra>nodegrade</extra>
+    <extra2>nodecay</extra2>
+    <level>10</level>
+    <material>memory</material>
+    <rsize>50</rsize>
+    <short>the pensieve memory of the herbology office corridor is within this vial- room 1234</short>
+    <type>trash</type>
+    <values>0 0 0 0 0</values>
+    <vnum>15509</vnum>
+    <wear>take hold</wear>
+    <weight>5</weight>
+  </object>
+  <object>
+    <name>pensieve memory vial</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>The pensieve memory of the entrance to school library is within this vial- room 1389.</desc>
+    <extra>nodegrade</extra>
+    <extra2>nodecay</extra2>
+    <level>10</level>
+    <material>memory</material>
+    <rsize>50</rsize>
+    <short>the pensieve memory of the entrance to school library is within this vial- room 1389</short>
+    <type>trash</type>
+    <values>0 0 0 0 0</values>
+    <vnum>15510</vnum>
+    <wear>take hold</wear>
+    <weight>5</weight>
+  </object>
+  <object>
+    <name>pensieve memory vial</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>The pensieve memory of the aurora borealis room is within this vial- room 1249.</desc>
+    <extra>nodegrade</extra>
+    <extra2>nodecay</extra2>
+    <level>10</level>
+    <material>memory</material>
+    <rsize>50</rsize>
+    <short>the pensieve memory of the aurora borealis room is within this vial- room 1249</short>
+    <type>trash</type>
+    <values>0 0 0 0 0</values>
+    <vnum>15511</vnum>
+    <wear>take hold</wear>
+    <weight>5</weight>
+  </object>
+  <object>
+    <name>pensieve memory vial</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>The pensieve memory of the sweet scent passage is within this vial- room 1271.</desc>
+    <extra>nodegrade</extra>
+    <extra2>nodecay</extra2>
+    <level>10</level>
+    <material>memory</material>
+    <rsize>50</rsize>
+    <short>the pensieve memory of the sweet scent passage is within this vial- room 1271</short>
+    <type>trash</type>
+    <values>0 0 0 0 0</values>
+    <vnum>15512</vnum>
+    <wear>take hold</wear>
+    <weight>5</weight>
+  </object>
+  <object>
+    <name>pensieve memory vial</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>The pensieve memory of the warlock's walk is within this vial- room 1244.</desc>
+    <extra>nodegrade</extra>
+    <extra2>nodecay</extra2>
+    <level>10</level>
+    <material>memory</material>
+    <rsize>50</rsize>
+    <short>the pensieve memory of the warlock's walk is within this vial- room 1244</short>
+    <type>trash</type>
+    <values>0 0 0 0 0</values>
+    <vnum>15513</vnum>
+    <wear>take hold</wear>
+    <weight>5</weight>
+  </object>
+  <object>
+    <name>pensieve memory vial</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>The pensieve memory of the entrance hall is within this vial- room 1000.</desc>
+    <extra>nodegrade</extra>
+    <extra2>nodecay</extra2>
+    <level>10</level>
+    <material>memory</material>
+    <rsize>50</rsize>
+    <short>the pensieve memory of the entrance hall is within this vial- room 1000</short>
+    <type>trash</type>
+    <values>0 0 0 0 0</values>
+    <vnum>15514</vnum>
+    <wear>take hold</wear>
+    <weight>5</weight>
+  </object>
+  <object>
+    <name>pensieve memory vial</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>The pensieve memory of the ghosts' meeting hall is within this vial- room 1227.</desc>
+    <extra>nodegrade</extra>
+    <extra2>nodecay</extra2>
+    <level>10</level>
+    <material>memory</material>
+    <rsize>50</rsize>
+    <short>the pensieve memory of the ghosts' meeting hall is within this vial- room 1227</short>
+    <type>trash</type>
+    <values>0 0 0 0 0</values>
+    <vnum>15515</vnum>
+    <wear>take hold</wear>
+    <weight>5</weight>
+  </object>
+  <object>
+    <name>pensieve memory vial</name>
+    <asize>0</asize>
+    <cost>0</cost>
+    <desc>The pensieve memory of the pools of juniper is within this vial- room 1475.</desc>
+    <extra>nodegrade</extra>
+    <extra2>nodecay</extra2>
+    <level>10</level>
+    <material>memory</material>
+    <rsize>50</rsize>
+    <short>the pensieve memory of the pools of juniper is within this vial- room 1475</short>
+    <type>trash</type>
+    <values>0 0 0 0 0</values>
+    <vnum>15516</vnum>
+    <wear>take hold</wear>
+    <weight>5</weight>
+  </object>
+  <reset></reset>
+  <room>
+    <name>Dan is a Punk</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc>Dan is such a stinking punk.  He stinks.  He's a punk.  He's a stinking punk.
+</desc>
+    <editdraft>As you enter the room the stunning view captures your eye's attention.  
+</editdraft>
+    <editdraftcomments>A good start, but what stunning view are we supposed to see?
+</editdraftcomments>
+    <exit>
+      <name>north</name>
+      <vnum>15501</vnum>
+    </exit>
+    <extradesc>
+      <desc>Everyone can smell Dan, the stinking punk.
+</desc>
+      <keywords>dan punk stinking</keywords>
+    </extradesc>
+    <extradesc>
+      <desc>Different colored owls swarm the room that you are standing in.  
+</desc>
+      <keywords>view colors brilliant</keywords>
+    </extradesc>
+    <roomecho>
+      <after>6</after>
+      <before>7</before>
+      <chance>1</chance>
+      <desc>Bright sunlight pierces the room.</desc>
+    </roomecho>
+    <roomecho>
+      <after>20</after>
+      <before>21</before>
+      <chance>1</chance>
+      <desc>The  bright sunlight slowly fades from view.</desc>
+    </roomecho>
+    <sector>ice</sector>
+    <vnum>15500</vnum>
+  </room>
+  <room>
+    <name>The Entrance Hall</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc>The school's massive entrance hall resides beyond the monumental, stone 
+archway that surrounds the imposing, weather-beaten, oak doors.  Resplendent 
+with statues, figures, and sculptures, polished suits of armour stand guard 
+around this cavernous room.  Inlaid patterns, elegant masonry, and huge 
+pieces of artwork, illuminated by burning torches, are displayed upon the 
+stone walls.  Upon the vaulted ceiling, a large chandelier, bedecked with 
+countless candles, lavishes the hall with a healthy glow.  The flagstone 
+floor leads to a magnificent, gleaming, white marble stairway, above which 
+is a large crest inscribed with the legend: Hogwarts School of Witchcraft 
+and Wizardry.  The wide steps lead up to the topmost floor and down into the 
+dungeons.  A door to the east opens up to a smaller staircase, while an 
+imposing exit to the south leads to the Great Hall.  To the north, a 
+corridor leads deeper into the castle and to the west, the stone archway 
+leads outside.  
+</desc>
+    <exit>
+      <name>north</name>
+      <vnum>15502</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15500</vnum>
+    </exit>
+    <extradesc>
+      <desc>. 
+The giant, stone arch is dominated by a thick, wooden gate.  Multiple iron locks hold the gate in place.  The arch looks chipped in a few places where stray spells might have bounced off of it.  A couple of scorch marks highlight the wooden gate.
+</desc>
+      <keywords>stone arch</keywords>
+    </extradesc>
+    <extradesc>
+      <desc>. 
+Clear and stain-glassed windows allow light from the sun and moon to fill the entrance hall.
+</desc>
+      <keywords>windows</keywords>
+    </extradesc>
+    <extradesc>
+      <desc>. 
+Light fills the room from the candles sitting on the chandelier and floating though the air.
+</desc>
+      <keywords>candles</keywords>
+    </extradesc>
+    <extradesc>
+      <desc>. 
+Several torches line the walls, casting flickering shadows across the room.
+</desc>
+      <keywords>torches</keywords>
+    </extradesc>
+    <extradesc>
+      <desc>. 
+The floor is made of marble and polished to a smooth, lustrous shine.
+</desc>
+      <keywords>floor</keywords>
+    </extradesc>
+    <extradesc>
+      <desc>. 
+Numerous works of art and carvings cover the cold stone walls.
+</desc>
+      <keywords>walls</keywords>
+    </extradesc>
+    <extradesc>
+      <desc>. 
+A large chandelier hangs from the beautifully carved stone ceiling.
+</desc>
+      <keywords>ceiling</keywords>
+    </extradesc>
+    <extradesc>
+      <desc>. 
+Ancient and worn, the carvings on the ceiling and walls still look remarkably new.
+</desc>
+      <keywords>carvings artwork</keywords>
+    </extradesc>
+    <extradesc>
+      <desc>. 
+Suits of armour and ornately carved statues are placed at intervals around the sides of the hall; in between each is a door.
+</desc>
+      <keywords>armour suits statues</keywords>
+    </extradesc>
+    <roomecho>
+      <after>8</after>
+      <before>16</before>
+      <chance>3</chance>
+      <desc>Students pour out of the doors and staircase on their way to their next class.</desc>
+    </roomecho>
+    <roomecho>
+      <after>7</after>
+      <before>20</before>
+      <chance>5</chance>
+      <desc>An owl swoops through the hall with a letter, in search of the addressee.</desc>
+    </roomecho>
+    <roomecho>
+      <after>4</after>
+      <before>18</before>
+      <chance>4</chance>
+      <desc>A ghost gently glides down the staircase, only to disappear through a wall on the other side of the hall.</desc>
+    </roomecho>
+    <roomecho>
+      <after>1</after>
+      <before>7</before>
+      <chance>2</chance>
+      <desc>A torch sputters and goes out. Suddenly, it re-ignites itself.</desc>
+    </roomecho>
+    <roomecho>
+      <after>3</after>
+      <before>14</before>
+      <chance>3</chance>
+      <desc>A mighty wind blows against the giant wooden doors, making them creak slightly.</desc>
+    </roomecho>
+    <roomecho>
+      <after>17</after>
+      <before>23</before>
+      <chance>2</chance>
+      <desc>Two tawny owls swoop through an open window.</desc>
+    </roomecho>
+    <roomecho>
+      <after>6</after>
+      <before>7</before>
+      <chance>2</chance>
+      <desc>Pale morning sunlight peeks in through the high windows.</desc>
+    </roomecho>
+    <roomecho>
+      <after>9</after>
+      <before>20</before>
+      <chance>3</chance>
+      <desc>A couple of students, weighed down with books, make their way from the Great Hall to their class.</desc>
+    </roomecho>
+    <roomecho>
+      <after>17</after>
+      <before>5</before>
+      <chance>2</chance>
+      <desc>Smoke pours off a sputtering and dying torch.</desc>
+    </roomecho>
+    <roomecho>
+      <after>8</after>
+      <before>15</before>
+      <chance>3</chance>
+      <desc>Gentle sunlight streams through the windows, creating colourful designs on the floor.</desc>
+    </roomecho>
+    <sector>inside</sector>
+    <vnum>15501</vnum>
+  </room>
+  <room>
+    <name>Pools of Juniper Corridor</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc>The air in this corridor is thick with incense, burning fastidiously in 
+suspended iron censers.  The imposing walls are assembled from huge blocks 
+of ashen basalt with strands of pure silver woven across the entire surface. 
+ The floor is a deep shade of iridescent juniper, throwing the reflected 
+light into shards of incredible beauty.  Collecting by the walls and along 
+the ledges of the windows lie smooth grey pebbles, each with an inlaid 
+figure or form.  Upon casting a pebble to the floor, liquid-like ripples 
+circle out from the point of impact, though the surface remains solid.  
+</desc>
+    <exit>
+      <name>north</name>
+      <vnum>15503</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15501</vnum>
+    </exit>
+    <extradesc>
+      <desc>The dull grey pebbles are incredibly smooth.  Carved into each is a small figure of an animal or creature.
+</desc>
+      <keywords>pebbles smooth figure form</keywords>
+    </extradesc>
+    <roomecho>
+      <after>0</after>
+      <before>23</before>
+      <chance>2</chance>
+      <desc>Light and energy pulse along the floor, illuminating the room in flashes of turquoise and jade.</desc>
+    </roomecho>
+    <roomecho>
+      <after>8</after>
+      <before>18</before>
+      <chance>2</chance>
+      <desc>A student hurries by, swiping a pebble from a nearby ledge and tossing it to one side.  As it hits the floor, the sound of a deep bell accompanies the expanding waves filling the floor.</desc>
+    </roomecho>
+    <sector>inside</sector>
+    <vnum>15502</vnum>
+  </room>
+  <room>
+    <name>Warlock's Walk</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc>There is a faint smell of rosemary in this hallway.  Lit by torches burning 
+brightly, the floor is covered in a luscious, thick, carmine rug with a 
+sewn, golden motif running along the edge.  The high walls are made of wide, 
+stone slabs, inlaid with a number of curious designs.  The high, vaulted 
+roof has partially collapsed on itself - the fallen beams suspended by a 
+dozen hair-thin strands of magical, glowing thread anchored to the walls.  
+There is a short, marble plinth on the eastern wall, holding a bust of a 
+hooded wizard.  
+</desc>
+    <exit>
+      <name>north</name>
+      <vnum>15504</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15502</vnum>
+    </exit>
+    <extradesc>
+      <desc>. Quixos Wren: (1680 - 1821)
+</desc>
+      <keywords>bust warlock wizard hooded hood</keywords>
+    </extradesc>
+    <extradesc>
+      <desc>On closer inspection, it seems that the motif depicts a snake coiling endlessly around itself. It writhes as you look at at it.
+</desc>
+      <keywords>carpet red rug motif gold</keywords>
+    </extradesc>
+    <extradesc>
+      <desc>. 
+&quot;Snape Sucks -- MWPP&quot;
+&quot;HP&amp;GW&quot;
+&quot;MUDBLOODS BEWARE!&quot;
+</desc>
+      <keywords>graffiti</keywords>
+    </extradesc>
+    <extradesc>
+      <desc>This painting is completely black save for a small pair of glowing eyes in the centre. They blink occasionally.
+</desc>
+      <keywords>paintings</keywords>
+    </extradesc>
+    <extradesc>
+      <desc>Years of student graffiti is carved into the wood.
+</desc>
+      <keywords>beams wooden</keywords>
+    </extradesc>
+    <extradesc>
+      <desc>The carved designs on the wall are quite geometric. Some depict star charts while others are a series of glyphs and runes. As you look a little longer the designs shift, the very rock altering to show new, even stranger icons.
+</desc>
+      <keywords>designs rocks walls</keywords>
+    </extradesc>
+    <roomecho>
+      <after>8</after>
+      <before>20</before>
+      <chance>1</chance>
+      <desc>One of the blue threads snaps! Hopefully a teacher will come and replace it before somthing terrible happens...</desc>
+    </roomecho>
+    <roomecho>
+      <after>0</after>
+      <before>23</before>
+      <chance>4</chance>
+      <desc>The roof creaks ominously...</desc>
+    </roomecho>
+    <sector>inside</sector>
+    <vnum>15503</vnum>
+  </room>
+  <room>
+    <name>Herbology Office Corridor</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc>This corridor is quite warm, the air is very dense and moist.  The floor 
+here is covered with mud and leaves with ocassional patches of the old 
+marble glimpsing through.  Covering the walls are thick brown vines and 
+wide, dark green leaves.  There are recesses in the walls that look like 
+they could have been windows but they are so obscured by foliage it is quite 
+impossible to tell.  There is a low wooden ceiling hanging with trailing 
+vines.  It is hard to distinguish beams from branches and it seems that the 
+plants are doing half the work of keeping the ceiling up.  There is a 
+circular oak door to the south wreathed in tiny blossoming flowers, the 
+words &quot;Herbology Office&quot; carved into it.  
+</desc>
+    <exit>
+      <name>north</name>
+      <vnum>15505</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15503</vnum>
+    </exit>
+    <extradesc>
+      <desc>The vines are thick and muscular, occasionally moving of their own accord.
+</desc>
+      <keywords>vines</keywords>
+    </extradesc>
+    <extradesc>
+      <desc>Are you sure they are windows? There are vines blocking your view.
+</desc>
+      <keywords>windows</keywords>
+    </extradesc>
+    <roomecho>
+      <after>0</after>
+      <before>23</before>
+      <chance>3</chance>
+      <desc>Some of the flowers surrounding the door give a small sneeze.</desc>
+    </roomecho>
+    <roomecho>
+      <after>0</after>
+      <before>23</before>
+      <chance>3</chance>
+      <desc>A large drop of condensed water drips from the ceiling.</desc>
+    </roomecho>
+    <roomecho>
+      <after>0</after>
+      <before>23</before>
+      <chance>2</chance>
+      <desc>The vines slowly rearrange themselves.</desc>
+    </roomecho>
+    <sector>inside</sector>
+    <vnum>15504</vnum>
+  </room>
+  <room>
+    <name>Sweet Scent Passage</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc>A heady scent lingers heavily in the air, its sweet taste embracing all 
+those who pass by.  Light streaks through the corridor from an enchanted 
+picture on one wall.  It shows a permanent sunset and bathes everything in a 
+hazy yellow glow.  Against another wall stands a tall marble statue of two 
+figures: a wizard in long flowing robes and hood embracing a kindly looking 
+witch, a slim gold crown resting atop her head and a stone tablet under one 
+arm.  An old lute lies at the wizard's feet.  There is a silvered 
+inscription running around the statue's base.  Hanging from the ceiling are 
+several unused candelabra swinging soundlessly.  
+</desc>
+    <exit>
+      <name>north</name>
+      <vnum>15506</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15504</vnum>
+    </exit>
+    <extradesc>
+      <desc>The wizard has slim defined features and blue-grey gemstones inset for eyes. He is smiling wistfully at the witch.  
+</desc>
+      <keywords>wizard long flowing robes</keywords>
+    </extradesc>
+    <extradesc>
+      <desc>The witch is beautiful beyond description. In one hand she cradles a tablet and a quill, the other is extended around the wizard.
+</desc>
+      <keywords>kind witch crown tablet</keywords>
+    </extradesc>
+    <extradesc>
+      <desc>The inscription reads: &quot;THE FOOL AND THE GUIDE&quot; in thin silvered lettering.  
+</desc>
+      <keywords>inscription</keywords>
+    </extradesc>
+    <roomecho>
+      <after>8</after>
+      <before>20</before>
+      <chance>4</chance>
+      <desc>A girl looks reflectively at the statues.  She touches the face of the wizard and whispers, &quot;You don't look like a fool.&quot;</desc>
+    </roomecho>
+    <roomecho>
+      <after>9</after>
+      <before>17</before>
+      <chance>2</chance>
+      <desc>A tall Slytherin boy dashes through the corridor clutching his robes to his face and coughing loudly.</desc>
+    </roomecho>
+    <sector>inside</sector>
+    <vnum>15505</vnum>
+  </room>
+  <room>
+    <name>Ghosts' Meeting Hall</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc>The corridor is glacial, like an icebox, forcing one's breath to appear as 
+tiny bits of fog.  The floor, walls, and ceiling are charcoal-grey, grim.  
+One lone torch attempts to emit a bit of light, but the darkness seems to 
+almost swallow it.  An ebony, marble table sports grey, dingy chairs around 
+its circular form.  The room possesses an air of neglect, making it hard to 
+determine if the room is shadowy in appearance from its original colour, or 
+from the years of inattention.  If one looks closely, the walls model two 
+dark tapestries, each weaved in varying colours of blacks and greys.  One 
+tapestry depicts Rochester Castle, in Kent, and its famous tenant.  The 
+second tapestry portrays Lowther Castle in Westmoreland and its resident, 
+the infamous &quot;wicked Jimmy&quot;.  
+</desc>
+    <exit>
+      <name>north</name>
+      <vnum>15507</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15505</vnum>
+    </exit>
+    <extradesc>
+      <desc>&quot;Wicked Jimmy&quot;, or Sir James Lowther, was a ruthless man in an unhappy &quot;arranged&quot; marriage.  He fell in love with a lovely, young woman, who eventually grew ill and died.  He kept her body in his castle for a while, attending to her room everyday, refusing to believe she was dead.  When his servants complained of the smell she was finally buried.  His angst caused him to constantly walk the grounds.  At his death he came back to stroll the grounds once again.  
+</desc>
+      <keywords>wicked jimmy lowther westmoreland two second</keywords>
+    </extradesc>
+    <extradesc>
+      <desc>The White Lady, who has haunted the castle for over seven hundred years, is thought to be Lady Blanche de Warren, who was accidentally slain by her betrothed.  
+</desc>
+      <keywords>one rochester kent tenant</keywords>
+    </extradesc>
+    <roomecho>
+      <after>0</after>
+      <before>23</before>
+      <chance>4</chance>
+      <desc>The Bloody Baron's presence makes two first years flutter away.</desc>
+    </roomecho>
+    <roomecho>
+      <after>0</after>
+      <before>23</before>
+      <chance>3</chance>
+      <desc>Several ghosts sit at the table in discussion.</desc>
+    </roomecho>
+    <roomecho>
+      <after>0</after>
+      <before>23</before>
+      <chance>6</chance>
+      <desc>Nearly Headless Nick breezes through the hall.</desc>
+    </roomecho>
+    <sector>inside</sector>
+    <vnum>15506</vnum>
+  </room>
+  <room>
+    <name>Aurora Borealis Room</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc>A long, black corridor leads you to the room.  The brightness is dizzying 
+upon entering.  A duplicate of the Aurora Borealis stretches across all the 
+walls.  This dazzling phenomenon illuminates the room in shimmering greens, 
+whites, yellows, oranges, reds, and purples.  The colours eddy and wave like 
+swirling ribbons blowing in a lazy breeze of whites and greens mixing then 
+changing to reds and purples, perpetually rotating and morphing into varying 
+colours.  There are several lush sofas scattered about allowing the couples 
+in Hogwarts to frequent this room.  
+</desc>
+    <exit>
+      <name>north</name>
+      <vnum>15508</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15506</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>15509</vnum>
+    </exit>
+    <roomecho>
+      <after>6</after>
+      <before>11</before>
+      <chance>4</chance>
+      <desc>A prefect enters the room and says, &quot;Okay, you two, cut it out.&quot;  A couple runs from the room.</desc>
+    </roomecho>
+    <roomecho>
+      <after>8</after>
+      <before>17</before>
+      <chance>5</chance>
+      <desc>A giggle can be heard from one of the sofas.</desc>
+    </roomecho>
+    <sector>inside</sector>
+    <vnum>15507</vnum>
+  </room>
+  <room>
+    <name>Entrance to the School Library</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc>The Hogwarts crest is inlayed with gold into the dark brown, white-veined 
+marble floor.  The walls are panelled in deep, rich mahogany.  Lamps light 
+the room while Madam Pince's desk sits in the middle.  Her old, walnut desk 
+is sturdy and immaculate, yet stark.  In a corner her feather duster rests 
+upon a stand.  An unadorned quill and pot of ink sit in the opposite corner. 
+ Be careful not to disturb this peevish librarian with her vulture-like 
+tendencies, for the consequences will be unpleasant.  Rows upon rows of 
+books lie beyond her desk.  Be vigilant; Madam Pince snuffs the lamps at 
+eight o'clock p.m. sharp.  
+</desc>
+    <exit>
+      <name>east</name>
+      <vnum>15510</vnum>
+    </exit>
+    <exit>
+      <name>south</name>
+      <vnum>15507</vnum>
+    </exit>
+    <roomecho>
+      <after>0</after>
+      <before>23</before>
+      <chance>4</chance>
+      <desc>An older female voice asks, &quot;Just what do you think you're doing?&quot;</desc>
+    </roomecho>
+    <sector>inside</sector>
+    <vnum>15508</vnum>
+  </room>
+  <room>
+    <name>Jamie's room</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc>This room is being written by Jamie.
+Jamie's room?  Who in the hell is Jamie?  `-tina
+</desc>
+    <editdraft>This room has four walls with one window and one door.  There is a desk 
+with a stack of books and parchment beneath the window.  
+</editdraft>
+    <exit>
+      <name>east</name>
+      <vnum>15507</vnum>
+    </exit>
+    <extradesc>
+      <desc>The desk has a faint shimmer of light dancing across the surface.  
+</desc>
+      <keywords>desk</keywords>
+    </extradesc>
+    <extradesc>
+      <desc>The light seems to hover a few inches above the desk, as though something 
+invisible were resting here.  
+</desc>
+      <keywords>light surface</keywords>
+    </extradesc>
+    <extradesc>
+      <desc>The window is closed and locked.  There are black curtains covering the 
+glass.  
+</desc>
+      <keywords>&quot;windows&quot;</keywords>
+    </extradesc>
+    <sector>inside</sector>
+    <vnum>15509</vnum>
+  </room>
+  <room>
+    <name>newbie training room</name>
+    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
+    <desc></desc>
+    <exit>
+      <name>west</name>
+      <vnum>15508</vnum>
+    </exit>
+    <sector>inside</sector>
+    <vnum>15510</vnum>
+  </room>
+  <shop></shop>
+  <special></special>
+</area>
