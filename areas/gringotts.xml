@@ -523,36 +523,6 @@ out.
     <vnum>100015</vnum>
   </room>
   <room>
-    <name></name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>down</name>
-      <vnum>100023</vnum>
-    </exit>
-    <exit>
-      <name>northwest</name>
-      <vnum>100002</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100016</vnum>
-  </room>
-  <room>
-    <name></name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>down</name>
-      <vnum>100022</vnum>
-    </exit>
-    <exit>
-      <name>northeast</name>
-      <vnum>100002</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100017</vnum>
-  </room>
-  <room>
     <name>FIRST DRAFT Stairway to Vaults</name>
     <copyright>Copyright © 2005  Joanna &lt;monkeyjane92@yahoo.com&gt;</copyright>
     <desc>The white marble no longer decorates the walls and floor in this recess in 
@@ -619,18 +589,6 @@ the east is the main lobby.
     <vnum>100019</vnum>
   </room>
   <room>
-    <name>Vault 6</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>north</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100035</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100020</vnum>
-  </room>
-  <room>
     <name>FIRST DRAFT Passage</name>
     <copyright>Copyright © 2005  Joanna &lt;monkeyjane92@yahoo.com&gt;</copyright>
     <desc>Rough grey stone creates a tight passage beneath the lobby of Gringotts.  
@@ -668,22 +626,6 @@ slanting ever so slightly as it does so.
     </roomecho>
     <sector>inside</sector>
     <vnum>100021</vnum>
-  </room>
-  <room>
-    <name></name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit></exit>
-    <sector>inside</sector>
-    <vnum>100022</vnum>
-  </room>
-  <room>
-    <name></name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit></exit>
-    <sector>inside</sector>
-    <vnum>100023</vnum>
   </room>
   <room>
     <name>Passage</name>
@@ -1173,21 +1115,6 @@ here.  To east one can exit, and to the west is the cave.
     </exit>
     <sector>inside</sector>
     <vnum>100045</vnum>
-  </room>
-  <room>
-    <name>Passage</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>east</name>
-      <vnum>100047</vnum>
-    </exit>
-    <exit>
-      <name>west</name>
-      <vnum>100043</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100046</vnum>
   </room>
   <room>
     <name>Passage</name>
@@ -1810,90 +1737,6 @@ passage.
     <vnum>100079</vnum>
   </room>
   <room>
-    <name>Vault 11</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>south</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100024</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100080</vnum>
-  </room>
-  <room>
-    <name>Vault 12</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>north</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100024</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100081</vnum>
-  </room>
-  <room>
-    <name>Vault 20</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>east</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100029</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100082</vnum>
-  </room>
-  <room>
-    <name>Vault 21</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>west</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100029</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100083</vnum>
-  </room>
-  <room>
-    <name>Vault 23</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>west</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100030</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100084</vnum>
-  </room>
-  <room>
-    <name>Vault 22</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>south</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100030</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100085</vnum>
-  </room>
-  <room>
-    <name>Vault 24</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>north</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100031</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100086</vnum>
-  </room>
-  <room>
     <name>Vault 25</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
@@ -1904,30 +1747,6 @@ passage.
     </exit>
     <sector>inside</sector>
     <vnum>100087</vnum>
-  </room>
-  <room>
-    <name>Vault 41</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>east</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100038</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100088</vnum>
-  </room>
-  <room>
-    <name>Vault 42</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>west</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100038</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100089</vnum>
   </room>
   <room>
     <name>Vault 43</name>
@@ -2002,18 +1821,6 @@ passage.
     <vnum>100095</vnum>
   </room>
   <room>
-    <name>Vault 49</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>south</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100056</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100096</vnum>
-  </room>
-  <room>
     <name>Vault 50</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
@@ -2086,30 +1893,6 @@ passage.
     <vnum>100102</vnum>
   </room>
   <room>
-    <name>Vault 55</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>east</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100059</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100103</vnum>
-  </room>
-  <room>
-    <name>Vault 58</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>south</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100060</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100104</vnum>
-  </room>
-  <room>
     <name>Vault 57</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
@@ -2120,66 +1903,6 @@ passage.
     </exit>
     <sector>inside</sector>
     <vnum>100105</vnum>
-  </room>
-  <room>
-    <name>Vault 27</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>west</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100042</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100106</vnum>
-  </room>
-  <room>
-    <name>Vault 26</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>east</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100042</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100107</vnum>
-  </room>
-  <room>
-    <name>Vault 28</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>east</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100043</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100108</vnum>
-  </room>
-  <room>
-    <name>Vault 29</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>west</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100044</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100109</vnum>
-  </room>
-  <room>
-    <name>Vault 30</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>east</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100044</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100110</vnum>
   </room>
   <room>
     <name>Vault 31</name>
@@ -2206,42 +1929,6 @@ passage.
     <vnum>100112</vnum>
   </room>
   <room>
-    <name>Vault 33</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>north</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100051</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100113</vnum>
-  </room>
-  <room>
-    <name>Vault 34</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>south</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100051</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100114</vnum>
-  </room>
-  <room>
-    <name>Vault 35</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>north</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100052</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100115</vnum>
-  </room>
-  <room>
     <name>Vault 36</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
@@ -2252,18 +1939,6 @@ passage.
     </exit>
     <sector>inside</sector>
     <vnum>100116</vnum>
-  </room>
-  <room>
-    <name>Vault 37</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>west</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100053</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100117</vnum>
   </room>
   <room>
     <name>Vault 38</name>
@@ -2300,30 +1975,6 @@ passage.
     </exit>
     <sector>inside</sector>
     <vnum>100120</vnum>
-  </room>
-  <room>
-    <name>Vault 9</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>south</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100033</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100121</vnum>
-  </room>
-  <room>
-    <name>Vault 10</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>north</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100033</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100122</vnum>
   </room>
   <room>
     <name>Vault 7</name>
@@ -2414,30 +2065,6 @@ passage.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
     <exit>
-      <name>west</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100062</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100130</vnum>
-  </room>
-  <room>
-    <name></name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>east</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100062</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100131</vnum>
-  </room>
-  <room>
-    <name></name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
       <name>south</name>
       <flags>door closed locked obvious</flags>
       <vnum>100063</vnum>
@@ -2456,18 +2083,6 @@ passage.
     </exit>
     <sector>inside</sector>
     <vnum>100133</vnum>
-  </room>
-  <room>
-    <name></name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>south</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100064</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100134</vnum>
   </room>
   <room>
     <name></name>
@@ -2510,60 +2125,12 @@ passage.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
     <exit>
-      <name>west</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100066</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100138</vnum>
-  </room>
-  <room>
-    <name></name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>east</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100066</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100139</vnum>
-  </room>
-  <room>
-    <name></name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>north</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100068</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100140</vnum>
-  </room>
-  <room>
-    <name></name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
       <name>south</name>
       <flags>door closed locked obvious</flags>
       <vnum>100068</vnum>
     </exit>
     <sector>inside</sector>
     <vnum>100141</vnum>
-  </room>
-  <room>
-    <name></name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>north</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>100070</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100142</vnum>
   </room>
   <room>
     <name></name>
@@ -5571,17 +5138,6 @@ passage.
     <vnum>100343</vnum>
   </room>
   <room>
-    <name>Vault 164</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>northwest</name>
-      <vnum>100343</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100344</vnum>
-  </room>
-  <room>
     <name>Vault 163</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
@@ -5696,17 +5252,6 @@ passage.
     </exit>
     <sector>inside</sector>
     <vnum>100352</vnum>
-  </room>
-  <room>
-    <name>Vault 168</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>southwest</name>
-      <vnum>100351</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100353</vnum>
   </room>
   <room>
     <name>Passage</name>
@@ -6315,17 +5860,6 @@ passage.
     </exit>
     <sector>inside</sector>
     <vnum>100393</vnum>
-  </room>
-  <room>
-    <name>Vault 191</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>east</name>
-      <vnum>100393</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100394</vnum>
   </room>
   <room>
     <name>Vault 192</name>
@@ -8944,17 +8478,6 @@ west, vault 279.
     <vnum>100559</vnum>
   </room>
   <room>
-    <name>Vault 277</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>east</name>
-      <vnum>100558</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100560</vnum>
-  </room>
-  <room>
     <name>Tunnel To Vaults</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
@@ -9186,17 +8709,6 @@ the vaults on this level or upward toward the main floor.
     <vnum>100573</vnum>
   </room>
   <room>
-    <name>Vault 279</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>east</name>
-      <vnum>100558</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>100574</vnum>
-  </room>
-  <room>
     <name>Sphinx Sanctum</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
@@ -9286,7 +8798,6 @@ west, vault 281.
     <sector>inside</sector>
     <vnum>100580</vnum>
   </room>
-  <rooms></rooms>
   <shop></shop>
   <special></special>
 </area>

@@ -13339,7 +13339,7 @@ doors leading in to the village pub, the Hanged Man.
     <vnum>84021</vnum>
   </room>
   <room>
-    <name>The Hanged Man Inn</name>
+    <name>** The Hanged Man Inn</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>The floor of this sparsely-lit inn lies several feet below ground level, 
 firmly nestling the snug pub into the earth.  Soft shadows wrap themselves 
@@ -13366,6 +13366,10 @@ to the east leads out to the modest garden.
       <flags>door obvious</flags>
       <key>84022</key>
       <vnum>84019</vnum>
+    </exit>
+    <exit>
+      <name>up</name>
+      <vnum>84042</vnum>
     </exit>
     <extradesc>
       <desc>The gleaming patina of the keyhole is inscribed with what appear to be 
@@ -13683,7 +13687,7 @@ and moss.  A rusted iron gate leads westward to the village.
     <vnum>84027</vnum>
   </room>
   <room>
-    <name>The Pathway through the Graveyard</name>
+    <name>** The Pathway through the Graveyard</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>The wild, unkempt, graveyard trail curls steeply southwards towards the 
 decrepit church.  Beneath a large, gnarled yew tree standing nearby, the 
@@ -13694,6 +13698,10 @@ to the earth like a disquieted spirit.  A thin, iron fence can be seen
 further down the path to the northwest.  The silhouette of a titanic, 
 abandoned house stands atop a hill in the distance.  
 </desc>
+    <exit>
+      <name>down</name>
+      <vnum>84165</vnum>
+    </exit>
     <exit>
       <name>northwest</name>
       <vnum>84027</vnum>
@@ -15748,7 +15756,7 @@ pearl-hued silken comforter.
     <vnum>84061</vnum>
   </room>
   <room>
-    <name>Village Square</name>
+    <name>** Village Square</name>
     <copyright>Copyright © 2006  Nicole &lt;nmhcat@hotmail.com&gt;</copyright>
     <desc>This area, paved with cobblestones laid in a herringbone pattern, is the 
 northwest corner of the town square.  The dark cobbles underfoot are rounded 
@@ -15762,6 +15770,10 @@ the east, shops are visible, and to the south, beyond the square and its
 bordering street, are homes.  
 </desc>
     <ekeywords>oak doorway</ekeywords>
+    <exit>
+      <name>down</name>
+      <vnum>84525</vnum>
+    </exit>
     <exit>
       <name>east</name>
       <vnum>84063</vnum>
@@ -20842,7 +20854,7 @@ thicknesses.
     <vnum>84159</vnum>
   </room>
   <room>
-    <name>Travellers Shack Garden</name>
+    <name>** Travellers Shack Garden</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Wedged behind a few gnarled oak trees and a line of scrubby brush, this 
 weed-tangled area is more of a clearing than a true garden.  A vegetable 
@@ -20856,7 +20868,7 @@ the eaves to catch runoff.  A disassembled packing crate serves as a door to
 the rickety structure.  
 </desc>
     <exit>
-      <name>east</name>
+      <name>north</name>
       <flags>door obvious</flags>
       <vnum>84161</vnum>
     </exit>
@@ -20887,7 +20899,7 @@ the rickety structure.
     <vnum>84160</vnum>
   </room>
   <room>
-    <name>Shack</name>
+    <name>** Shack</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>With a packed-earth floor and a dun canvas tarp for a roof, this structure 
 is by no means luxurious.  Walls of stacked granite depend on gravity, moss, 
@@ -20906,7 +20918,7 @@ supplement any light leaking in through the chinks and gaps.
       <vnum>84162</vnum>
     </exit>
     <exit>
-      <name>west</name>
+      <name>south</name>
       <flags>door obvious</flags>
       <vnum>84160</vnum>
     </exit>
@@ -23029,17 +23041,6 @@ supplies as does the desk I'd either keep the desk sentence simple and marry the
     <vnum>84206</vnum>
   </room>
   <room>
-    <name></name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>down</name>
-      <vnum>84049</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>84207</vnum>
-  </room>
-  <room>
     <name>Receptionist's Office</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>The most striking thing about this room is the sharpness of all the edges.  
@@ -24328,7 +24329,7 @@ indication to stay put.
     <vnum>84525</vnum>
   </room>
   <room>
-    <name>Underwater Passage</name>
+    <name>** Underwater Passage</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Turning like the abrupt curves of a crudely-carved sculpture, a passage 
 twists west and south like a gigantic, broken hand, snapped in the middle.  
@@ -24344,12 +24345,12 @@ pincer-like, delicate ends hang deceivingly-loose at their ends, like
 Venetian stilettos ready to break in a wound.  
 </desc>
     <exit>
-      <name>south</name>
-      <vnum>84524</vnum>
+      <name>northwest</name>
+      <vnum>84527</vnum>
     </exit>
     <exit>
-      <name>west</name>
-      <vnum>84527</vnum>
+      <name>south</name>
+      <vnum>84524</vnum>
     </exit>
     <flags>dark indoors</flags>
     <roomecho>
@@ -24368,7 +24369,7 @@ Venetian stilettos ready to break in a wound.
     <vnum>84526</vnum>
   </room>
   <room>
-    <name>Underwater Passage</name>
+    <name>** Underwater Passage</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Completely submerged under the cold weight of motionless water, a tunnel 
 struggles through, heading east.  The walls are jagged and all too near.  
@@ -24383,7 +24384,7 @@ glass-like surface of the water.  Unfortunately, it does not go very far,
 drowning in the black maw of the pitch-black, jagged darkness.  
 </desc>
     <exit>
-      <name>east</name>
+      <name>southeast</name>
       <vnum>84526</vnum>
     </exit>
     <exit>
@@ -24638,7 +24639,7 @@ blown glass.
     <vnum>84531</vnum>
   </room>
   <room>
-    <name>Underwater</name>
+    <name>** Underwater</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Filled with frigid water as still as death, this area is dimly lit with the 
 sickly glow of the bioluminescent coral scattered over the limestone 
@@ -24663,6 +24664,10 @@ cambered, slick cavern wall extends to the north and southeast.
     <exit>
       <name>southeast</name>
       <vnum>84182</vnum>
+    </exit>
+    <exit>
+      <name>southwest</name>
+      <vnum>84530</vnum>
     </exit>
     <exit>
       <name>up</name>

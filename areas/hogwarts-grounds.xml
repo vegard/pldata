@@ -348,7 +348,7 @@ words &quot;HAPPY BIRTHDAY!  I love you!&quot;
   </object>
   <reset></reset>
   <room>
-    <name>* Steps to Front Doors</name>
+    <name>** * Steps to Front Doors</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>A smooth, paved path tiredly stretches from the west, breaking at the feet 
 of these high, regular steps, that lead eastward into Hogwarts Castle.  The 
@@ -364,6 +364,10 @@ walls to the east have small trenches in them, dug by hundreds of years of
 rain trickling down in an inevitable fall towards the ground.  To the north 
 and northwest stretch patches of clear, green grass.  
 </desc>
+    <exit>
+      <name>east</name>
+      <vnum>1000</vnum>
+    </exit>
     <exit>
       <name>north</name>
       <vnum>2042</vnum>
@@ -1861,9 +1865,13 @@ east and southeast, while dusty grounds roll open to the west and southwest.
     <vnum>2031</vnum>
   </room>
   <room>
-    <name>LAKE DO NOT TOUCH!</name>
+    <name>** LAKE DO NOT TOUCH!</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>9000</vnum>
+    </exit>
     <exit>
       <name>south</name>
       <vnum>2150</vnum>
@@ -1884,9 +1892,17 @@ east and southeast, while dusty grounds roll open to the west and southwest.
     <vnum>2032</vnum>
   </room>
   <room>
-    <name>LAKE DO NOT TOUCH!</name>
+    <name>** ** LAKE DO NOT TOUCH!</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>9001</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>9000</vnum>
+    </exit>
     <exit>
       <name>northwest</name>
       <vnum>2032</vnum>
@@ -1911,9 +1927,17 @@ east and southeast, while dusty grounds roll open to the west and southwest.
     <vnum>2033</vnum>
   </room>
   <room>
-    <name>LAKE DO NOT TOUCH!</name>
+    <name>** ** LAKE DO NOT TOUCH!</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>9002</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
+      <vnum>9001</vnum>
+    </exit>
     <exit>
       <name>northwest</name>
       <vnum>2033</vnum>
@@ -9383,9 +9407,13 @@ which stands to the southwest.
     <vnum>2162</vnum>
   </room>
   <room>
-    <name>LAKE DO NOT TOUCH!</name>
+    <name>** LAKE DO NOT TOUCH!</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>9003</vnum>
+    </exit>
     <exit>
       <name>north</name>
       <vnum>2034</vnum>
@@ -9410,9 +9438,13 @@ which stands to the southwest.
     <vnum>2163</vnum>
   </room>
   <room>
-    <name>LAKE DO NOT TOUCH!</name>
+    <name>** LAKE DO NOT TOUCH!</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
+    <exit>
+      <name>east</name>
+      <vnum>9004</vnum>
+    </exit>
     <exit>
       <name>north</name>
       <vnum>2163</vnum>
@@ -9437,9 +9469,13 @@ which stands to the southwest.
     <vnum>2164</vnum>
   </room>
   <room>
-    <name>CLIFFS DO NOT TOUCH</name>
+    <name>** CLIFFS DO NOT TOUCH</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
+    <exit>
+      <name>down</name>
+      <vnum>9005</vnum>
+    </exit>
     <exit>
       <name>north</name>
       <vnum>2164</vnum>
@@ -9464,9 +9500,13 @@ which stands to the southwest.
     <vnum>2165</vnum>
   </room>
   <room>
-    <name>CLIFFS DO NOT TOUCH</name>
+    <name>** CLIFFS DO NOT TOUCH</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
+    <exit>
+      <name>down</name>
+      <vnum>9006</vnum>
+    </exit>
     <exit>
       <name>north</name>
       <vnum>2165</vnum>
@@ -9491,9 +9531,13 @@ which stands to the southwest.
     <vnum>2166</vnum>
   </room>
   <room>
-    <name>CLIFFS DO NOT TOUCH</name>
+    <name>** ** CLIFFS DO NOT TOUCH</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
+    <exit>
+      <name>down</name>
+      <vnum>9007</vnum>
+    </exit>
     <exit>
       <name>north</name>
       <vnum>2166</vnum>
@@ -9503,7 +9547,7 @@ which stands to the southwest.
       <vnum>2161</vnum>
     </exit>
     <exit>
-      <name>southwest</name>
+      <name>south</name>
       <vnum>2168</vnum>
     </exit>
     <exit>
@@ -9514,11 +9558,15 @@ which stands to the southwest.
     <vnum>2167</vnum>
   </room>
   <room>
-    <name>CLIFFS DO NOT TOUCH</name>
+    <name>** ** CLIFFS DO NOT TOUCH</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
     <exit>
-      <name>northeast</name>
+      <name>down</name>
+      <vnum>9008</vnum>
+    </exit>
+    <exit>
+      <name>north</name>
       <vnum>2167</vnum>
     </exit>
     <exit>
@@ -10941,7 +10989,7 @@ the dreary look of these omniscient plants.
     <vnum>2183</vnum>
   </room>
   <room>
-    <name>* Hogwarts Gates</name>
+    <name>** * Hogwarts Gates</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>An austere assembly of black, wrought iron bars, the gates at the end of the 
 path are the only entrance between Hogsmeade village to the west and the 
@@ -10964,6 +11012,10 @@ have stepped on their way to and from Hogwarts.
       <name>southeast</name>
       <vnum>2658</vnum>
     </exit>
+    <exit>
+      <name>west</name>
+      <vnum>5750</vnum>
+    </exit>
     <history>
       <date>2005-08-25 12:32:44</date>
       <person>Laine &lt;cybErdrAgOnY2K@hotmail.com&gt;</person>
@@ -10976,7 +11028,7 @@ have stepped on their way to and from Hogwarts.
     <vnum>2184</vnum>
   </room>
   <room>
-    <name>* Cliff</name>
+    <name>** * Cliff</name>
     <copyright>Copyright © 2005  Nicole &lt;nmhcat@hotmail.com&gt;</copyright>
     <desc>Perched on a strip of land between the high wall of Hogwarts Castle, to the 
 west, and a sharp drop-off, to the east, this lonely path leads south and 
@@ -10986,6 +11038,10 @@ the crumbling rock of the cliff face by erratic gusts that scour the path
 and anything on it.  A tiny, green plant clings precariously to the brink of 
 the drop.  
 </desc>
+    <exit>
+      <name>down</name>
+      <vnum>9010</vnum>
+    </exit>
     <exit>
       <name>northeast</name>
       <vnum>2186</vnum>
@@ -11014,9 +11070,13 @@ rock is still solid.
     <vnum>2185</vnum>
   </room>
   <room>
-    <name>CLIFFS DO NOT TOUCH</name>
+    <name>** CLIFFS DO NOT TOUCH</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
+    <exit>
+      <name>down</name>
+      <vnum>9009</vnum>
+    </exit>
     <exit>
       <name>north</name>
       <vnum>2168</vnum>
@@ -11050,7 +11110,7 @@ no exits here whatsoever!
     <vnum>2187</vnum>
   </room>
   <room>
-    <name>* Cliffs</name>
+    <name>** * Cliffs</name>
     <copyright>Copyright © 2005  Nicole &lt;nmhcat@hotmail.com&gt;</copyright>
     <desc>This narrow trail leads north and south, wedged up against the towering bulk 
 of Hogwarts Castle.  Nothing but the uneven, grey stone of the wall is 
@@ -11060,6 +11120,10 @@ below.  The muddy-brown rock of the cliff face has been etched by the
 scouring winds.  The creviced stone breaks up at a touch.  In one place, a 
 deep crack invades the path itself.  
 </desc>
+    <exit>
+      <name>down</name>
+      <vnum>9011</vnum>
+    </exit>
     <exit>
       <name>north</name>
       <vnum>2185</vnum>
@@ -11085,7 +11149,7 @@ clear view of the lapping ripples far below.
     <vnum>2188</vnum>
   </room>
   <room>
-    <name>* Cliffs</name>
+    <name>** * Cliffs</name>
     <copyright>Copyright © 2005  Nicole &lt;nmhcat@hotmail.com&gt;</copyright>
     <desc>The cracked ground that makes up this narrow path is damp from the moist 
 wind off the lake.  The trail runs north and south, paralleling the mossy, 
@@ -11093,6 +11157,10 @@ stone wall of Hogwarts Castle, which stands to the west.  To the east, a
 vertical face of disintegrating, brown rock drops to the shifting waters of 
 the lake, far below.  The earthy scent of wet rock pervades everything.  
 </desc>
+    <exit>
+      <name>down</name>
+      <vnum>9012</vnum>
+    </exit>
     <exit>
       <name>north</name>
       <vnum>2188</vnum>
@@ -16533,10 +16601,6 @@ the haunting image of a dying tree.
       <vnum>2564</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2663</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2563</vnum>
     </exit>
@@ -16589,10 +16653,6 @@ against the interior edge of the stands.
     <exit>
       <name>southeast</name>
       <vnum>2434</vnum>
-    </exit>
-    <exit>
-      <name>up</name>
-      <vnum>2543</vnum>
     </exit>
     <extradesc>
       <desc>This banner is old, probably dating back at least a century.  The texture is 
@@ -16679,10 +16739,6 @@ sideline continues to eastern midfield.
       <vnum>2439</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2560</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2419</vnum>
     </exit>
@@ -16748,10 +16804,6 @@ of the sandy ground.
     <exit>
       <name>southwest</name>
       <vnum>2434</vnum>
-    </exit>
-    <exit>
-      <name>up</name>
-      <vnum>2564</vnum>
     </exit>
     <exit>
       <name>west</name>
@@ -16840,10 +16892,6 @@ south, in al directions, the Quidditch Pitch playing field continues.
     <exit>
       <name>southwest</name>
       <vnum>2420</vnum>
-    </exit>
-    <exit>
-      <name>up</name>
-      <vnum>2563</vnum>
     </exit>
     <extradesc>
       <desc>The posts are eight inches in diameter.  Their rust colored paint is 
@@ -16967,10 +17015,6 @@ would make a perfect room.  No edits from me.
     <exit>
       <name>southeast</name>
       <vnum>2420</vnum>
-    </exit>
-    <exit>
-      <name>up</name>
-      <vnum>2542</vnum>
     </exit>
     <extradesc>
       <desc>This scarf is so old that it has begun to disintegrate at the edges.  A 
@@ -17373,10 +17417,6 @@ ed.  Please take a look!  `-mira
       <vnum>2438</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2570</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2421</vnum>
     </exit>
@@ -17512,10 +17552,6 @@ This yellow box can be opened only by the captain of the Hufflepuff Quidditch te
       <name>southwest</name>
       <vnum>2428</vnum>
     </exit>
-    <exit>
-      <name>up</name>
-      <vnum>2555</vnum>
-    </exit>
     <history>
       <date>2006-06-19 08:54:23</date>
       <person>Jessica Ayers &lt;slimshadylady78@hotmail.com&gt;</person>
@@ -17543,10 +17579,6 @@ This yellow box can be opened only by the captain of the Hufflepuff Quidditch te
     <exit>
       <name>southwest</name>
       <vnum>2433</vnum>
-    </exit>
-    <exit>
-      <name>up</name>
-      <vnum>2554</vnum>
     </exit>
     <exit>
       <name>west</name>
@@ -17583,10 +17615,6 @@ This yellow box can be opened only by the captain of the Hufflepuff Quidditch te
     <exit>
       <name>southwest</name>
       <vnum>2443</vnum>
-    </exit>
-    <exit>
-      <name>up</name>
-      <vnum>2553</vnum>
     </exit>
     <exit>
       <name>west</name>
@@ -17652,10 +17680,6 @@ concerns.  `-mira
     <exit>
       <name>southwest</name>
       <vnum>2442</vnum>
-    </exit>
-    <exit>
-      <name>up</name>
-      <vnum>2569</vnum>
     </exit>
     <exit>
       <name>west</name>
@@ -17727,10 +17751,6 @@ the playing field.
     <exit>
       <name>southwest</name>
       <vnum>2440</vnum>
-    </exit>
-    <exit>
-      <name>up</name>
-      <vnum>2561</vnum>
     </exit>
     <exit>
       <name>west</name>
@@ -18108,10 +18128,6 @@ Slytherin locker room.
       <vnum>2441</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2565</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2434</vnum>
     </exit>
@@ -18211,10 +18227,6 @@ unmarked by personal banners belonging to any house.
     <exit>
       <name>southeast</name>
       <vnum>2441</vnum>
-    </exit>
-    <exit>
-      <name>up</name>
-      <vnum>2544</vnum>
     </exit>
     <extradesc>
       <desc>These steps are carved in solid wood, though they have the enchanted 
@@ -18328,10 +18340,6 @@ flight of oak steps towards an upper tier.
       <name>south</name>
       <vnum>2449</vnum>
     </exit>
-    <exit>
-      <name>up</name>
-      <vnum>2545</vnum>
-    </exit>
     <extradesc>
       <desc>This carpet feels comforting to the touch, its colour a deep, endless blue.  
 Tiny, bronze scribbling appears and disappears across it, spelling either 
@@ -18428,10 +18436,6 @@ where the grass meets with the sand infront of the towering goalposts.
       <vnum>2449</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2562</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2440</vnum>
     </exit>
@@ -18512,10 +18516,6 @@ air' :) thanks so much!  `-mira
     <exit>
       <name>south</name>
       <vnum>2447</vnum>
-    </exit>
-    <exit>
-      <name>up</name>
-      <vnum>2566</vnum>
     </exit>
     <exit>
       <name>west</name>
@@ -18619,10 +18619,6 @@ pitch to the southwest, three large goal posts stand in the sand pit.)
       <vnum>2447</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2568</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2442</vnum>
     </exit>
@@ -18690,10 +18686,6 @@ A small blade of grass reads, &quot;Strong by wisdom, strong by nature.  Look cl
       <vnum>2445</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2552</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2443</vnum>
     </exit>
@@ -18728,10 +18720,6 @@ A small blade of grass reads, &quot;Strong by wisdom, strong by nature.  Look cl
     <exit>
       <name>southwest</name>
       <vnum>2480</vnum>
-    </exit>
-    <exit>
-      <name>up</name>
-      <vnum>2551</vnum>
     </exit>
     <history>
       <date>2006-06-19 08:56:00</date>
@@ -18954,10 +18942,6 @@ to the Northeast is the Northeastern Baseline Section.
       <name>southwest</name>
       <vnum>2478</vnum>
     </exit>
-    <exit>
-      <name>up</name>
-      <vnum>2567</vnum>
-    </exit>
     <extradesc>
       <desc>Each goal post stands about five to ten feet taller or shorter then the 
 others, the middle being the tallest and the eastern and western five and 
@@ -19105,10 +19089,6 @@ with protective spells so that it is nearly impossible to damage.
     <exit>
       <name>southeast</name>
       <vnum>2478</vnum>
-    </exit>
-    <exit>
-      <name>up</name>
-      <vnum>2474</vnum>
     </exit>
     <history>
       <date>2006-06-19 08:55:25</date>
@@ -20449,7 +20429,7 @@ only before a maiden's eyes.
     <vnum>2462</vnum>
   </room>
   <room>
-    <name>* Entrance to Quidditch Stadium</name>
+    <name>** * Entrance to Quidditch Stadium</name>
     <copyright>Copyright © 2006  Jessica Ayers &lt;slimshadylady78@hotmail.com&gt;</copyright>
     <desc>A majestic archway, made of beige sandstone, rises on the eastern side of 
 this area.  Beneath it, the eastern, seasonal grass of the grounds turns 
@@ -20607,7 +20587,7 @@ south, southwest, west, northwest, north, and northeast.
     <vnum>2464</vnum>
   </room>
   <room>
-    <name># Entrance to the Quidditch Stadium</name>
+    <name>** # Entrance to the Quidditch Stadium</name>
     <copyright>Copyright © 2006  Jessica Ayers &lt;slimshadylady78@hotmail.com&gt;</copyright>
     <desc>Do not touch! This is being written by Jess and Kaya.
 </desc>
@@ -20749,14 +20729,7 @@ accidentally hit his head, damaging it beyond repair.&quot;
     <vnum>2466</vnum>
   </room>
   <room>
-    <name>Unconnected Room</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <sector>field</sector>
-    <vnum>2467</vnum>
-  </room>
-  <room>
-    <name># Entrance to Quidditch Stadium</name>
+    <name>** # Entrance to Quidditch Stadium</name>
     <copyright>Copyright © 2006  Jessica Ayers &lt;slimshadylady78@hotmail.com&gt;</copyright>
     <desc>Do not touch! This is being written by Jess and Kaya.
 </desc>
@@ -21010,7 +20983,7 @@ layer of buff dust puffs up with every step.
     <vnum>2470</vnum>
   </room>
   <room>
-    <name># Entrance to Quidditch Stadium</name>
+    <name>** # Entrance to Quidditch Stadium</name>
     <copyright>Copyright © 2006  Jessica Ayers &lt;slimshadylady78@hotmail.com&gt;</copyright>
     <desc>Do not touch! This is being written by Jess and Kaya.
 </desc>
@@ -21310,10 +21283,6 @@ the latest moves performed by the players.
     <desc>Do not touch! This is for Kaya to build.
 </desc>
     <exit>
-      <name>down</name>
-      <vnum>2449</vnum>
-    </exit>
-    <exit>
       <name>east</name>
       <vnum>2533</vnum>
     </exit>
@@ -21332,10 +21301,6 @@ the latest moves performed by the players.
     <exit>
       <name>southeast</name>
       <vnum>2547</vnum>
-    </exit>
-    <exit>
-      <name>up</name>
-      <vnum>2642</vnum>
     </exit>
     <sector>hills</sector>
     <vnum>2474</vnum>
@@ -21634,10 +21599,6 @@ holds a small bead of sap, where a dead fly is encased.
       <vnum>2449</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2547</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2471</vnum>
     </exit>
@@ -21664,10 +21625,6 @@ holds a small bead of sap, where a dead fly is encased.
     <exit>
       <name>north</name>
       <vnum>2447</vnum>
-    </exit>
-    <exit>
-      <name>up</name>
-      <vnum>2548</vnum>
     </exit>
     <exit>
       <name>west</name>
@@ -21702,10 +21659,6 @@ holds a small bead of sap, where a dead fly is encased.
       <vnum>2447</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2549</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2479</vnum>
     </exit>
@@ -21719,13 +21672,6 @@ holds a small bead of sap, where a dead fly is encased.
     </history>
     <sector>hills</sector>
     <vnum>2480</vnum>
-  </room>
-  <room>
-    <name>Unconnected Room</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <sector>inside</sector>
-    <vnum>2481</vnum>
   </room>
   <room>
     <name>* Sagittarius Statue</name>
@@ -25966,10 +25912,6 @@ with small holes.  A few brown leaves still cling to the dead boughs.
       <vnum>2546</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2660</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2474</vnum>
     </exit>
@@ -25992,10 +25934,6 @@ with small holes.  A few brown leaves still cling to the dead boughs.
     <exit>
       <name>southwest</name>
       <vnum>2424</vnum>
-    </exit>
-    <exit>
-      <name>up</name>
-      <vnum>2559</vnum>
     </exit>
     <exit>
       <name>west</name>
@@ -26024,10 +25962,6 @@ with small holes.  A few brown leaves still cling to the dead boughs.
     <exit>
       <name>south</name>
       <vnum>2422</vnum>
-    </exit>
-    <exit>
-      <name>up</name>
-      <vnum>2558</vnum>
     </exit>
     <exit>
       <name>west</name>
@@ -26092,10 +26026,6 @@ with small holes.  A few brown leaves still cling to the dead boughs.
     <exit>
       <name>southwest</name>
       <vnum>2422</vnum>
-    </exit>
-    <exit>
-      <name>up</name>
-      <vnum>2557</vnum>
     </exit>
     <exit>
       <name>west</name>
@@ -26443,7 +26373,7 @@ Hogwarts Grounds of pests.
     <vnum>2540</vnum>
   </room>
   <room>
-    <name># Tier One Quidditch Stands</name>
+    <name>** ** # Tier One Quidditch Stands</name>
     <copyright>Copyright © 2008  Miranda Lehman &lt;BajaChica3@cox.net&gt;</copyright>
     <desc>Do not touch! This is for Kaya to build.
  
@@ -26467,7 +26397,7 @@ Hogwarts Grounds of pests.
     </exit>
     <exit>
       <name>up</name>
-      <vnum>2635</vnum>
+      <vnum>2572</vnum>
     </exit>
     <history>
       <date>2008-03-02 21:26:22</date>
@@ -26481,10 +26411,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Do not touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2424</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2662</vnum>
@@ -26505,10 +26431,6 @@ Hogwarts Grounds of pests.
       <name>southeast</name>
       <vnum>2560</vnum>
     </exit>
-    <exit>
-      <name>up</name>
-      <vnum>2638</vnum>
-    </exit>
     <sector>hills</sector>
     <vnum>2542</vnum>
   </room>
@@ -26517,10 +26439,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Do not touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2419</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2560</vnum>
@@ -26541,10 +26459,6 @@ Hogwarts Grounds of pests.
       <name>southeast</name>
       <vnum>2561</vnum>
     </exit>
-    <exit>
-      <name>up</name>
-      <vnum>2639</vnum>
-    </exit>
     <sector>hills</sector>
     <vnum>2543</vnum>
   </room>
@@ -26553,10 +26467,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Do not touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2439</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2561</vnum>
@@ -26577,10 +26487,6 @@ Hogwarts Grounds of pests.
       <name>southeast</name>
       <vnum>2562</vnum>
     </exit>
-    <exit>
-      <name>up</name>
-      <vnum>2640</vnum>
-    </exit>
     <sector>hills</sector>
     <vnum>2544</vnum>
   </room>
@@ -26589,10 +26495,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Do not touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2440</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2562</vnum>
@@ -26613,15 +26515,11 @@ Hogwarts Grounds of pests.
       <name>southeast</name>
       <vnum>2533</vnum>
     </exit>
-    <exit>
-      <name>up</name>
-      <vnum>2641</vnum>
-    </exit>
     <sector>hills</sector>
     <vnum>2545</vnum>
   </room>
   <room>
-    <name># Tier One Quidditch Stands</name>
+    <name>** ** # Tier One Quidditch Stands</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Do not touch! This is for Kaya to build.
 </desc>
@@ -26643,7 +26541,7 @@ Hogwarts Grounds of pests.
     </exit>
     <exit>
       <name>up</name>
-      <vnum>2643</vnum>
+      <vnum>2571</vnum>
     </exit>
     <sector>hills</sector>
     <vnum>2546</vnum>
@@ -26653,10 +26551,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Do not touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2478</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2548</vnum>
@@ -26674,10 +26568,6 @@ Hogwarts Grounds of pests.
       <vnum>2474</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2646</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2546</vnum>
     </exit>
@@ -26689,10 +26579,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Do not touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2479</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2549</vnum>
@@ -26710,10 +26596,6 @@ Hogwarts Grounds of pests.
       <vnum>2533</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2604</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2547</vnum>
     </exit>
@@ -26725,10 +26607,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Do not touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2480</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2550</vnum>
@@ -26746,10 +26624,6 @@ Hogwarts Grounds of pests.
       <vnum>2567</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2620</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2548</vnum>
     </exit>
@@ -26757,7 +26631,7 @@ Hogwarts Grounds of pests.
     <vnum>2549</vnum>
   </room>
   <room>
-    <name># Tier One Quidditch Stands</name>
+    <name>** ** # Tier One Quidditch Stands</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Do not touch! This is for Kaya to build.
 </desc>
@@ -26775,7 +26649,7 @@ Hogwarts Grounds of pests.
     </exit>
     <exit>
       <name>up</name>
-      <vnum>2621</vnum>
+      <vnum>2581</vnum>
     </exit>
     <exit>
       <name>west</name>
@@ -26789,10 +26663,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Do not touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2445</vnum>
-    </exit>
     <exit>
       <name>north</name>
       <vnum>2552</vnum>
@@ -26810,10 +26680,6 @@ Hogwarts Grounds of pests.
       <vnum>2549</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2624</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2664</vnum>
     </exit>
@@ -26825,10 +26691,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Do not touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2444</vnum>
-    </exit>
     <exit>
       <name>north</name>
       <vnum>2553</vnum>
@@ -26846,10 +26708,6 @@ Hogwarts Grounds of pests.
       <vnum>2664</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2625</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2568</vnum>
     </exit>
@@ -26861,10 +26719,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Do not touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2432</vnum>
-    </exit>
     <exit>
       <name>north</name>
       <vnum>2554</vnum>
@@ -26882,10 +26736,6 @@ Hogwarts Grounds of pests.
       <vnum>2568</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2626</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2569</vnum>
     </exit>
@@ -26897,10 +26747,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Do not touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2431</vnum>
-    </exit>
     <exit>
       <name>north</name>
       <vnum>2555</vnum>
@@ -26918,10 +26764,6 @@ Hogwarts Grounds of pests.
       <vnum>2569</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2627</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2570</vnum>
     </exit>
@@ -26933,10 +26775,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Do not touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2430</vnum>
-    </exit>
     <exit>
       <name>north</name>
       <vnum>2556</vnum>
@@ -26954,10 +26792,6 @@ Hogwarts Grounds of pests.
       <vnum>2570</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2628</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2418</vnum>
     </exit>
@@ -26965,7 +26799,7 @@ Hogwarts Grounds of pests.
     <vnum>2555</vnum>
   </room>
   <room>
-    <name># Tier One Quidditch Stands</name>
+    <name>** ** # Tier One Quidditch Stands</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Do not touch! This is for Kaya to build.
 </desc>
@@ -26983,7 +26817,7 @@ Hogwarts Grounds of pests.
     </exit>
     <exit>
       <name>up</name>
-      <vnum>2629</vnum>
+      <vnum>2587</vnum>
     </exit>
     <exit>
       <name>west</name>
@@ -26997,10 +26831,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Do not touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2536</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2556</vnum>
@@ -27018,10 +26848,6 @@ Hogwarts Grounds of pests.
       <vnum>2563</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2632</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2558</vnum>
     </exit>
@@ -27033,10 +26859,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Do not touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2535</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2557</vnum>
@@ -27054,10 +26876,6 @@ Hogwarts Grounds of pests.
       <vnum>2662</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2633</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2559</vnum>
     </exit>
@@ -27069,10 +26887,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Do not touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2534</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2558</vnum>
@@ -27090,10 +26904,6 @@ Hogwarts Grounds of pests.
       <vnum>2542</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2634</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2541</vnum>
     </exit>
@@ -27105,10 +26915,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Claimed by Melentolos and Kanru!  
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2420</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2564</vnum>
@@ -27138,10 +26944,6 @@ Hogwarts Grounds of pests.
       <vnum>2544</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2591</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2543</vnum>
     </exit>
@@ -27153,10 +26955,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Claimed by Melentolos and Kanru!
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2434</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2565</vnum>
@@ -27186,10 +26984,6 @@ Hogwarts Grounds of pests.
       <vnum>2545</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2592</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2544</vnum>
     </exit>
@@ -27201,10 +26995,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Claimed by Melentolos and Kanru!  
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2441</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2566</vnum>
@@ -27234,10 +27024,6 @@ Hogwarts Grounds of pests.
       <vnum>2474</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2593</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2545</vnum>
     </exit>
@@ -27249,10 +27035,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>claimed by J.M. and Kanru
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2422</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2418</vnum>
@@ -27282,10 +27064,6 @@ Hogwarts Grounds of pests.
       <vnum>2560</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2594</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2662</vnum>
     </exit>
@@ -27297,10 +27075,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Claimed by Melentolos and Kanru!  
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2421</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2570</vnum>
@@ -27330,10 +27104,6 @@ Hogwarts Grounds of pests.
       <vnum>2561</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2595</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2560</vnum>
     </exit>
@@ -27345,10 +27115,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Claimed by Melentolos and Kanru!  
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2438</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2569</vnum>
@@ -27378,10 +27144,6 @@ Hogwarts Grounds of pests.
       <vnum>2562</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2596</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2561</vnum>
     </exit>
@@ -27393,10 +27155,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Claimed by Melentolos and Kanru!  
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2442</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2568</vnum>
@@ -27426,10 +27184,6 @@ Hogwarts Grounds of pests.
       <vnum>2533</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2599</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2562</vnum>
     </exit>
@@ -27441,10 +27195,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>claimed by J.M. and Kanru
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2447</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2664</vnum>
@@ -27474,10 +27224,6 @@ Hogwarts Grounds of pests.
       <vnum>2547</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2600</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2533</vnum>
     </exit>
@@ -27489,10 +27235,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Claimed by Melentolos and Kanru!  
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2443</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2552</vnum>
@@ -27522,10 +27264,6 @@ Hogwarts Grounds of pests.
       <vnum>2567</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2603</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2566</vnum>
     </exit>
@@ -27537,10 +27275,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Claimed by Melentolos and Kanru!  
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2433</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2553</vnum>
@@ -27570,10 +27304,6 @@ Hogwarts Grounds of pests.
       <vnum>2566</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2602</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2565</vnum>
     </exit>
@@ -27585,10 +27315,6 @@ Hogwarts Grounds of pests.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>claimed by Kanru and J.M
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2428</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2554</vnum>
@@ -27618,10 +27344,6 @@ Hogwarts Grounds of pests.
       <vnum>2565</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2601</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2564</vnum>
     </exit>
@@ -27629,10 +27351,14 @@ Hogwarts Grounds of pests.
     <vnum>2570</vnum>
   </room>
   <room>
-    <name>DON'T TOUCH Above Tier One Quidditch Stands</name>
+    <name>** DON'T TOUCH Above Tier One Quidditch Stands</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>claimed by J.M. and Kanru
 </desc>
+    <exit>
+      <name>down</name>
+      <vnum>2546</vnum>
+    </exit>
     <exit>
       <name>east</name>
       <vnum>2578</vnum>
@@ -27640,10 +27366,6 @@ Hogwarts Grounds of pests.
     <exit>
       <name>north</name>
       <vnum>2577</vnum>
-    </exit>
-    <exit>
-      <name>northeast</name>
-      <vnum>2660</vnum>
     </exit>
     <exit>
       <name>northwest</name>
@@ -27669,10 +27391,14 @@ Hogwarts Grounds of pests.
     <vnum>2571</vnum>
   </room>
   <room>
-    <name>DON'T TOUCH Above Tier One Quidditch Stands</name>
+    <name>** DON'T TOUCH Above Tier One Quidditch Stands</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Claimed by Kanru and Melentolos
 </desc>
+    <exit>
+      <name>down</name>
+      <vnum>2541</vnum>
+    </exit>
     <exit>
       <name>east</name>
       <vnum>2590</vnum>
@@ -27922,10 +27648,6 @@ Hogwarts Grounds of pests.
       <vnum>2660</vnum>
     </exit>
     <exit>
-      <name>northeast</name>
-      <vnum>2600</vnum>
-    </exit>
-    <exit>
       <name>northwest</name>
       <vnum>2577</vnum>
     </exit>
@@ -28029,10 +27751,14 @@ Hogwarts Grounds of pests.
     <vnum>2580</vnum>
   </room>
   <room>
-    <name>DON'T TOUCH Above Tier One Quidditch Stands</name>
+    <name>** DON'T TOUCH Above Tier One Quidditch Stands</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>claimed by J.M. and Kanru
 </desc>
+    <exit>
+      <name>down</name>
+      <vnum>2550</vnum>
+    </exit>
     <exit>
       <name>east</name>
       <vnum>2623</vnum>
@@ -28271,10 +27997,14 @@ w
     <vnum>2586</vnum>
   </room>
   <room>
-    <name>DON'T TOUCH Above Tier One Quidditch Stands</name>
+    <name>** DON'T TOUCH Above Tier One Quidditch Stands</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>claimed by Melentolos and Kanru.
 </desc>
+    <exit>
+      <name>down</name>
+      <vnum>2556</vnum>
+    </exit>
     <exit>
       <name>east</name>
       <vnum>2629</vnum>
@@ -28436,10 +28166,6 @@ e
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
     <exit>
-      <name>down</name>
-      <vnum>2560</vnum>
-    </exit>
-    <exit>
       <name>east</name>
       <vnum>2595</vnum>
     </exit>
@@ -28481,10 +28207,6 @@ e
 w
 </desc>
     <exit>
-      <name>down</name>
-      <vnum>2561</vnum>
-    </exit>
-    <exit>
       <name>east</name>
       <vnum>2596</vnum>
     </exit>
@@ -28524,10 +28246,6 @@ w
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>claimed by J.M. and Kanru
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2562</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2599</vnum>
@@ -28569,10 +28287,6 @@ w
     <desc>claimed by Melentolos and Kanru
 </desc>
     <exit>
-      <name>down</name>
-      <vnum>2563</vnum>
-    </exit>
-    <exit>
       <name>east</name>
       <vnum>2663</vnum>
     </exit>
@@ -28612,10 +28326,6 @@ w
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>claimed by J.M. and Kanru
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2564</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2601</vnum>
@@ -28657,10 +28367,6 @@ w
     <desc>claimed by J.M. and Kanru
 </desc>
     <exit>
-      <name>down</name>
-      <vnum>2565</vnum>
-    </exit>
-    <exit>
       <name>east</name>
       <vnum>2602</vnum>
     </exit>
@@ -28696,32 +28402,10 @@ w
     <vnum>2596</vnum>
   </room>
   <room>
-    <name></name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <exit>
-      <name>down</name>
-      <vnum>2566</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>2597</vnum>
-  </room>
-  <room>
-    <name>Unconnected Room</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <sector>inside</sector>
-    <vnum>2598</vnum>
-  </room>
-  <room>
     <name>DON'T TOUCH Above Tier One Quidditch Stands</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Claimed by Kanru and J.  M.  
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2566</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2603</vnum>
@@ -28763,10 +28447,6 @@ w
     <desc>Being edited by Jack Melentolos.
 </desc>
     <exit>
-      <name>down</name>
-      <vnum>2567</vnum>
-    </exit>
-    <exit>
       <name>east</name>
       <vnum>2661</vnum>
     </exit>
@@ -28791,10 +28471,6 @@ w
       <vnum>2580</vnum>
     </exit>
     <exit>
-      <name>southwest</name>
-      <vnum>2580</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2660</vnum>
     </exit>
@@ -28806,10 +28482,6 @@ w
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>claimed by J.M. and Kanru
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2570</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2585</vnum>
@@ -28850,10 +28522,6 @@ w
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>claimed by J.M. and Kanru
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2569</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2584</vnum>
@@ -28896,10 +28564,6 @@ w
 e
 </desc>
     <exit>
-      <name>down</name>
-      <vnum>2568</vnum>
-    </exit>
-    <exit>
       <name>east</name>
       <vnum>2583</vnum>
     </exit>
@@ -28939,10 +28603,6 @@ e
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Don't touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2548</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2620</vnum>
@@ -29155,10 +28815,6 @@ and below by intricate webs of branches and roots.
     <desc>Don't touch! This is for Kaya to build.
 </desc>
     <exit>
-      <name>down</name>
-      <vnum>2549</vnum>
-    </exit>
-    <exit>
       <name>east</name>
       <vnum>2621</vnum>
     </exit>
@@ -29186,10 +28842,6 @@ and below by intricate webs of branches and roots.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Don't touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2550</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2622</vnum>
@@ -29267,10 +28919,6 @@ and below by intricate webs of branches and roots.
     <desc>Don't touch! This is for Kaya to build.
 </desc>
     <exit>
-      <name>down</name>
-      <vnum>2551</vnum>
-    </exit>
-    <exit>
       <name>north</name>
       <vnum>2625</vnum>
     </exit>
@@ -29299,10 +28947,6 @@ and below by intricate webs of branches and roots.
     <desc>Don't touch! This is for Kaya to build.
 </desc>
     <exit>
-      <name>down</name>
-      <vnum>2552</vnum>
-    </exit>
-    <exit>
       <name>northwest</name>
       <vnum>2584</vnum>
     </exit>
@@ -29327,10 +28971,6 @@ and below by intricate webs of branches and roots.
     <desc>CLAIMED BY KANRU 
 </desc>
     <exit>
-      <name>down</name>
-      <vnum>2553</vnum>
-    </exit>
-    <exit>
       <name>northwest</name>
       <vnum>2585</vnum>
     </exit>
@@ -29350,10 +28990,6 @@ and below by intricate webs of branches and roots.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Don't touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2554</vnum>
-    </exit>
     <exit>
       <name>north</name>
       <vnum>2628</vnum>
@@ -29378,10 +29014,6 @@ and below by intricate webs of branches and roots.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Don't touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2555</vnum>
-    </exit>
     <exit>
       <name>north</name>
       <vnum>2629</vnum>
@@ -29410,10 +29042,6 @@ and below by intricate webs of branches and roots.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Don't touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2556</vnum>
-    </exit>
     <exit>
       <name>north</name>
       <vnum>2630</vnum>
@@ -29491,10 +29119,6 @@ and below by intricate webs of branches and roots.
     <desc>Don't touch! This is for Kaya to build.
 </desc>
     <exit>
-      <name>down</name>
-      <vnum>2557</vnum>
-    </exit>
-    <exit>
       <name>east</name>
       <vnum>2631</vnum>
     </exit>
@@ -29522,10 +29146,6 @@ and below by intricate webs of branches and roots.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Don't touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2558</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2632</vnum>
@@ -29555,10 +29175,6 @@ and below by intricate webs of branches and roots.
     <desc>Don't touch! This is for Kaya to build.
 </desc>
     <exit>
-      <name>down</name>
-      <vnum>2559</vnum>
-    </exit>
-    <exit>
       <name>east</name>
       <vnum>2633</vnum>
     </exit>
@@ -29586,10 +29202,6 @@ and below by intricate webs of branches and roots.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Don't touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2541</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2634</vnum>
@@ -29667,10 +29279,6 @@ and below by intricate webs of branches and roots.
     <desc>Don't touch! This is for Kaya to build.
 </desc>
     <exit>
-      <name>down</name>
-      <vnum>2542</vnum>
-    </exit>
-    <exit>
       <name>east</name>
       <vnum>2573</vnum>
     </exit>
@@ -29698,10 +29306,6 @@ and below by intricate webs of branches and roots.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Don't touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2543</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2574</vnum>
@@ -29731,10 +29335,6 @@ and below by intricate webs of branches and roots.
     <desc>Don't touch! This is for Kaya to build.
 </desc>
     <exit>
-      <name>down</name>
-      <vnum>2544</vnum>
-    </exit>
-    <exit>
       <name>east</name>
       <vnum>2575</vnum>
     </exit>
@@ -29762,10 +29362,6 @@ and below by intricate webs of branches and roots.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Don't touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2545</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2576</vnum>
@@ -29795,10 +29391,6 @@ and below by intricate webs of branches and roots.
     <desc>Don't touch! This is for Kaya to build.
 </desc>
     <exit>
-      <name>down</name>
-      <vnum>2474</vnum>
-    </exit>
-    <exit>
       <name>east</name>
       <vnum>2577</vnum>
     </exit>
@@ -29826,10 +29418,6 @@ and below by intricate webs of branches and roots.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Don't touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2546</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2571</vnum>
@@ -29906,10 +29494,6 @@ and below by intricate webs of branches and roots.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Don't touch! This is for Kaya to build.
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2547</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2604</vnum>
@@ -31212,10 +30796,6 @@ is northeast and the wall continues to the south.
     <desc>claimed by melentolos and Kanru
 </desc>
     <exit>
-      <name>down</name>
-      <vnum>2662</vnum>
-    </exit>
-    <exit>
       <name>east</name>
       <vnum>2594</vnum>
     </exit>
@@ -31256,10 +30836,6 @@ is northeast and the wall continues to the south.
     <desc>claimed by J.M. and Kanru
 </desc>
     <exit>
-      <name>down</name>
-      <vnum>2533</vnum>
-    </exit>
-    <exit>
       <name>east</name>
       <vnum>2600</vnum>
     </exit>
@@ -31284,10 +30860,6 @@ is northeast and the wall continues to the south.
       <vnum>2579</vnum>
     </exit>
     <exit>
-      <name>southwest</name>
-      <vnum>2579</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2577</vnum>
     </exit>
@@ -31299,10 +30871,6 @@ is northeast and the wall continues to the south.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>claimed by J.M. and Kanru
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2664</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2582</vnum>
@@ -31372,10 +30940,6 @@ is northeast and the wall continues to the south.
       <vnum>2543</vnum>
     </exit>
     <exit>
-      <name>up</name>
-      <vnum>2659</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>2542</vnum>
     </exit>
@@ -31387,10 +30951,6 @@ is northeast and the wall continues to the south.
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>claimed by Melentolos and Kanru
 </desc>
-    <exit>
-      <name>down</name>
-      <vnum>2418</vnum>
-    </exit>
     <exit>
       <name>east</name>
       <vnum>2586</vnum>
@@ -31458,10 +31018,6 @@ is northeast and the wall continues to the south.
     <exit>
       <name>southwest</name>
       <vnum>2548</vnum>
-    </exit>
-    <exit>
-      <name>up</name>
-      <vnum>2661</vnum>
     </exit>
     <exit>
       <name>west</name>
@@ -37571,13 +37127,6 @@ Hogwarts Lake spreads east and south.
     <vnum>2741</vnum>
   </room>
   <room>
-    <name>Unconnected Room</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <sector>inside</sector>
-    <vnum>2742</vnum>
-  </room>
-  <room>
     <name>* Divination Fountain</name>
     <copyright>Copyright © 2006  Carole Vaudry &lt;Vaudry2@hotmail.com&gt;</copyright>
     <desc>A basin occupies most of the patch leaving room for only three stepstones 
@@ -40814,13 +40363,6 @@ The flower is a very light pink, almost like the a picture found on a Valentine'
     </history>
     <sector>field</sector>
     <vnum>2780</vnum>
-  </room>
-  <room>
-    <name>Unconnected Room</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <sector>inside</sector>
-    <vnum>2781</vnum>
   </room>
   <room>
     <name>* Rose Garden</name>
@@ -44815,13 +44357,6 @@ written &quot;Aquarius, the Water-Bearer&quot;.
     </roomecho>
     <sector>field</sector>
     <vnum>2825</vnum>
-  </room>
-  <room>
-    <name>Unconnected Room</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <sector>inside</sector>
-    <vnum>2826</vnum>
   </room>
   <room>
     <name>* Twiggy Bushes</name>

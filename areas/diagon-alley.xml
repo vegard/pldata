@@ -7057,11 +7057,6 @@ Fortescue's ice cream shop is visible.
       <vnum>5055</vnum>
     </exit>
     <exit>
-      <name>northwest</name>
-      <flags>door obvious</flags>
-      <vnum>5015</vnum>
-    </exit>
-    <exit>
       <name>south</name>
       <flags>door obvious</flags>
       <vnum>5016</vnum>
@@ -7080,66 +7075,6 @@ Fortescue's ice cream shop is visible.
     </history>
     <sector>city</sector>
     <vnum>5014</vnum>
-  </room>
-  <room>
-    <name>Magical Menagerie</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc>Upon entering this cluttered shop, the atmosphere explodes in a loud and 
-frantic screeching, cawing, and growling of magical beasts.  On the west 
-wall, tanks filled with aquatic creatures - turtles with jeweled shells, 
-singing fish, and constantly inflating and deflating frogs taking up the 
-majority - are stacked upon one another.  Cages holding other 
-curious-looking creatures are scattered around the room.  Colourful birds 
-swoop around the room, every once in a while landing on the small, wooden, 
-cashier's desk.  To the south is the door leading out onto the streets of 
-Diagon Alley.  
-</desc>
-    <ekeywords>door</ekeywords>
-    <exit>
-      <name>north</name>
-      <flags>door closed locked</flags>
-      <vnum>5130</vnum>
-    </exit>
-    <exit>
-      <name>southeast</name>
-      <flags>door obvious</flags>
-      <vnum>5014</vnum>
-    </exit>
-    <flags>indoors</flags>
-    <history>
-      <date>2004-10-10 01:49:59</date>
-      <person>Amnar &lt;brikwars@yahoo.com&gt;</person>
-    </history>
-    <history>
-      <date>2004-10-11 20:53:48</date>
-      <person>Amnar &lt;brikwars@yahoo.com&gt;</person>
-    </history>
-    <history>
-      <date>2006-03-04 23:20:23</date>
-      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
-    </history>
-    <history>
-      <date>2006-03-04 23:52:17</date>
-      <person>Tina Halford &lt;calliopeismusing@hotmail.com&gt;</person>
-    </history>
-    <history>
-      <date>2006-03-09 14:42:01</date>
-      <person>Cristina Onete &lt;onetecristina@hotmail.com&gt;</person>
-    </history>
-    <roomecho>
-      <after>1</after>
-      <before>23</before>
-      <chance>2</chance>
-      <desc>A loud, unenthusiastic, loud sigh penetrates the cacophony of sounds, though it is impossible to say which creature is responsible for it.</desc>
-    </roomecho>
-    <roomecho>
-      <after>1</after>
-      <before>23</before>
-      <chance>2</chance>
-      <desc>A few, small, colourful birds screech at each other aggressively.</desc>
-    </roomecho>
-    <sector>inside</sector>
-    <vnum>5015</vnum>
   </room>
   <room>
     <name>Florean Fortescue's Ice-Cream Parlour - Terrace</name>
@@ -7257,7 +7192,7 @@ Spider Legs. To the west is a small door leading to a back door labled,
     <vnum>5017</vnum>
   </room>
   <room>
-    <name>Diagon Alley - A Turn in the Road</name>
+    <name>** Diagon Alley - A Turn in the Road</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Diagon Alley spills off into every direction here.  The cobblestone main 
 road continues east and southwest, curving to the west soon after the bend.  
@@ -7275,11 +7210,6 @@ in delicate ruby-red writing, &quot;Lady Gemma's Fine Jewelry&quot;.
     </exit>
     <exit>
       <name>north</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>5098</vnum>
-    </exit>
-    <exit>
-      <name>northwest</name>
       <vnum>5094</vnum>
     </exit>
     <exit>
@@ -7290,11 +7220,6 @@ in delicate ruby-red writing, &quot;Lady Gemma's Fine Jewelry&quot;.
     <exit>
       <name>southwest</name>
       <vnum>5019</vnum>
-    </exit>
-    <exit>
-      <name>west</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>5101</vnum>
     </exit>
     <history>
       <date>2004-11-29 21:11:48</date>
@@ -7328,7 +7253,7 @@ in delicate ruby-red writing, &quot;Lady Gemma's Fine Jewelry&quot;.
     <vnum>5018</vnum>
   </room>
   <room>
-    <name>Diagon Alley - Outside SandWitches</name>
+    <name>** Diagon Alley - Outside SandWitches</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>The well-treaded path widens as the grander stores of Diagon Alley approach. 
  Although there are no weeds growing in the crack between the cobblestones, 
@@ -7347,11 +7272,6 @@ ways.
 </desc>
     <ekeywords>door</ekeywords>
     <exit>
-      <name>east</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>5102</vnum>
-    </exit>
-    <exit>
       <name>north</name>
       <flags>door obvious</flags>
       <vnum>5020</vnum>
@@ -7364,6 +7284,11 @@ ways.
       <name>south</name>
       <flags>door closed locked obvious</flags>
       <vnum>5103</vnum>
+    </exit>
+    <exit>
+      <name>southeast</name>
+      <flags>door closed locked obvious</flags>
+      <vnum>5102</vnum>
     </exit>
     <exit>
       <name>west</name>
@@ -8154,7 +8079,7 @@ west.
     <vnum>5028</vnum>
   </room>
   <room>
-    <name>The Beastiary</name>
+    <name>** The Beastiary</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Within the dingy, cacophonous main room, the smell of rank, unkempt animals 
 hangs like a fog in the thick air.  A small lantern dangles in the centre of 
@@ -8170,7 +8095,7 @@ the northeast allows access to the storeroom.
 </desc>
     <ekeywords>door</ekeywords>
     <exit>
-      <name>northeast</name>
+      <name>north</name>
       <flags>door closed</flags>
       <vnum>5087</vnum>
     </exit>
@@ -9061,11 +8986,6 @@ the coal huddles the source of the excruciating light: a salamander.
       <name>southwest</name>
       <vnum>5039</vnum>
     </exit>
-    <exit>
-      <name>west</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>5117</vnum>
-    </exit>
     <history>
       <date>2005-09-10 21:35:02</date>
       <person>Amnar &lt;brikwars@yahoo.com&gt;</person>
@@ -9286,7 +9206,7 @@ giving off energy.  Diagon Alley cheerfully goes on east and west.
     <vnum>5042</vnum>
   </room>
   <room>
-    <name>The Daily Prophet - Rotunda - Main Floor</name>
+    <name>** The Daily Prophet - Rotunda - Main Floor</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>This room's grandeur matches that of Gringotts.  The deep green marble walls 
 seem to stretch up forever, the soaring ceiling held up by massive pillars.  
@@ -9305,7 +9225,7 @@ different directions here on the first floor, to the west a door says,
 </desc>
     <ekeywords>door</ekeywords>
     <exit>
-      <name>east</name>
+      <name>north</name>
       <flags>door closed locked</flags>
       <key>5230</key>
       <vnum>5499</vnum>
@@ -9755,7 +9675,7 @@ largest box declares it contains 'ThunderToes - Size 762'.
     <vnum>5050</vnum>
   </room>
   <room>
-    <name>Gringotts - Inner Doors</name>
+    <name>** Gringotts - Inner Doors</name>
     <copyright>Copyright © 2005  Joanna &lt;monkeyjane92@yahoo.com&gt;</copyright>
     <desc>Past the burnished, bronze, entrance doors is another set of doors, these 
 made of highly polished silver.  A rhyme is engraved with curly writing upon 
@@ -9766,6 +9686,10 @@ silver doors, is the main chamber of Gringotts.  To the south are the
 Gringotts steps.  
 </desc>
     <ekeywords>door</ekeywords>
+    <exit>
+      <name>north</name>
+      <vnum>100000</vnum>
+    </exit>
     <exit>
       <name>south</name>
       <flags>door closed locked obvious</flags>
@@ -9840,7 +9764,7 @@ Of finding more than treasure there.&quot;
     <vnum>5054</vnum>
   </room>
   <room>
-    <name>Madam Malkin's Robes for All Occasion</name>
+    <name>** Madam Malkin's Robes for All Occasion</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>The shop front of Madam Malkin's is very neat, albeit a bit dusty.  West of 
 the front door is an old, antique desk of mahogany, presumably to match the 
@@ -9851,7 +9775,7 @@ squat stools and three gilded mirrors reflecting them.
 </desc>
     <ekeywords>door</ekeywords>
     <exit>
-      <name>northwest</name>
+      <name>north</name>
       <flags>door closed locked</flags>
       <vnum>5130</vnum>
     </exit>
@@ -10063,18 +9987,6 @@ it. Behind it is a grungy cashier and a stand selling owl treats.
     </history>
     <sector>inside</sector>
     <vnum>5059</vnum>
-  </room>
-  <room>
-    <name>Eeylops stock room</name>
-    <copyright>Copyright © 2004  Amnar &lt;brikwars@yahoo.com&gt;</copyright>
-    <desc></desc>
-    <flags>no_mob law noscry</flags>
-    <history>
-      <date>2004-06-27 00:17:38</date>
-      <person>Amnar &lt;brikwars@yahoo.com&gt;</person>
-    </history>
-    <sector>inside</sector>
-    <vnum>5060</vnum>
   </room>
   <room>
     <name>Knockturn Alley Sewers</name>
@@ -10337,14 +10249,6 @@ friendly vines caressing its surface.
     </history>
     <sector>inside</sector>
     <vnum>5064</vnum>
-  </room>
-  <room>
-    <name>Magical Menagerie - Storeroom</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <flags>no_mob imm_only law noscry</flags>
-    <sector>inside</sector>
-    <vnum>5065</vnum>
   </room>
   <room>
     <name>Merenda Cafe - Interior</name>
@@ -10836,7 +10740,7 @@ lighting stretching over this entryway.
     <vnum>5077</vnum>
   </room>
   <room>
-    <name>Sewer Under Zambrovski's Yard</name>
+    <name>** Sewer Under Zambrovski's Yard</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>This brick-walled tunnel connects to a vertical shaft, not unlike a well.  
 Embedded in the shaft's walls are discoloured, iron bars, textured with 
@@ -10849,6 +10753,10 @@ vacillating shadows merge with a deeper darkness.
     <exit>
       <name>east</name>
       <vnum>5062</vnum>
+    </exit>
+    <exit>
+      <name>up</name>
+      <vnum>5079</vnum>
     </exit>
     <extradesc>
       <desc>A patina has formed upon the bars.  The crosses, once crimson in colour, slough off the shafts like flecks of bloody snow.
@@ -11032,13 +10940,6 @@ hieroglyph or territorial marking that claims possession of this space.
     </roomecho>
     <sector>inside</sector>
     <vnum>5081</vnum>
-  </room>
-  <room>
-    <name></name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <sector>inside</sector>
-    <vnum>5082</vnum>
   </room>
   <room>
     <name>Knockturn Alley Sewers</name>
@@ -11280,7 +11181,7 @@ hole.
     <vnum>5086</vnum>
   </room>
   <room>
-    <name>The Beastiary's Storeroom</name>
+    <name>** The Beastiary's Storeroom</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>This stone-floored storeroom smells strongly of musk and ammonia.  A dim, 
 smoky lantern hangs from the centre of the ceiling.  Cramped shelves cover 
@@ -11292,7 +11193,7 @@ wooden trapdoor lies in the middle of the room.
 </desc>
     <ekeywords>door</ekeywords>
     <exit>
-      <name>southwest</name>
+      <name>south</name>
       <flags>door closed</flags>
       <vnum>5029</vnum>
     </exit>
@@ -11530,7 +11431,7 @@ north, and the stairway back to the Cauldron's pub is to the south.
     <vnum>5093</vnum>
   </room>
   <room>
-    <name>Diagon Alley - Back Alley</name>
+    <name>** Diagon Alley - Back Alley</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>The pale cobblestone of Diagon Alley splinters off into a deteriorated back 
 alley here.  Bordered by walls and buildings, the path is in disrepair, not 
@@ -11549,7 +11450,7 @@ commerce.
       <vnum>5355</vnum>
     </exit>
     <exit>
-      <name>southeast</name>
+      <name>south</name>
       <vnum>5018</vnum>
     </exit>
     <exit>
@@ -11824,30 +11725,6 @@ contributes to give this shop a bright and modern atmosphere.
     <vnum>5097</vnum>
   </room>
   <room>
-    <name>a vacant shop front</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <ekeywords>door</ekeywords>
-    <exit>
-      <name>down</name>
-      <flags>door closed locked</flags>
-      <vnum>5503</vnum>
-    </exit>
-    <exit>
-      <name>north</name>
-      <flags>door closed locked</flags>
-      <vnum>5356</vnum>
-    </exit>
-    <exit>
-      <name>south</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>5018</vnum>
-    </exit>
-    <flags>indoors</flags>
-    <sector>inside</sector>
-    <vnum>5098</vnum>
-  </room>
-  <room>
     <name>Lady Gemma's Fine Jewellery for the Mystical</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>Soft, multi-coloured gleams dance across the entire surface of the room, 
@@ -12063,25 +11940,12 @@ the door back to Diagon Alley.  To the north lies an alley.
     <vnum>5100</vnum>
   </room>
   <room>
-    <name>a vacant shop</name>
+    <name>** a vacant shop</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
     <ekeywords>door</ekeywords>
     <exit>
-      <name>east</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>5018</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>5101</vnum>
-  </room>
-  <room>
-    <name>a vacant shop</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <ekeywords>door</ekeywords>
-    <exit>
-      <name>west</name>
+      <name>northwest</name>
       <flags>door closed locked obvious</flags>
       <vnum>5019</vnum>
     </exit>
@@ -13101,19 +12965,6 @@ quarters lie to the southeast and the reception area is to the west.
     <desc></desc>
     <ekeywords>door</ekeywords>
     <exit>
-      <name>east</name>
-      <flags>door closed locked obvious</flags>
-      <vnum>5037</vnum>
-    </exit>
-    <sector>inside</sector>
-    <vnum>5117</vnum>
-  </room>
-  <room>
-    <name>a vacant shop</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <ekeywords>door</ekeywords>
-    <exit>
       <name>north</name>
       <flags>door closed locked obvious</flags>
       <vnum>5063</vnum>
@@ -13262,10 +13113,6 @@ London Eye.
       <name>down</name>
       <vnum>5123</vnum>
     </exit>
-    <exit>
-      <name>south</name>
-      <vnum>5125</vnum>
-    </exit>
     <history>
       <date>2004-11-23 13:56:54</date>
       <person>Amnar &lt;brikwars@yahoo.com&gt;</person>
@@ -13288,10 +13135,6 @@ the stair treads.
       <name>down</name>
       <flags>door closed locked infuriating obvious</flags>
       <vnum>5049</vnum>
-    </exit>
-    <exit>
-      <name>north</name>
-      <vnum>5124</vnum>
     </exit>
     <extradesc>
       <desc>Stubs of branches still protrude here and there from the wooden steps, 
@@ -13487,7 +13330,7 @@ Flourish &amp; Blott's.
     <vnum>5129</vnum>
   </room>
   <room>
-    <name>Diagon Alley - Back Alley - Behind Madam Malkins</name>
+    <name>** ** ** Diagon Alley - Back Alley - Behind Madam Malkins</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>The milled alleyway continues here, behind more shops.  To the southeast, a 
 wooden door set in an old building has a curly sign next to the door 
@@ -13506,22 +13349,17 @@ horribly rusted.  The path continues to the east and west, dusty and dirty.
     </exit>
     <exit>
       <name>north</name>
+      <vnum>5356</vnum>
+    </exit>
+    <exit>
+      <name>northeast</name>
       <flags>door closed locked easy</flags>
       <vnum>5504</vnum>
     </exit>
     <exit>
       <name>south</name>
       <flags>door closed locked</flags>
-      <vnum>5015</vnum>
-    </exit>
-    <exit>
-      <name>southeast</name>
-      <flags>door closed locked</flags>
       <vnum>5055</vnum>
-    </exit>
-    <exit>
-      <name>west</name>
-      <vnum>5356</vnum>
     </exit>
     <history>
       <date>2005-07-06 22:44:41</date>
@@ -13585,7 +13423,7 @@ is going back up the stairs.
     <vnum>5131</vnum>
   </room>
   <room>
-    <name>Inside the Condemned Building</name>
+    <name>** Inside the Condemned Building</name>
     <copyright>Copyright © 2004  Amnar &lt;brikwars@yahoo.com&gt;</copyright>
     <desc>This small cramped room is only big enough for two people to stand in. There 
 is no lights from any direction except the light beams filtering in around 
@@ -13598,7 +13436,7 @@ the door's edges.
       <vnum>5131</vnum>
     </exit>
     <exit>
-      <name>north</name>
+      <name>west</name>
       <vnum>5133</vnum>
     </exit>
     <flags>dark indoors nofly</flags>
@@ -13620,18 +13458,18 @@ the door's edges.
     <vnum>5132</vnum>
   </room>
   <room>
-    <name>Condemned Building - Pitch Black Corridor</name>
+    <name>** Condemned Building - Pitch Black Corridor</name>
     <copyright>Copyright © 2004  Amnar &lt;brikwars@yahoo.com&gt;</copyright>
     <desc>The cramped hallway is still pitch black with no lights. The wall to the 
 east is blocked off, but to the west, a dark opening opens up. 
 </desc>
     <exit>
-      <name>north</name>
-      <vnum>5135</vnum>
+      <name>east</name>
+      <vnum>5132</vnum>
     </exit>
     <exit>
-      <name>south</name>
-      <vnum>5132</vnum>
+      <name>north</name>
+      <vnum>5135</vnum>
     </exit>
     <exit>
       <name>west</name>
@@ -14487,7 +14325,7 @@ down to the reception area.
     <vnum>5150</vnum>
   </room>
   <room>
-    <name>Hotel landing</name>
+    <name>** ** ** Hotel landing</name>
     <copyright>Copyright © 2005  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
     <desc>The floor of the landing is covered with sumptuous, eggplant-coloured 
 carpeting with the symbol of the Witch's Ladder running down the length of 
@@ -14505,17 +14343,17 @@ the west.
       <vnum>5156</vnum>
     </exit>
     <exit>
-      <name>south</name>
+      <name>north</name>
       <flags>door closed</flags>
       <vnum>5155</vnum>
     </exit>
     <exit>
-      <name>southeast</name>
+      <name>northeast</name>
       <flags>door closed</flags>
       <vnum>5161</vnum>
     </exit>
     <exit>
-      <name>southwest</name>
+      <name>northwest</name>
       <flags>door closed</flags>
       <vnum>5162</vnum>
     </exit>
@@ -14667,7 +14505,7 @@ sheen.  The exit is through the door to the east.
     <vnum>5154</vnum>
   </room>
   <room>
-    <name>Warm Tomorrow</name>
+    <name>** Warm Tomorrow</name>
     <copyright>Copyright © 2005  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
     <desc>The room is warm in both calefaction and ambiance; the aroma of roasted 
 chestnuts lingers in the room.  The walls and ceiling are covered in burnt 
@@ -14679,7 +14517,7 @@ an ivory side table.  The exit is through the alder door to the north.
 </desc>
     <ekeywords>door</ekeywords>
     <exit>
-      <name>north</name>
+      <name>south</name>
       <flags>door closed</flags>
       <vnum>5151</vnum>
     </exit>
@@ -14981,7 +14819,7 @@ south allows access into the Sanctuary of Slumber.
     <vnum>5160</vnum>
   </room>
   <room>
-    <name>The Velveteen Room</name>
+    <name>** The Velveteen Room</name>
     <copyright>Copyright © 2005  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
     <desc>Black velvet drapes from the ceiling and across the walls.  A silver 
 chandelier, clasping golden tapers, emits a honeyed hue that plays with the 
@@ -14994,7 +14832,7 @@ an ebony door that leads to the landing.
 </desc>
     <ekeywords>door</ekeywords>
     <exit>
-      <name>northwest</name>
+      <name>southwest</name>
       <flags>door closed</flags>
       <vnum>5151</vnum>
     </exit>
@@ -15024,7 +14862,7 @@ an ebony door that leads to the landing.
     <vnum>5161</vnum>
   </room>
   <room>
-    <name>Viridian Guest Room</name>
+    <name>** Viridian Guest Room</name>
     <copyright>Copyright © 2005  Tina Halford &lt;calliopeismusing@hotmail.com&gt;</copyright>
     <desc>From the viridian ceiling hang two stained glass lamps casting 
 multi-coloured rays upon the ebony walls and floor.  A large bed, with a 
@@ -15037,7 +14875,7 @@ book lies open on the walnut end table.  The exit is to the north-east.
 </desc>
     <ekeywords>door</ekeywords>
     <exit>
-      <name>northeast</name>
+      <name>southeast</name>
       <flags>door closed</flags>
       <vnum>5151</vnum>
     </exit>
@@ -15993,37 +15831,6 @@ palatial, outer suite.
     <vnum>5197</vnum>
   </room>
   <room>
-    <name>Tom's Inventory Room - Breakfast</name>
-    <copyright>Copyright © 2004  Aether &lt;aethergray@gmail.com&gt;</copyright>
-    <desc></desc>
-    <history>
-      <date>2004-10-25 15:26:03</date>
-      <person>Aether &lt;aethergray@gmail.com&gt;</person>
-    </history>
-    <history>
-      <date>2004-10-25 15:31:29</date>
-      <person>Aether &lt;aethergray@gmail.com&gt;</person>
-    </history>
-    <history>
-      <date>2004-10-25 15:31:48</date>
-      <person>Aether &lt;aethergray@gmail.com&gt;</person>
-    </history>
-    <history>
-      <date>2004-10-25 15:32:56</date>
-      <person>Aether &lt;aethergray@gmail.com&gt;</person>
-    </history>
-    <history>
-      <date>2004-10-25 15:37:40</date>
-      <person>Aether &lt;aethergray@gmail.com&gt;</person>
-    </history>
-    <history>
-      <date>2004-11-27 11:38:02</date>
-      <person>Aether &lt;aethergray@gmail.com&gt;</person>
-    </history>
-    <sector>inside</sector>
-    <vnum>5350</vnum>
-  </room>
-  <room>
     <name>Tom's Inventory Lunch</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
@@ -16031,21 +15838,7 @@ palatial, outer suite.
     <vnum>5351</vnum>
   </room>
   <room>
-    <name>Tom's Inventory Dinner</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <sector>inside</sector>
-    <vnum>5352</vnum>
-  </room>
-  <room>
-    <name>Junk Room (`YHave MOB Purge after Dumping`X)</name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <sector>inside</sector>
-    <vnum>5354</vnum>
-  </room>
-  <room>
-    <name>Diagon Alley - Back Alley</name>
+    <name>** Diagon Alley - Back Alley</name>
     <copyright>Copyright © 2005  Amnar &lt;brikwars@yahoo.com&gt;</copyright>
     <desc>The back alley turns here, into a long stretch running behind the main shops 
 of Diagon. Pieces of rubbish blow about, rats skitter across occasionally 
@@ -16054,7 +15847,7 @@ alley stretches off to the east, and the only visible way back to Diagon is
 to the south. 
 </desc>
     <exit>
-      <name>east</name>
+      <name>northeast</name>
       <vnum>5356</vnum>
     </exit>
     <exit>
@@ -16073,7 +15866,7 @@ to the south.
     <vnum>5355</vnum>
   </room>
   <room>
-    <name>Diagon Alley - Back Alley - Behind a Shop</name>
+    <name>** ** Diagon Alley - Back Alley - Behind a Shop</name>
     <copyright>Copyright © 2005  Amnar &lt;brikwars@yahoo.com&gt;</copyright>
     <desc>The beaten back alley continues on here, running behind a simple brick 
 building. A small grey door of metal has a warning written on it, &quot;Staff Use 
@@ -16081,16 +15874,11 @@ only, DO NOT ENTER&quot;. Along the north wall is random graffiti written. The
 alley stretches off to the east and west. 
 </desc>
     <exit>
-      <name>east</name>
+      <name>south</name>
       <vnum>5130</vnum>
     </exit>
     <exit>
-      <name>south</name>
-      <flags>door closed locked</flags>
-      <vnum>5098</vnum>
-    </exit>
-    <exit>
-      <name>west</name>
+      <name>southwest</name>
       <vnum>5355</vnum>
     </exit>
     <extradesc>
@@ -16163,21 +15951,6 @@ it. The door to the south has a black plaque on it that reads, &quot;Loo&quot;.
     </history>
     <sector>inside</sector>
     <vnum>5358</vnum>
-  </room>
-  <room>
-    <name>Gringotts Car</name>
-    <copyright>Copyright © 2004  Aether &lt;aethergray@gmail.com&gt;</copyright>
-    <desc></desc>
-    <history>
-      <date>2004-06-24 13:43:55</date>
-      <person>Aether &lt;aethergray@gmail.com&gt;</person>
-    </history>
-    <history>
-      <date>2004-06-24 13:43:58</date>
-      <person>Aether &lt;aethergray@gmail.com&gt;</person>
-    </history>
-    <sector>inside</sector>
-    <vnum>5494</vnum>
   </room>
   <room>
     <name>Keen Magpie - Back Hallway</name>
@@ -16278,7 +16051,7 @@ but the sounds of traffic still leak through.
     <vnum>5498</vnum>
   </room>
   <room>
-    <name>Daily Prophet News Room</name>
+    <name>** Daily Prophet News Room</name>
     <copyright>Copyright © 2005  Amnar &lt;brikwars@yahoo.com&gt;</copyright>
     <desc>This room is all business, but with a very old feeling to it. The floors of 
 stone look as though they might have once held a pattern which has been 
@@ -16294,7 +16067,7 @@ Prophet office, and indirectly the way to leave the huge tower.
 </desc>
     <ekeywords>door</ekeywords>
     <exit>
-      <name>west</name>
+      <name>south</name>
       <flags>door closed locked</flags>
       <key>5230</key>
       <vnum>5043</vnum>
@@ -16490,29 +16263,7 @@ faintly glowing at night. The back alley is east, running north.
     <vnum>5502</vnum>
   </room>
   <room>
-    <name>Basement Storage - Shop East of Madam Malkins</name>
-    <copyright>Copyright © 2004  Aether &lt;aethergray@gmail.com&gt;</copyright>
-    <desc></desc>
-    <ekeywords>door</ekeywords>
-    <exit>
-      <name>up</name>
-      <flags>door closed locked</flags>
-      <vnum>5098</vnum>
-    </exit>
-    <flags>indoors</flags>
-    <history>
-      <date>2004-08-13 11:03:56</date>
-      <person>Aether &lt;aethergray@gmail.com&gt;</person>
-    </history>
-    <history>
-      <date>2004-08-13 11:34:41</date>
-      <person>Aether &lt;aethergray@gmail.com&gt;</person>
-    </history>
-    <sector>inside</sector>
-    <vnum>5503</vnum>
-  </room>
-  <room>
-    <name>Diagon Alley - Back Alley - Riley's Rat Emporium</name>
+    <name>** Diagon Alley - Back Alley - Riley's Rat Emporium</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>This slanted, old, wooden shack is covered in inches upon inches of thick 
 dust and by dry rat droppings.  It is filled with old, rusty cages, the 
@@ -16528,7 +16279,7 @@ ground.
 </desc>
     <ekeywords>door</ekeywords>
     <exit>
-      <name>south</name>
+      <name>southwest</name>
       <flags>door closed locked easy</flags>
       <vnum>5130</vnum>
     </exit>
@@ -16830,7 +16581,7 @@ THIS SITE UNDER THE PROTECTION OF WACC, WIZARDS FOR AMIABLE CARE OF CREATURES. T
     <vnum>5514</vnum>
   </room>
   <room>
-    <name>The Leaky Cauldron - Upper Hallway</name>
+    <name>** The Leaky Cauldron - Upper Hallway</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
     <ekeywords>door</ekeywords>
@@ -16840,7 +16591,7 @@ THIS SITE UNDER THE PROTECTION OF WACC, WIZARDS FOR AMIABLE CARE OF CREATURES. T
       <vnum>5516</vnum>
     </exit>
     <exit>
-      <name>northwest</name>
+      <name>north</name>
       <vnum>5520</vnum>
     </exit>
     <exit>
@@ -16940,7 +16691,7 @@ THIS SITE UNDER THE PROTECTION OF WACC, WIZARDS FOR AMIABLE CARE OF CREATURES. T
     <vnum>5519</vnum>
   </room>
   <room>
-    <name>The Leaky Cauldron - Upper Hallway</name>
+    <name>** ** ** The Leaky Cauldron - Upper Hallway</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
     <ekeywords>door</ekeywords>
@@ -16950,17 +16701,17 @@ THIS SITE UNDER THE PROTECTION OF WACC, WIZARDS FOR AMIABLE CARE OF CREATURES. T
       <vnum>5527</vnum>
     </exit>
     <exit>
-      <name>northwest</name>
+      <name>north</name>
       <flags>door closed locked</flags>
       <vnum>5531</vnum>
     </exit>
     <exit>
-      <name>southeast</name>
-      <vnum>5515</vnum>
+      <name>northeast</name>
+      <vnum>5529</vnum>
     </exit>
     <exit>
-      <name>west</name>
-      <vnum>5529</vnum>
+      <name>south</name>
+      <vnum>5515</vnum>
     </exit>
     <flags>indoors</flags>
     <history>
@@ -16979,7 +16730,7 @@ THIS SITE UNDER THE PROTECTION OF WACC, WIZARDS FOR AMIABLE CARE OF CREATURES. T
     <vnum>5520</vnum>
   </room>
   <room>
-    <name>Wireless Wizarding Network - Back Hallway - East End</name>
+    <name>** Wireless Wizarding Network - Back Hallway - East End</name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc>The hallway of the WWN ends here, with three simple offices. Each has a 
 wooden door with fogged glass, the wood stained almost to a bronze color. 
@@ -16995,7 +16746,7 @@ Diagon Alley.
       <vnum>5525</vnum>
     </exit>
     <exit>
-      <name>north</name>
+      <name>northeast</name>
       <flags>door closed locked obvious</flags>
       <vnum>5524</vnum>
     </exit>
@@ -17080,12 +16831,12 @@ Diagon Alley.
     <vnum>5523</vnum>
   </room>
   <room>
-    <name>WWN - General Offices - North Office</name>
+    <name>** WWN - General Offices - North Office</name>
     <copyright>Copyright © 2004  Aether &lt;aethergray@gmail.com&gt;</copyright>
     <desc></desc>
     <ekeywords>door</ekeywords>
     <exit>
-      <name>south</name>
+      <name>southwest</name>
       <flags>door closed locked obvious</flags>
       <vnum>5521</vnum>
     </exit>
@@ -17231,16 +16982,16 @@ Diagon Alley.
     <vnum>5528</vnum>
   </room>
   <room>
-    <name>The Leaky Cauldron - Room Twelve - Bedroom</name>
+    <name>** ** The Leaky Cauldron - Room Twelve - Bedroom</name>
     <copyright>Copyright © 2004  Aether &lt;aethergray@gmail.com&gt;</copyright>
     <desc></desc>
     <exit>
       <name>east</name>
-      <vnum>5520</vnum>
+      <vnum>5530</vnum>
     </exit>
     <exit>
-      <name>west</name>
-      <vnum>5530</vnum>
+      <name>southwest</name>
+      <vnum>5520</vnum>
     </exit>
     <history>
       <date>2004-10-16 10:25:17</date>
@@ -17250,11 +17001,11 @@ Diagon Alley.
     <vnum>5529</vnum>
   </room>
   <room>
-    <name>The Leaky Cauldron - Room Twelve - Bathroom</name>
+    <name>** The Leaky Cauldron - Room Twelve - Bathroom</name>
     <copyright>Copyright © 2004  Aether &lt;aethergray@gmail.com&gt;</copyright>
     <desc></desc>
     <exit>
-      <name>east</name>
+      <name>west</name>
       <vnum>5529</vnum>
     </exit>
     <history>
@@ -17265,12 +17016,12 @@ Diagon Alley.
     <vnum>5530</vnum>
   </room>
   <room>
-    <name>The Leaky Cauldron - Linen Closet</name>
+    <name>** The Leaky Cauldron - Linen Closet</name>
     <copyright>Copyright © 2004  Aether &lt;aethergray@gmail.com&gt;</copyright>
     <desc></desc>
     <ekeywords>door</ekeywords>
     <exit>
-      <name>southeast</name>
+      <name>south</name>
       <flags>door closed locked</flags>
       <vnum>5520</vnum>
     </exit>
@@ -17342,27 +17093,6 @@ rushes of a waterfall.
     </roomecho>
     <sector>inside</sector>
     <vnum>5532</vnum>
-  </room>
-  <room>
-    <name></name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <sector>inside</sector>
-    <vnum>5608</vnum>
-  </room>
-  <room>
-    <name></name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <sector>inside</sector>
-    <vnum>5609</vnum>
-  </room>
-  <room>
-    <name></name>
-    <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
-    <desc></desc>
-    <sector>inside</sector>
-    <vnum>5633</vnum>
   </room>
   <shop></shop>
   <special></special>

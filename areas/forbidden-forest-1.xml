@@ -8,7 +8,7 @@
 -->
 <area>
   <areadata>
-    <name>FF DoT Template</name>
+    <name>Forbidden Forest</name>
     <builders>tina kyle</builders>
     <colour></colour>
     <colourcode>`</colourcode>
@@ -7348,14 +7348,6 @@
       <vnum>4584</vnum>
     </exit>
     <exit>
-      <name>north</name>
-      <vnum>4314</vnum>
-    </exit>
-    <exit>
-      <name>south</name>
-      <vnum>4313</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>4312</vnum>
     </exit>
@@ -7373,10 +7365,6 @@
     <exit>
       <name>north</name>
       <vnum>4917</vnum>
-    </exit>
-    <exit>
-      <name>south</name>
-      <vnum>4313</vnum>
     </exit>
     <exit>
       <name>west</name>
@@ -19477,26 +19465,26 @@
     <vnum>4866</vnum>
   </room>
   <room>
-    <name></name>
+    <name>** </name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
     <exit>
-      <name>northwest</name>
-      <vnum>4868</vnum>
-    </exit>
-    <exit>
       <name>southeast</name>
       <vnum>4866</vnum>
+    </exit>
+    <exit>
+      <name>west</name>
+      <vnum>4868</vnum>
     </exit>
     <sector>inside</sector>
     <vnum>4867</vnum>
   </room>
   <room>
-    <name></name>
+    <name>** </name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
     <exit>
-      <name>southeast</name>
+      <name>east</name>
       <vnum>4867</vnum>
     </exit>
     <exit>
@@ -19736,11 +19724,11 @@
     <vnum>4883</vnum>
   </room>
   <room>
-    <name></name>
+    <name>** </name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
     <exit>
-      <name>north</name>
+      <name>northwest</name>
       <vnum>4885</vnum>
     </exit>
     <exit>
@@ -19751,7 +19739,7 @@
     <vnum>4884</vnum>
   </room>
   <room>
-    <name></name>
+    <name>** </name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
     <exit>
@@ -19759,7 +19747,7 @@
       <vnum>4886</vnum>
     </exit>
     <exit>
-      <name>south</name>
+      <name>southeast</name>
       <vnum>4884</vnum>
     </exit>
     <sector>inside</sector>
@@ -20157,10 +20145,6 @@
       <vnum>4907</vnum>
     </exit>
     <exit>
-      <name>south</name>
-      <vnum>4913</vnum>
-    </exit>
-    <exit>
       <name>southwest</name>
       <vnum>4915</vnum>
     </exit>
@@ -20172,10 +20156,6 @@
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
     <exit>
-      <name>north</name>
-      <vnum>4911</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>4915</vnum>
     </exit>
@@ -20186,10 +20166,6 @@
     <name></name>
     <copyright>Copyright © 2004-2010  Project Legilimensia</copyright>
     <desc></desc>
-    <exit>
-      <name>north</name>
-      <vnum>4911</vnum>
-    </exit>
     <exit>
       <name>south</name>
       <vnum>4914</vnum>
@@ -20255,10 +20231,6 @@
       <vnum>4754</vnum>
     </exit>
     <exit>
-      <name>north</name>
-      <vnum>4919</vnum>
-    </exit>
-    <exit>
       <name>south</name>
       <vnum>4314</vnum>
     </exit>
@@ -20282,10 +20254,6 @@
       <vnum>4920</vnum>
     </exit>
     <exit>
-      <name>south</name>
-      <vnum>4917</vnum>
-    </exit>
-    <exit>
       <name>west</name>
       <vnum>4326</vnum>
     </exit>
@@ -20303,10 +20271,6 @@
     <exit>
       <name>north</name>
       <vnum>4921</vnum>
-    </exit>
-    <exit>
-      <name>south</name>
-      <vnum>4917</vnum>
     </exit>
     <exit>
       <name>west</name>
