@@ -1,6 +1,7 @@
 use strict;
 use warnings;
 
+use HTML::Entities;
 use XML::Simple;
 
 my $areadir = shift || '../areas';
@@ -19,7 +20,7 @@ for my $areaname (@areanames) {
 			object => '+vnum',
 			room => '+vnum',
 		},
-		ForceArray => ['exit', 'extradesc', 'object', 'room', 'roomecho'],
+		ForceArray => ['exit', 'extradesc', 'history', 'object', 'room', 'roomecho'],
 		SuppressEmpty => 1,
 	);
 	$areas{$areaname} = $area;
@@ -250,15 +251,7 @@ for my $area_shortname (sort keys %areas) {
 		my $extras = $room->{extradesc} || [];
 		my $exits = $room->{exit} || {};
 		my $echoes = $room->{roomecho} || [];
-
-		my %authors;
-		for my $account (keys %{$room_authors{$room_vnum}}) {
-			if (exists $authors{$account}) {
-				$authors{$account} += $room_authors{$room_vnum}->{$account};
-			} else {
-				$authors{$account} = $room_authors{$room_vnum}->{$account};
-			}
-		}
+		my $history = $room->{history} || [];
 
 		open my $fd, '>', (sprintf "html/%s/%d.html", $area_shortname, $room_vnum) or die $!;
 		printf $fd "%s\n", '<?xml version="1.0" encoding="UTF-8" ?>';
@@ -426,25 +419,34 @@ for my $area_shortname (sort keys %areas) {
 			}
 		}
 
-		if (scalar keys %authors) {
+		if (@$history) {
 			printf $fd "<div id=\"authors\">\n";
-			printf $fd "<p>Likely authors:</p>\n";
+			printf $fd "<p>Possible authors:</p>\n";
 			printf $fd "<ul>\n";
 
-			for my $account (sort { $authors{$b} <=> $authors{$a} } keys %authors) {
-				printf $fd "<li>(%d) %s</li>\n", $authors{$account}, $account;
+			for my $entry(sort { $a->{date} cmp $b->{date} } @$history) {
+				printf $fd "<li>%s - %s</li>\n", $entry->{date}, scramble_email_address($entry->{person});
 			}
 
 			printf $fd "</ul>\n";
 			printf $fd "</div>\n";
 		}
 
-		$room->{authors} = \%authors;
-
 		printf $fd "</body>\n";
 		printf $fd "</html>\n";
 		close $fd;
 	}
+}
+
+sub scramble_email_address {
+	my $addr = shift;
+
+	$addr =~ s/</(/g;
+	$addr =~ s/>/)/g;
+	$addr =~ s/\@/ at /g;
+	$addr =~ s/\./ dot /g;
+
+	return $addr;
 }
 
 sub map_area {
